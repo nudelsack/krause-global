@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Krause Global Resources & Trade</title>
+    <meta name="description" content="Свяжитесь с Krause Global Resources & Trade для ваших потребностей в закупках.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../images/logo_kg.png" alt="KGRT Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="commodities.html">Сырье и товары</a></li>
+                        <li><a href="global-presence.html">Глобальное присутствие</a></li>
+                        <li><a href="values.html">Наши ценности</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <i class="fas fa-globe"></i>
+                    <select onchange="window.location.href=this.value" style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 0.3rem 0.5rem; border-radius: 4px; cursor: pointer;">
+                        <option value="../contact.html">DE</option>
+                        <option value="../en/contact.html">EN</option>
+                        <option value="contact.html" selected>RU</option>
+                        <option value="../ar/contact.html">AR</option>
+                        <option value="../fr/contact.html">FR</option>
+                        <option value="../tr/contact.html">TR</option>
+                        <option value="../zh/contact.html">中文</option>
+                    </select>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p class="breadcrumb"><a href="index.html">Главная</a> / Контакты</p>
+        </div>
+    </section>
+
+    <!-- Contact Intro -->
+    <section class="services-intro">
+        <div class="container">
+            <h2>Давайте поговорим</h2>
+            <p class="services-intro-text">
+                Если у вас есть вопросы о наших услугах, вы хотите отправить запрос или заинтересованы в 
+                долгосрочном партнерстве - мы будем рады услышать от вас. Наша команда к вашим услугам.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Контактная информация</h2>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                        Свяжитесь с нами различными способами. Обычно мы отвечаем в течение 24 часов.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Электронная почта</h4>
+                            <p>oh@krause-global.com</p>
+                            <p>nk@krause-global.com</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Для общих запросов</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Телефон</h4>
+                            <p>+49 152 26872757</p>
+                            <p>+49 176 70414688</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Адрес</h4>
+                            <p>ul. Dajwór 4, jr 4, lok. 19</p>
+                            <p>31-054 Краков, Польша</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Головной офис</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <h4>Рабочие часы</h4>
+                            <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Круглосуточная экстренная связь для партнеров</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Отправьте нам сообщение</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Компания *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Электронная почта *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Интерес к *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Пожалуйста, выберите...</option>
+                                <option value="agricultural">Сельскохозяйственная продукция</option>
+                                <option value="food">Продукты питания</option>
+                                <option value="energy">Энергоносители</option>
+                                <option value="metals">Металлы и промышленное сырье</option>
+                                <option value="multiple">Несколько категорий</option>
+                                <option value="partnership">Общее партнерство</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение *</label>
+                            <textarea id="message" name="message" required placeholder="Пожалуйста, опишите ваш запрос или проблему..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" required style="margin-top: 0.25rem; flex-shrink: 0;">
+                                <span style="font-weight: normal;">Я принимаю <a href="datenschutz.html" style="color: var(--gold);">Политику конфиденциальности</a> *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Быстрый запрос для институциональных партнеров</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-light);">
+                Для институциональных партнеров и крупных клиентов мы предлагаем приоритетную поддержку и специальных менеджеров по работе с клиентами.
+            </p>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Менеджер по работе с клиентами</h4>
+                    <p>Персональный контакт для ваших нужд</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Поддержка 24/7</h4>
+                    <p>Экстренная связь для срочных запросов</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h4>Индивидуальные предложения</h4>
+                    <p>Индивидуальные решения для ваших требований</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Быстрое время ответа</h4>
+                    <p>Ответ в течение 24 часов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="commodity-category" style="margin-bottom: 1.5rem;">
+                    <div class="category-header" style="cursor: pointer;">
+                        <div class="category-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.3rem;">Как быстро вы можете доставить?</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Сроки доставки варьируются в зависимости от продукта, количества и места назначения. Обычно мы можем доставить в течение 4-8 недель. Мы предлагаем экспресс-варианты для срочных запросов.</p>
+                    </div>
+                </div>
+
+                <div class="commodity-category" style="margin-bottom: 1.5rem;">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.3rem;">Каковы ваши минимальные объемы заказа?</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Мы специализируемся на больших объемах для институциональных покупателей. Минимальные количества варьируются в зависимости от продукта, но обычно начинаются с контейнерных или вагонных партий.</p>
+                    </div>
+                </div>
+
+                <div class="commodity-category" style="margin-bottom: 1.5rem;">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.3rem;">Предоставляете ли вы сертификаты качества?</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Да, все наши поставки сопровождаются полными сертификатами качества от независимых лабораторий. Мы соответствуем всем соответствующим международным стандартам.</p>
+                    </div>
+                </div>
+
+                <div class="commodity-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.3rem;">Как мне стать партнером?</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Свяжитесь с нами через форму выше или напрямую по электронной почте. После первоначальной проверки мы организуем личную встречу для обсуждения ваших потребностей и построения партнерства.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Готовы к следующему шагу?</h2>
+            <p>Давайте вместе оптимизируем вашу стратегию закупок.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:oh@krause-global.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Отправить письмо
+                </a>
+                <a href="tel:+4915226872757" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo-section">
+                <img src="../images/logo_kg.png" alt="KGRT Logo">
+                <div class="footer-logo-text">Krause Global Resources & Trade</div>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Ваш надежный партнер в глобальной торговле сырьем и товарами с акцентом на устойчивость и долгосрочные партнерства.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="commodities.html">Сырье</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="values.html">Ценности</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> oh@krause-global.com</li>
+                        <li><i class="fas fa-phone"></i> +49 152 26872757</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Краков, Польша</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krause Global Resources & Trade. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="impressum.html">Выходные данные</a>
+                    <a href="datenschutz.html">Конфиденциальность</a>
+                    <a href="agb.html">Условия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
