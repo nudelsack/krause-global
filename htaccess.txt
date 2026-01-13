@@ -1,0 +1,14 @@
+# Keep German as default - NO redirects
+# KGRT Website
+
+# Prevent automatic redirects based on browser language
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Ensure index.html is served for directory requests
+DirectoryIndex index.html
+
+# DISABLE all rewrite rules - no automatic redirects
+RewriteEngine Off

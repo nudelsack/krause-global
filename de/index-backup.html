@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krause Global Resources & Trade - Zuverlässiger Partner im globalen Rohstoffhandel</title>
     <meta name="description" content="Krause Global Resources & Trade - Spezialist für die Beschaffung großer Chargen von Rohstoffen und Gütern weltweit.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/additional.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -14,6 +14,11 @@
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../images/logo.jpeg" alt="KGRT Logo">
+                    </a>
+                </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
@@ -30,7 +35,7 @@
                     <i class="fas fa-globe"></i>
                     <select onchange="window.location.href=this.value" style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 0.3rem 0.5rem; border-radius: 4px; cursor: pointer;">
                         <option value="index.html" selected>DE</option>
-                        <option value="en/index.html">EN</option>
+                        <option value="../en/index.html">EN</option>
                         
                     </select>
                 </div>
@@ -115,18 +120,6 @@
                     </div>
                     <h4>Institutionelle Partner</h4>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commodities Promo (inserted before News) -->
-    <section class="commodities-promo" style="padding:4rem 0; background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);">
-        <div class="container">
-            <h2 class="section-title">Rohstoffe & Waren</h2>
-            <p style="text-align:center; max-width:800px; margin:0 auto 2rem; color:var(--text-light);">Unser Portfolio deckt ein breites Spektrum - von Agrarprodukten über Energie bis zu Metallen und Industriechemikalien. Entdecken Sie unser Angebot und Kontaktmöglichkeiten für große Volumen.</p>
-            <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;">
-                <a href="commodities.html" class="btn btn-primary" style="padding:0.8rem 1.25rem;">Zum Angebot</a>
-                <a href="contact.html" class="btn btn-secondary" style="padding:0.8rem 1.25rem;">Anfrage stellen</a>
             </div>
         </div>
     </section>
@@ -257,6 +250,9 @@
     <footer class="footer">
         <div class="container">
             <!-- Prominent Logo Section -->
+            <div class="footer-logo-section">
+                <img src="../images/logo.jpeg" alt="KGRT Logo">
+                <div class="footer-logo-text">Krause Global Resources & Trade</div>
             
             <div class="footer-grid">
                 <div class="footer-col">
@@ -300,6 +296,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

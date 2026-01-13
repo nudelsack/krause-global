@@ -51,7 +51,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 48px;
 }
 
 /* ===================================
@@ -594,12 +594,24 @@ a {
     margin-bottom: 3rem;
 }
 
+/* Ensure footer columns keep distance from viewport edges */
+.footer-grid {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 .footer-col h3,
 .footer-col h4 {
     color: var(--accent-teal);
     margin-bottom: 1.25rem;
     font-weight: 700;
-}
 }
 
 .footer-col p {
@@ -642,6 +654,8 @@ a {
 .footer-bottom {
     border-top: 1px solid var(--light-gray);
     padding-top: 1.5rem;
+    padding-left: 48px;
+    padding-right: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -672,6 +686,41 @@ a {
 /* ===================================
    Responsive Design
    =================================== */
+
+/* Ensure wide, full-width sections keep inner content away from viewport edges */
+.page-header,
+.hero,
+.cta-section,
+.footer,
+.services-grid,
+.mission-section,
+.team-section,
+.timeline-section,
+.certifications-section,
+.about-intro,
+.services-intro,
+.footer-logo-section {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+@media (max-width: 768px) {
+    .page-header,
+    .hero,
+    .cta-section,
+    .footer,
+    .services-grid,
+    .mission-section,
+    .team-section,
+    .timeline-section,
+    .certifications-section,
+    .about-intro,
+    .services-intro,
+    .footer-logo-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
 
 @media (max-width: 768px) {
     .mobile-menu-toggle {
@@ -738,6 +787,13 @@ a {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 

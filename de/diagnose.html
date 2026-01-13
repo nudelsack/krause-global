@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>DIAGNOSE - Welche Seite wird geladen?</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 50px;
+            background: #1a1a1a;
+            color: #0f0;
+        }
+        .info {
+            background: #000;
+            border: 2px solid #0f0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        h1 { color: #ff0; }
+    </style>
+</head>
+<body>
+    <h1>🔍 DIAGNOSE-SEITE</h1>
+    <div class="info">
+        <p><strong>Datei:</strong> /index.html (ROOT - DEUTSCH)</p>
+        <p><strong>Sprache:</strong> Deutsch (DE)</p>
+        <p><strong>Zeit:</strong> <script>document.write(new Date().toLocaleString('de-DE'));</script></p>
+    </div>
+    <div class="info">
+        <p><strong>✓ ERFOLG!</strong> Sie sehen die DEUTSCHE Root-Datei!</p>
+        <p>Wenn Sie diese Seite sehen, wurde KEINE Weiterleitung durchgeführt.</p>
+    </div>
+    <div class="info">
+        <p><strong>URL dieser Seite sollte sein:</strong></p>
+        <p>ihre-domain.de/index.html ODER ihre-domain.de/</p>
+        <p><strong>Aktuelle URL:</strong> <script>document.write(window.location.href);</script></p>
+    </div>
+    <hr>
+    <p><a href="about.html" style="color: #0f0;">→ Zur About-Seite</a></p>
+    <p><a href="en/index.html" style="color: #f00;">→ Zur englischen Startseite (SOLLTE WEITERGELEITET WERDEN)</a></p>
+</body>
+</html>
