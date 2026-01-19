@@ -119,9 +119,10 @@ a {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
     width: auto;
     display: block;
+    object-fit: contain;
 }
 
 .logo-badge {
@@ -215,7 +216,10 @@ a {
 
 .hero {
     position: relative;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.18) 100%),
+        url('../images/AdobeStock_315664059.jpeg') center center / cover no-repeat,
+        url('../images/logo-background.jpg') center center / cover no-repeat;
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -232,10 +236,8 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../images/logo-background.jpg') center center no-repeat;
-    background-size: cover;
-    opacity: 0.08;
-    mix-blend-mode: overlay;
+    background: none;
+    opacity: 0;
 }
 
 .hero::after {
@@ -245,7 +247,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at top, rgba(20, 184, 166, 0.15), transparent 60%);
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.08), transparent 60%);
 }
 
 .hero-overlay {

@@ -1,0 +1,376 @@
+[Mon Jan 19 04:26:03 2026] PHP 8.5.0 Development Server (http://127.0.0.1:8000) started
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50132 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50132 [200]: GET /
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50132 Closing
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50133 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50133 [200]: GET /en/index.html
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50133 Closing
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50134 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50134 [200]: GET /css/style.css
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50135 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50134 Closing
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50135 [200]: GET /css/additional.css
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50135 Closing
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50136 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50137 Accepted
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50136 [200]: GET /js/main.js
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50136 Closing
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50137 [200]: GET /images/diamand.png
+[Mon Jan 19 04:26:26 2026] 127.0.0.1:50137 Closing
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50139 Accepted
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50139 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50140 Accepted
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50140 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50140 Closing
+[Mon Jan 19 04:26:27 2026] 127.0.0.1:50139 Closing
+[Mon Jan 19 04:26:28 2026] 127.0.0.1:50141 Accepted
+[Mon Jan 19 04:26:28 2026] 127.0.0.1:50141 [200]: GET /favicon.ico
+[Mon Jan 19 04:26:28 2026] 127.0.0.1:50141 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50143 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50143 [200]: GET /en/commodities.html
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50143 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50144 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50144 [200]: GET /css/style.css
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50145 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50144 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50145 [200]: GET /css/pages.css
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50145 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50146 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50146 [200]: GET /images/diamand.png
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50147 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50146 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50147 [200]: GET /js/main.js
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50147 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50148 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50148 [200]: GET /images/header_Waren%20.jpg
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50149 Accepted
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50149 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50149 Closing
+[Mon Jan 19 04:26:35 2026] 127.0.0.1:50148 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50150 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50150 [200]: GET /en/index.html
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50150 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50151 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50151 [200]: GET /css/style.css
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50151 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50152 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50152 [200]: GET /css/additional.css
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50152 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50153 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50153 [200]: GET /images/diamand.png
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50153 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50154 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50155 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50156 Accepted
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50154 [200]: GET /js/main.js
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50155 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50154 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50156 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50156 Closing
+[Mon Jan 19 04:26:41 2026] 127.0.0.1:50155 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50182 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50182 [200]: GET /en/index.html
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50182 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50183 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50183 [200]: GET /css/style.css
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50183 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50184 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50184 [200]: GET /css/additional.css
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50184 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50185 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50185 [200]: GET /images/diamand.png
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50185 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50186 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50187 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50188 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50186 [200]: GET /js/main.js
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50187 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50186 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50188 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50188 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50189 Accepted
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50189 [200]: GET /images/fresh-fish.jpg
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50189 Closing
+[Mon Jan 19 04:28:20 2026] 127.0.0.1:50187 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50191 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50191 [200]: GET /en/fish.html
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50191 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50192 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50192 [200]: GET /css/style.css
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50192 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50193 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50194 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50193 [200]: GET /css/pages.css
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50193 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50194 [200]: GET /js/main.js
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50194 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50195 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50196 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50195 [200]: GET /images/diamand.png
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50196 [200]: GET /images/beluga-caviar.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50195 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50197 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50197 [200]: GET /images/Kamtschatka%20King%20Crab.png
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50196 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50197 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50198 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50198 [200]: GET /images/Header.Fish.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50199 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50199 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50199 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50198 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50200 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50201 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50200 [200]: GET /images/delicatessen-caviar.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50201 [200]: GET /images/fresh-fish.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50200 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50201 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50202 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50203 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50202 [200]: GET /images/seafood-shellfish.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50203 [200]: GET /images/Dorschleber,%20wild_Konservier.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50203 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50202 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50204 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50205 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50204 [200]: GET /images/Atlantischer%20Dorsch.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50205 [200]: GET /images/Schellfish.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50204 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50206 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50206 [200]: GET /images/K%C3%B6hler.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50205 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50206 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50207 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50208 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50207 [200]: GET /images/Pollachius%20pollachiu.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50208 [200]: GET /images/hering%20.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50207 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50208 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50209 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50210 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50209 [200]: GET /images/makrele.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50210 [200]: GET /images/Rotbarsch.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50211 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50212 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50213 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50214 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50209 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50211 [200]: GET /images/Heilbutt_Hippoglossus%20hippoglossus%20486549.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50215 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50210 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50212 [200]: GET /images/Plattfische_Diverse%20Arten%20auf%20eis%20%20486549.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50216 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50215 [200]: GET /images/Horse%20Jack%20Mackerel_Trachurus%20japonicus__%20auf%20eis%20ohne%20text%20%20862578.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50216 [200]: GET /images/keta.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50213 [200]: GET /images/%20Pacific%20Cod_Gadus%20macrocephalus%20%20auf%20eis4.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50214 [200]: GET /images/pollock%20.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50211 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50212 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50217 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50213 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50218 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50214 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50219 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50215 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50216 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50220 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50221 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50222 Accepted
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50217 [200]: GET /images/rotlachs-bild%20.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50218 [200]: GET /images/Pink%20Salmon%20_Oncorhynchus%20jpg.png
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50220 [200]: GET /images/Giant%20Squid%20(Kalmar)_Dosidicus%20gigas_fischmarkt%20_%20auf%20eis%20ohne%20text%20%20124220.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50221 [200]: GET /images/kamtschatka-king-crab.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50219 [200]: GET /images/Atlantischer%20Lachs_Salmo%20salar___%20auf%20eis%20ohne%20text%20%20124220.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50222 [200]: GET /images/snow-crab-chionoecetes-opilio.jpg
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50221 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50217 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50218 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50219 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50222 Closing
+[Mon Jan 19 04:28:25 2026] 127.0.0.1:50220 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50223 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50223 [200]: GET /en/index.html
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50224 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50223 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50225 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50226 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50227 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50228 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50224 [200]: GET /css/style.css
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50224 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50225 [200]: GET /js/main.js
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50225 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50229 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50226 [200]: GET /images/diamand.png
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50226 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50229 [200]: GET /css/additional.css
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50229 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50227 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50228 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50228 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50227 Closing
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50230 Accepted
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50230 [200]: GET /images/fresh-fish.jpg
+[Mon Jan 19 04:28:29 2026] 127.0.0.1:50230 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50232 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50232 [200]: GET /en/fish.html
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50232 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50233 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50233 [200]: GET /css/style.css
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50233 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50234 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50234 [200]: GET /css/pages.css
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50234 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50235 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50235 [200]: GET /images/diamand.png
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50235 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50236 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50236 [200]: GET /images/beluga-caviar.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50237 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50236 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50237 [200]: GET /images/Kamtschatka%20King%20Crab.png
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50237 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50238 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50238 [200]: GET /js/main.js
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50238 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50239 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50239 [200]: GET /images/Header.Fish.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50240 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50240 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50240 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50239 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50241 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50242 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50241 [200]: GET /images/delicatessen-caviar.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50242 [200]: GET /images/fresh-fish.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50241 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50242 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50243 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50244 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50243 [200]: GET /images/seafood-shellfish.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50244 [200]: GET /images/Dorschleber,%20wild_Konservier.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50244 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50243 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50245 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50246 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50245 [200]: GET /images/Atlantischer%20Dorsch.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50246 [200]: GET /images/Schellfish.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50245 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50247 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50246 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50247 [200]: GET /images/K%C3%B6hler.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50248 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50248 [200]: GET /images/Pollachius%20pollachiu.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50247 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50248 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50249 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50250 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50249 [200]: GET /images/hering%20.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50250 [200]: GET /images/makrele.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50249 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50250 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50251 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50252 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50251 [200]: GET /images/Rotbarsch.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50252 [200]: GET /images/Heilbutt_Hippoglossus%20hippoglossus%20486549.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50251 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50252 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50253 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50254 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50253 [200]: GET /images/Plattfische_Diverse%20Arten%20auf%20eis%20%20486549.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50254 [200]: GET /images/%20Pacific%20Cod_Gadus%20macrocephalus%20%20auf%20eis4.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50253 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50254 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50255 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50256 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50255 [200]: GET /images/pollock%20.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50256 [200]: GET /images/Horse%20Jack%20Mackerel_Trachurus%20japonicus__%20auf%20eis%20ohne%20text%20%20862578.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50255 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50256 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50257 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50258 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50257 [200]: GET /images/keta.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50258 [200]: GET /images/rotlachs-bild%20.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50257 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50258 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50259 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50260 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50259 [200]: GET /images/Pink%20Salmon%20_Oncorhynchus%20jpg.png
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50260 [200]: GET /images/Atlantischer%20Lachs_Salmo%20salar___%20auf%20eis%20ohne%20text%20%20124220.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50259 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50260 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50261 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50262 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50261 [200]: GET /images/Giant%20Squid%20(Kalmar)_Dosidicus%20gigas_fischmarkt%20_%20auf%20eis%20ohne%20text%20%20124220.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50262 [200]: GET /images/kamtschatka-king-crab.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50262 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50261 Closing
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50263 Accepted
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50263 [200]: GET /images/snow-crab-chionoecetes-opilio.jpg
+[Mon Jan 19 04:28:36 2026] 127.0.0.1:50263 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50265 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50265 [200]: GET /en/index.html
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50265 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50266 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50267 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50268 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50269 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50270 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50266 [200]: GET /css/style.css
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50266 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50267 [200]: GET /js/main.js
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50267 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50271 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50268 [200]: GET /images/diamand.png
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50268 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50271 [200]: GET /css/additional.css
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50271 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50269 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50270 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50270 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50272 Accepted
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50272 [200]: GET /images/fresh-fish.jpg
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50272 Closing
+[Mon Jan 19 04:28:42 2026] 127.0.0.1:50269 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50296 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50296 [200]: GET /en/about.html
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50296 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50297 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50297 [200]: GET /css/style.css
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50298 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50297 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50298 [200]: GET /css/pages.css
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50298 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50299 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50299 [200]: GET /images/diamand.png
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50299 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50300 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50300 [200]: GET /js/main.js
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50300 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50301 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50301 [200]: GET /images/AdobeStock_315664059.jpeg
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50302 Accepted
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50302 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50302 Closing
+[Mon Jan 19 04:31:18 2026] 127.0.0.1:50301 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50306 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50306 [200]: GET /en/commodities.html
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50306 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50307 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50307 [200]: GET /css/style.css
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50308 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50307 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50308 [200]: GET /css/pages.css
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50308 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50309 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50309 [200]: GET /images/diamand.png
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50309 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50310 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50310 [200]: GET /js/main.js
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50310 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50311 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50311 [200]: GET /images/header_Waren%20.jpg
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50312 Accepted
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50312 [404]: GET /images/logo-background.jpg - No such file or directory
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50312 Closing
+[Mon Jan 19 04:31:24 2026] 127.0.0.1:50311 Closing

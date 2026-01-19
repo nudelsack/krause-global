@@ -17,17 +17,15 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="../images/logo.jpeg" alt="KGRT Logo">
+                        <img src="../images/diamand.png" alt="KGRT Logo">
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="about.html">Über uns</a></li>
-                        <li><a href="services.html">Leistungen</a></li>
                         <li><a href="commodities.html">Rohstoffe & Waren</a></li>
-                        <li><a href="global-presence.html">Globale Präsenz</a></li>
-                        <li><a href="values.html">Unsere Werte</a></li>
+                        <li><a href="energy.html">Energie</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
@@ -61,7 +59,7 @@
             </p>
             <div class="hero-cta">
                 <a href="contact.html" class="btn btn-primary">Kontaktieren Sie uns</a>
-                <a href="services.html" class="btn btn-secondary">Mehr über unsere Leistungen</a>
+                <a href="about.html" class="btn btn-secondary">Mehr über unsere Leistungen</a>
             </div>
         </div>
     </section>
@@ -76,7 +74,7 @@
                     </div>
                     <h3>Unsere Leistungen</h3>
                     <p>Beschaffung großer Volumen weltweit mit Fokus auf langfristige Partnerschaften und nachhaltige Prozesse.</p>
-                    <a href="services.html" class="card-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <a href="about.html" class="card-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="overview-card">
                     <div class="card-icon">
@@ -98,38 +96,65 @@
         </div>
     </section>
 
-    <!-- Trust Elements Section -->
-    <section class="trust-section">
-        <div class="container">
-            <h2 class="section-title">Vertrauen durch Exzellenz</h2>
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h4>Globales Netzwerk</h4>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h4>Zertifizierte Qualität</h4>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Institutionelle Partner</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Commodities Promo (inserted before News) -->
     <section class="commodities-promo" style="padding:4rem 0; background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);">
         <div class="container">
             <h2 class="section-title">Rohstoffe & Waren</h2>
-            <p style="text-align:center; max-width:800px; margin:0 auto 2rem; color:var(--text-light);">Unser Portfolio deckt ein breites Spektrum - von Agrarprodukten über Energie bis zu Metallen und Industriechemikalien. Entdecken Sie unser Angebot und Kontaktmöglichkeiten für große Volumen.</p>
+            <p style="text-align:center; max-width:800px; margin:0 auto 3rem; color:var(--text-light);">Unser Portfolio deckt ein breites Spektrum - von Agrarprodukten über Energie bis zu Metallen und Industriechemikalien. Entdecken Sie unser Angebot und Kontaktmöglichkeiten für große Volumen.</p>
+            
+            <!-- Product Showcase Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <!-- Agriculture -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid rgba(20, 184, 166, 0.1);">
+                    <div style="height: 150px; background: linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(59, 130, 246, 0.15)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400') center/cover;"></div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-seedling" style="color: var(--accent-teal);"></i> Landwirtschaft
+                        </h4>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">Weitere Agrarprodukte aus nachhaltigen Quellen</p>
+                    </div>
+                </div>
+
+                <!-- Fish & Seafood -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid rgba(59, 130, 246, 0.1);">
+                    <div style="height: 150px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.15)), url('../images/fresh-fish.jpg') center/cover;"></div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-fish" style="color: #3b82f6;"></i> Fisch & Meeresfrüchte
+                        </h4>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">Premium B2B Portfolio mit vollständiger Dokumentation</p>
+                    </div>
+                </div>
+
+                <!-- Diesel / Energy -->
+                <a href="energy.html" style="text-decoration: none; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(245, 158, 11, 0.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.08)';">
+                    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid rgba(245, 158, 11, 0.1);">
+                        <div style="height: 150px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(239, 68, 68, 0.15)), url('https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=400') center/cover;"></div>
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-gas-pump" style="color: #f59e0b;"></i> DIESEL
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem; line-height: 1.8;">
+                                <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.4rem;"></i> EN590 (10 PPM)</li>
+                                <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.4rem;"></i> Jet Fuel (A1)</li>
+                                <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.4rem;"></i> Virgin Fuel (D6)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Metals -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid rgba(99, 102, 241, 0.1);">
+                    <div style="height: 150px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15)), url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400') center/cover;"></div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-gem" style="color: #6366f1;"></i> Edelmetalle
+                        </h4>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">Gold, Silber und Platin aus zertifizierten Quellen</p>
+                    </div>
+                </div>
+            </div>
+
             <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;">
                 <a href="commodities.html" class="btn btn-primary" style="padding:0.8rem 1.25rem;">Zum Angebot</a>
                 <a href="contact.html" class="btn btn-secondary" style="padding:0.8rem 1.25rem;">Anfrage stellen</a>
@@ -181,23 +206,7 @@
                     </div>
                 </div>
 
-                <!-- News Article 3 -->
-                <div class="news-card">
-                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 1. Dezember 2025</span>
-                        </div>
-                        <span class="news-category">Commodity Focus</span>
-                        <h3>Kaffeeernten 2025: Qualität und Volumen</h3>
-                        <p>
-                            Die diesjährige Kaffeeernte in Südamerika und Afrika zeigt ausgezeichnete Qualität. 
-                            Ein Überblick über die wichtigsten Anbauregionen und Preisentwicklungen...
-                        </p>
-                        <a href="https://www.ico.org/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+                <!-- Coffee news removed per request -->
 
                 <!-- News Article 4 -->
                 <div class="news-card">
@@ -264,7 +273,7 @@
         <div class="container">
             <!-- Prominent Logo Section -->
             <div class="footer-logo-section">
-                <img src="../images/logo.jpeg" alt="KGRT Logo">
+                <img src="../images/diamand.png" alt="KGRT Logo">
                 <div class="footer-logo-text">Krause Global Resources & Trade</div>
             
             <div class="footer-grid">
@@ -277,7 +286,6 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Über uns</a></li>
-                        <li><a href="services.html">Leistungen</a></li>
                         <li><a href="commodities.html">Rohstoffe & Waren</a></li>
                     </ul>
                 </div>

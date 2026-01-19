@@ -14,14 +14,18 @@
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/diamand.png" alt="KGRT Logo">
+                    </a>
+                </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Über uns</a></li>
-                        <li><a href="services.html">Leistungen</a></li>
                         <li><a href="commodities.html" class="active">Rohstoffe & Waren</a></li>
-                        <li><a href="global-presence.html">Globale Präsenz</a></li>
-                        <li><a href="values.html">Unsere Werte</a></li>
+                        <li><a href="fish.html">Fisch & Seafood</a></li>
+                        <li><a href="energy.html">Energie</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
@@ -34,22 +38,19 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Rohstoffe & Waren</h1>
-            <p class="breadcrumb"><a href="index.html">Home</a> / Rohstoffe & Waren</p>
-        </div>
-    </section>
-
-    <!-- Commodities Intro -->
-    <section class="commodities-intro">
-        <div class="container">
-            <h2>Unser vielfältiges Portfolio</h2>
-            <p class="commodities-intro-text">
-                Wir bieten eine breite Palette an Rohstoffen und Gütern in großen Mengen an, beschafft aus zuverlässigen 
-                Quellen weltweit für unser exklusives institutionelles Netzwerk. Jedes Produkt durchläuft strenge 
-                Qualitätskontrollen und erfüllt internationale Standards.
-            </p>
+    <section class="page-header" style="background: url('images/header_Waren .jpg') center/cover; min-height: 600px; display: flex; align-items: center; position: relative;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin-bottom: 1rem;">Rohstoffe & Waren</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7); margin-bottom: 2rem;"><a href="index.html">Home</a> / Rohstoffe & Waren</p>
+            
+            <div style="background: rgba(255, 255, 255, 0.2); padding: 2rem; border-radius: 12px; max-width: 800px; margin: 0 auto;">
+                <h2 style="color: white; margin-bottom: 1rem;">Unser vielfältiges Portfolio</h2>
+                <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; line-height: 1.6;">
+                    Wir bieten eine breite Palette an Rohstoffen und Gütern in großen Mengen an, beschafft aus zuverlässigen 
+                    Quellen weltweit für unser exklusives institutionelles Netzwerk. Jedes Produkt durchläuft strenge 
+                    Qualitätskontrollen und erfüllt internationale Standards.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -69,106 +70,72 @@
                 </div>
                 <div class="category-content">
                     <div class="commodity-grid">
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400" alt="Kaffee">
+                        <!-- Kaffee und Kakao entfernt -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fischprodukte -->
+            <div class="commodity-category">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <div>
+                        <h3>Fisch & Seafood</h3>
+                        <p style="color: rgba(255,255,255,0.9);">Umfassendes B2B-Portfolio für Gastronomie, Retail & Verarbeitung</p>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <div style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(59, 130, 246, 0.1)); padding: 2.5rem; border-radius: 16px; margin-bottom: 2rem; border: 2px solid rgba(20, 184, 166, 0.2);">
+                        <div style="display: flex; align-items: start; gap: 2rem; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 300px;">
+                                <h4 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <i class="fas fa-fish" style="color: #14b8a6; font-size: 28px;"></i>
+                                    Seafood-Portfolio
+                                </h4>
+                                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1rem;">
+                                    Umfassende B2B-Plattform für Fisch und Meeresfrüchte mit detaillierten Produktspezifikationen, Fangmethoden, FAO-Gebieten, Zuständen (Sea Frozen, IQF, Blast Frozen), Verpackungsoptionen und vollständiger Dokumentation (Health Certificate, Catch Certificate, COA).
+                                </p>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div style="background: white; padding: 1rem; border-radius: 10px; border-left: 3px solid #d4af37;">
+                                        <h5 style="color: var(--primary-navy); font-size: 0.95rem; margin-bottom: 0.5rem;"><i class="fas fa-crown" style="color: #d4af37;"></i> Delikatessen</h5>
+                                        <p style="margin: 0; color: var(--text-light); font-size: 0.85rem;">Beluga Kaviar, Dorschleber, King Crab</p>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 10px; border-left: 3px solid #3b82f6;">
+                                        <h5 style="color: var(--primary-navy); font-size: 0.95rem; margin-bottom: 0.5rem;"><i class="fas fa-fish" style="color: #3b82f6;"></i> Fisch</h5>
+                                        <p style="margin: 0; color: var(--text-light); font-size: 0.85rem;">Dorsch, Schellfisch, Lachs, Pazifik-Arten</p>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 10px; border-left: 3px solid #8b5cf6;">
+                                        <h5 style="color: var(--primary-navy); font-size: 0.95rem; margin-bottom: 0.5rem;"><i class="fas fa-shrimp" style="color: #8b5cf6;"></i> Meeresfrüchte</h5>
+                                        <p style="margin: 0; color: var(--text-light); font-size: 0.85rem;">Giant Squid, King Crab, Snow Crab</p>
+                                    </div>
+                                </div>
+                                <a href="fish.html" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: linear-gradient(135deg, #14b8a6, #0d9488); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 1rem; box-shadow: 0 8px 25px rgba(20, 184, 166, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(20, 184, 166, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(20, 184, 166, 0.3)';">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Zum vollständigen Fish & Seafood Portfolio
+                                </a>
                             </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-mug-hot"></i> Kaffee</h4>
-                                <p>Beschaffung von Premium-Bohnen aus nachhaltigen Plantagen in großen Chargen für langfristige Kontrakte.</p>
-                                <span class="sustainability-badge"><i class="fas fa-leaf"></i> Nachhaltig</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400" alt="Weizen">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-wheat-awn"></i> Weizen</h4>
-                                <p>Erstklassiger Weizen aus zertifizierten Anbaugebieten für globale Ernährungssicherheit.</p>
-                                <span class="sustainability-badge"><i class="fas fa-certificate"></i> Zertifiziert</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=400" alt="Kakao">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-cookie-bite"></i> Kakao</h4>
-                                <p>Hochwertige Kakaobohnen aus fairen Handelsbeziehungen für die Lebensmittelindustrie.</p>
-                                <span class="sustainability-badge"><i class="fas fa-handshake"></i> Fair Trade</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400" alt="Düngemittel">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-spray-can"></i> Düngemittel</h4>
-                                <p>Effiziente Düngemittel für moderne Landwirtschaft in industriellen Mengen.</p>
-                                <span class="sustainability-badge"><i class="fas fa-leaf"></i> Umweltschonend</span>
+                            <div style="flex: 0 0 300px; min-width: 280px;">
+                                <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+                                    <h5 style="color: var(--primary-navy); font-size: 1.1rem; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #14b8a6;"></i> Inklusive:</h5>
+                                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem; line-height: 2;">
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> 30+ Fisch & Seafood Produkte</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> FAO Fanggebiete & Methoden</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> Temperaturführung (Sea Frozen, IQF)</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> Verpackungsoptionen (Glas, Karton)</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> Vollständige Dokumentation</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> MSC/ASC/BAP Zertifizierungen</li>
+                                        <li><i class="fas fa-caret-right" style="color: #14b8a6; margin-right: 0.5rem;"></i> B2B Anfrageformular</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Food Products -->
-            <div class="commodity-category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <div>
-                        <h3>Lebensmittel</h3>
-                        <p style="color: rgba(255,255,255,0.9);">Frische und haltbare Produkte in Bulk-Mengen</p>
-                    </div>
-                </div>
-                <div class="category-content">
-                    <div class="commodity-grid">
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400" alt="Lebensmittel">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-apple-whole"></i> Lebensmittel</h4>
-                                <p>Vielfältiges Sortiment an verarbeiteten und frischen Lebensmitteln für globale Märkte.</p>
-                                <span class="sustainability-badge"><i class="fas fa-certificate"></i> Qualitätsgeprüft</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400" alt="Fleischprodukte">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-drumstick-bite"></i> Fleischprodukte</h4>
-                                <p>Hochwertige Fleischprodukte aus zertifizierten Betrieben mit vollständiger Rückverfolgbarkeit.</p>
-                                <span class="sustainability-badge"><i class="fas fa-shield-alt"></i> Zertifiziert</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400" alt="Fischprodukte">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-fish"></i> Fischprodukte</h4>
-                                <p>Nachhaltige Fischprodukte aus kontrollierten Quellen für internationale Verarbeiter.</p>
-                                <span class="sustainability-badge"><i class="fas fa-water"></i> Nachhaltig</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Getreideprodukte">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-bread-slice"></i> Getreideprodukte</h4>
-                                <p>Verarbeitete Getreideprodukte in industriellen Mengen für Großhandel und Verarbeitung.</p>
-                                <span class="sustainability-badge"><i class="fas fa-leaf"></i> Bio-verfügbar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Energy -->
             <div class="commodity-category">
@@ -183,46 +150,8 @@
                 </div>
                 <div class="category-content">
                     <div class="commodity-grid">
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1591768793355-74d04bb6608f?w=400" alt="Rohöl">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-gas-pump"></i> Rohöl</h4>
-                                <p>Zuverlässige Beschaffung von Rohöl aus stabilen Quellen für internationale Raffinerien.</p>
-                                <span class="sustainability-badge"><i class="fas fa-certificate"></i> Zertifiziert</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400" alt="Erdgas">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-fire-flame-curved"></i> Erdgas</h4>
-                                <p>Effiziente Erdgaslieferungen für Industrie und Energieversorgung.</p>
-                                <span class="sustainability-badge"><i class="fas fa-leaf"></i> Sauber</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400" alt="Bioenergie">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-bolt"></i> Bioenergie</h4>
-                                <p>Nachhaltige Bioenergie-Rohstoffe für erneuerbare Energieprojekte.</p>
-                                <span class="sustainability-badge"><i class="fas fa-leaf"></i> Erneuerbar</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=400" alt="Kohle">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-mountain"></i> Kohle</h4>
-                                <p>Hochwertige Kohle für industrielle Anwendungen mit transparenter Herkunft.</p>
-                                <span class="sustainability-badge"><i class="fas fa-certificate"></i> Qualitätsgeprüft</span>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -248,16 +177,6 @@
                                 <h4><i class="fas fa-gem"></i> Edelmetalle</h4>
                                 <p>Gold, Silber und Platin aus zertifizierten Quellen für Investitions- und Industriezwecke.</p>
                                 <span class="sustainability-badge"><i class="fas fa-certificate"></i> Zertifiziert</span>
-                            </div>
-                        </div>
-                        <div class="commodity-item">
-                            <div class="commodity-image">
-                                <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400" alt="Industriemetalle">
-                            </div>
-                            <div class="commodity-content">
-                                <h4><i class="fas fa-hammer"></i> Industriemetalle</h4>
-                                <p>Kupfer, Aluminium, Stahl und mehr für Bau- und Fertigungsindustrie.</p>
-                                <span class="sustainability-badge"><i class="fas fa-recycle"></i> Recycelbar</span>
                             </div>
                         </div>
                         
@@ -325,7 +244,6 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Über uns</a></li>
-                        <li><a href="services.html">Leistungen</a></li>
                         <li><a href="commodities.html">Rohstoffe & Waren</a></li>
                     </ul>
                 </div>
