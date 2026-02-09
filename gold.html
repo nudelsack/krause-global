@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy LBMA Gold Bars | Krause Global</title>
+    <meta property="og:title" content="Buy LBMA Gold Bars | Krause Global" />
+    <meta property="og:site_name" content="Krause Global" />
+    <meta property="og:description" content="Buy LBMA certified gold bars from Krause Global. Quality, security, and responsible sourcing. Gold in Europa verfügbar." />
+    <meta name="twitter:title" content="Buy LBMA Gold Bars | Krause Global" />
+    <meta name="twitter:description" content="Buy LBMA certified gold bars from Krause Global. Quality, security, and responsible sourcing. Gold in Europa verfügbar." />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/main.js" defer></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #gold-bar-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .gold-bar-card { 
+            background: #fff; 
+            border-radius: 16px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08); 
+            padding: 2rem; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+            aspect-ratio: 1;
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                        transform 4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                        border 0.3s ease,
+                        box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .gold-bar-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gold-bar-card:hover {
+            border: 2px solid #bfa14a;
+            box-shadow: 0 8px 30px rgba(191, 161, 74, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+        }
+        .gold-bar-img { width: 150px; height: 150px; object-fit: contain; border-radius: 12px; background: #f8fafc; }
+        .gold-bar-info { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .gold-bar-title { font-size: 1.3rem; font-weight: 700; color: #8b6914; margin-bottom: 0.5rem; }
+        .gold-bar-weight { font-size: 1rem; color: #333; margin-bottom: 0.5rem; }
+        .gold-bar-price { font-size: 1.2rem; color: #666; font-weight: 600; margin-bottom: 0.5rem; }
+        .gold-bar-price .live-price { color: #22c55e; }
+        .gold-bar-sold { font-size: 0.9rem; color: #8b6914; margin-bottom: 0.5rem; }
+        .buy-btn { background: #bfa14a; color: #fff; border: none; border-radius: 8px; padding: 0.7rem 1.5rem; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .buy-btn:hover { background: #a88c3a; }
+        .timer { font-size: 0.95rem; color: #d9534f; margin-left: 1rem; }
+        .gold-features, .gold-cert { background: #f8fafc; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+        .gold-features h2, .gold-cert h2 { color: #bfa14a; font-size: 1.1rem; margin-bottom: 1rem; }
+        .gold-features ul { margin: 0; padding-left: 1.2rem; }
+        .gold-features li { margin-bottom: 0.5rem; }
+        .gold-cert { font-size: 0.98rem; }
+        
+        /* Gold Bar Static Shimmer */
+        .gold-bar-hero {
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+        <!-- Krause Global Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="KGRT Logo" style="height:40px;" loading="lazy">
+</picture>
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="agriculture.html">Agriculture</a></li>
+                            <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="gasturbine.html">Power Solutions</a></li>
+                            <li><a href="metals.html">Metals</a></li>
+                            <li><a href="gold.html" style="color:#bfa14a;font-weight:700;">Buy Gold</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Page Header / Hero -->
+    <section class="page-header" style="background: url('images/gold_Hero_1.png') center/cover no-repeat; min-height: 500px; display: flex; align-items: center; position: relative;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%);"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.5rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); color: white;"><i class="fas fa-coins" style="color: #ffd700;"></i> LBMA Certified Gold Bars</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);"><a href="index.html">Home</a> / Gold</p>
+        </div>
+    </section>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 2rem 0;">
+        <section style="margin-bottom:2rem; text-align:center;">
+            <h2 style="color:#bfa14a; font-size:1.1rem; margin-bottom:1.5rem;">Gold Price</h2>
+            <picture>
+    <source srcset="images/Krause Gold.webp" type="image/webp">
+    <img src="images/Krause Gold.png" alt="Krause Gold" class="gold-bar-hero" style="width:150px;max-width:90%;display:block;margin:0 auto 2rem auto;" loading="lazy">
+</picture>
+            <span style="font-size:2rem;color:#bfa14a;font-weight:700;display:block;">1 ounce of gold: <span style="color:#ffd700;">€4.222,11</span></span>
+            <div style="margin-top:1rem; color:#94a3b8; font-size:1rem;">
+                <i class="fas fa-shield-alt" style="color:#bfa14a;"></i> LBMA certified | <i class="fas fa-globe" style="color:#bfa14a;"></i> Gold available in Europe
+            </div>
+            <div style="margin-top:1rem; background:#f8fafc; border-radius:12px; padding:1rem 1.5rem; display:inline-block; text-align:left;">
+                <ul style="margin:0; padding-left:1.2rem; color:#1a1a1a;">
+                    <li>Approx. 4% discount from spot price</li>
+                    <li>Minimum quantity from 1 kg</li>
+                    <li>Payment via cryptocurrency possible</li>
+                </ul>
+            </div>
+        </section>
+        <section class="gold-features">
+            <h2>Product Features</h2>
+            <ul>
+                <li><strong>Purity:</strong> 999.9/1000</li>
+                <li><strong>Weight:</strong> 10g, 20g, 50g, 100g, 250g, 500g, 1kg</li>
+                <li><strong>Certificate of Authenticity:</strong> Official certificate included</li>
+                <li><strong>Design:</strong> Embossed with refinery logos, weight, and purity</li>
+            </ul>
+        </section>
+        <section class="gold-cert">
+            <h2>Certification LBMA Standard</h2>
+            <p>Krause Global only supplies gold bars certified according to the LBMA standard (London Bullion Market Association). This certification guarantees that the manufacturer complies with the “OECD Guidance for Responsible Mineral Supply Chains”, in particular with regard to human rights, high-risk countries and money laundering prevention. Gold bars with this standard meet the highest requirements worldwide and are tradable without restrictions. The LBMA standard, also known as “Good Delivery”, makes the gold bars acceptable to banks and traders worldwide without the need for further are required.</p>
+        </section>
+        <section id="gold-bar-list" style="margin-bottom:2rem;">
+        </section>
+        <section style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 2rem; border-radius: 16px; border-left: 4px solid #bfa14a;">
+                <h2 style="color: #bfa14a; font-size: 1.3rem; margin-bottom: 1rem;"><i class="fas fa-chart-line" style="margin-right: 0.5rem;"></i>Why invest in LBMA gold bars?</h2>
+                <p style="color: #94a3b8; line-height: 1.7; margin: 0;">Gold bars are not only an excellent way to diversify your assets, but also a valuable hedge against economic uncertainty. Gold has proven to be a stable asset for centuries and is a popular choice for investors and collectors alike.</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 2rem; border-radius: 16px; border-left: 4px solid #bfa14a;">
+                <h2 style="color: #bfa14a; font-size: 1.3rem; margin-bottom: 1rem;"><i class="fas fa-handshake" style="margin-right: 0.5rem;"></i>Customer satisfaction</h2>
+                <p style="color: #94a3b8; line-height: 1.7; margin: 0;">At Krause Global, we place great importance on your satisfaction. Our dedicated team is always available to answer your questions and assist you in your buying decision.</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 2rem; border-radius: 16px; border-left: 4px solid #bfa14a;">
+                <h2 style="color: #bfa14a; font-size: 1.3rem; margin-bottom: 1rem;"><i class="fas fa-gem" style="margin-right: 0.5rem;"></i>Conclusion</h2>
+                <p style="color: #94a3b8; line-height: 1.7; margin: 0;">Invest in the future with an LBMA gold bar and enjoy the security and value that this precious metal offers. We look forward to assisting you with your investment in gold!</p>
+            </div>
+        </section>
+    </main>
+        <!-- Footer -->
+        <footer style="background:#f8fafc; color:#888; padding:2rem 0; margin-top:3rem; border-top:1px solid #eee; text-align:center;">
+            <div style="max-width:900px; margin:0 auto;">
+                <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="Krause Global Logo" style="height:32px; margin-bottom:1rem; filter: brightness(0) saturate(100%) invert(62%) sepia(67%) saturate(399%) hue-rotate(8deg) brightness(92%) contrast(89%);" loading="lazy">
+</picture>
+                <div style="font-size:1.05rem; color:#bfa14a; font-weight:600; margin-bottom:0.5rem;">Krause Global Resources & Trade</div>
+                <div style="margin-bottom:0.5rem;">Reliable Partner in Global Commodities Trading</div>
+                <div style="font-size:0.98rem;">&copy; 2026 Krause Global Resources & Trade. All rights reserved.</div>
+                <div style="margin-top:0.7rem;">
+                    <a href="impressum.html" style="color:#888; margin-right:1.2rem;">Impressum</a>
+                    <a href="datenschutz.html" style="color:#888; margin-right:1.2rem;">Privacy Policy</a>
+                    <a href="contact.html" style="color:#888;">Contact</a>
+                </div>
+            </div>
+        </footer>
+    <script>
+        // Fetch and display today's top 3 gold news
+        async function fetchGoldNews() {
+            const newsList = document.getElementById('gold-news-list');
+            try {
+                const today = new Date();
+                const yyyy = today.getFullYear();
+                const mm = String(today.getMonth()+1).padStart(2,'0');
+                const dd = String(today.getDate()).padStart(2,'0');
+                const dateStr = `${yyyy}-${mm}-${dd}`;
+                const query = encodeURIComponent('"gold price" OR "gold market" OR "gold bullion" OR "LBMA gold" OR "gold investment"');
+                const sources = 'bloomberg,reuters,financial-times,wsj,forbes,cnbc';
+                const url = `https://newsapi.org/v2/everything?q=${query}&sources=${sources}&from=${dateStr}&to=${dateStr}&sortBy=publishedAt&language=en&pageSize=3&apiKey=1cb099a37ae74dfca950b4f1c135d5b0`;
+                const res = await fetch(url);
+                const data = await res.json();
+                if (data.articles && data.articles.length > 0) {
+                    newsList.innerHTML = data.articles.map(article => `
+                        <div style="background:#fffbe6; border-radius:10px; box-shadow:0 2px 8px #bfa14a22; margin-bottom:1.2rem; padding:1.2rem;">
+                            <a href="${article.url}" target="_blank" style="font-size:1.08rem; color:#bfa14a; font-weight:600; text-decoration:none;">${article.title}</a>
+                            <div style="color:#888; font-size:0.98rem; margin-top:0.3rem;">${article.source.name} &bull; ${new Date(article.publishedAt).toLocaleDateString()}</div>
+                            <div style="margin-top:0.5rem; color:#444; font-size:0.98rem;">${article.description || ''}</div>
+                        </div>
+                    `).join('');
+                } else {
+                    newsList.innerHTML = '<div style="color:#888; text-align:center;">No news found for today.</div>';
+                }
+            } catch (e) {
+                newsList.innerHTML = '<div style="color:#d9534f; text-align:center;">Error loading news.</div>';
+            }
+        }
+        fetchGoldNews();
+    // Trust badge for each product
+    function trustBadges() {
+        return `<div style="margin-top:0.7rem; font-size:0.95rem; color:#888;">
+            <span style="margin-right:1.2rem;"><i class='fas fa-certificate' style='color:#bfa14a;'></i> Certified</span>
+            <span style="margin-right:1.2rem;"><i class='fas fa-lock' style='color:#bfa14a;'></i> Secure Payment</span>
+            <span><i class='fas fa-globe' style='color:#bfa14a;'></i> Responsible Sourcing</span>
+            <span style="margin-left:1.2rem;"><i class='fas fa-sync-alt' style='color:#bfa14a;'></i> Live Price</span>
+        </div>`;
+    }
+    const goldBars = [
+        { weight: '10g', img: 'images/Gold 10gr.png', grams: 10, sold: 129, priceEUR: 1353.95 },
+        { weight: '20g', img: 'images/Gold 20gr.png', grams: 20, sold: 179, priceEUR: 2707.91 },
+        { weight: '50g', img: 'images/Gold 50gr.png', grams: 50, sold: 38, priceEUR: 6769.77 },
+        { weight: '100g', img: 'images/Gold 100gr.png', grams: 100, sold: 32, priceEUR: 13539.55 },
+        { weight: '250g', img: 'images/Gold 250gr.png', grams: 250, sold: 22, priceEUR: 33848.87 },
+        { weight: '500g', img: 'images/Gold 500gr.png', grams: 500, sold: 12, priceEUR: 67697.74 },
+        { weight: '1kg', img: 'images/Gold 1kg.png', grams: 1000, sold: 11, priceEUR: 135395.48 }
+    ];
+
+    let liveGoldPricePerGramUSD = null;
+    // Render gold bar cards mit statischen Preisen
+    function renderGoldBars() {
+        const list = document.getElementById('gold-bar-list');
+        list.innerHTML = '';
+        goldBars.forEach(bar => {
+            const marketPriceEUR = bar.priceEUR;
+            const card = document.createElement('div');
+            card.className = 'gold-bar-card';
+            card.innerHTML = `
+                <img src="${bar.img}" alt="Gold Bar ${bar.weight}" class="gold-bar-img">
+                <div class="gold-bar-info">
+                    <div class="gold-bar-title">LBMA Gold Bar</div>
+                    <div class="gold-bar-weight">Weight: ${bar.weight}</div>
+                    <div class="gold-bar-price">Price: <span class="live-price">${marketPriceEUR.toLocaleString('en-US', { style: 'currency', currency: 'EUR' })}</span></div>
+                    ${bar.sold !== null ? `<div class=\"gold-bar-sold\">${bar.sold} Sold</div>` : ''}
+                    <button class="buy-btn" onclick="window.location.href='mailto:info@krauseglobal.com?subject=Gold%20Bar%20Inquiry%20-%20${encodeURIComponent(bar.weight)}&body=Hello,%0D%0A%0D%0AI am interested in purchasing a ${bar.weight} LBMA gold bar at the current price of ${marketPriceEUR.toLocaleString('en-US', { style: 'currency', currency: 'EUR' })}.%0D%0APlease provide more details about the purchase process.%0D%0A%0D%0AThank you.'">Buy Now</button>
+                    <span class="timer" id="timer-${bar.weight}" style="display:none;"></span>
+                </div>
+            `;
+            list.appendChild(card);
+        });
+        // Animation: show 'Updated!' for 1s on all cards
+        document.querySelectorAll('.updated-flash').forEach(el => {
+            el.style.display = 'inline';
+            setTimeout(() => { el.style.display = 'none'; }, 1000);
+        });
+    }
+
+    // Initial fetch and auto-refresh every 60s
+    renderGoldBars();
+
+    // Placeholder for purchase logic
+    function startPurchase(weight, price) {
+        // TODO: Fetch live price from Google Finance API, subtract 5%, show timer, enable Apple Pay/other payment
+        alert(`Purchase started for ${weight} gold bar at price: €${price}`);
+        // Show timer for 30 seconds
+        const timerSpan = document.getElementById(`timer-${weight}`);
+        let seconds = 30;
+        timerSpan.style.display = 'inline';
+        timerSpan.textContent = `Price valid for ${seconds} seconds`;
+        const interval = setInterval(() => {
+            seconds--;
+            timerSpan.textContent = `Price valid for ${seconds} seconds`;
+            if (seconds <= 0) {
+                clearInterval(interval);
+                timerSpan.textContent = 'Price expired. Please refresh.';
+            }
+        }, 1000);
+    }
+
+    renderGoldBars();
+    
+    // Fly-in animation on scroll
+    setTimeout(() => {
+        const cards = document.querySelectorAll('.gold-bar-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const card = entry.target;
+                    const cardIndex = Array.from(cards).indexOf(card);
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, (cardIndex % 2) * 300);
+                    observer.unobserve(card);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach(card => observer.observe(card));
+    }, 100);
+    </script>
+</body>
+</html>

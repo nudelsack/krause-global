@@ -25,18 +25,14 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="commodities.html">Commodities</a></li>
                         <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
                         <li><a href="energy.html" class="active">Energy</a></li>
+                        <li><a href="gasturbine.html">Gas Turbine</a></li>
+                        <li><a href="metals.html">Metals</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="language-switcher">
-                    <i class="fas fa-globe"></i>
-                    <select onchange="window.location.href=this.value" style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 0.3rem 0.5rem; border-radius: 4px; cursor: pointer;">
-                        <option value="../de/energy.html">DE</option>
-                        <option value="energy.html" selected>EN</option>
-                    </select>
-                </div>
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -45,7 +41,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=1200') center/cover; min-height: 600px; display: flex; align-items: center; position: relative;">
+    <section class="page-header" style="background: url('../images/diesel.jpg') center/cover; min-height: 600px; display: flex; align-items: center; position: relative;">
         <div class="container" style="position: relative; z-index: 2;">
             <h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin-bottom: 1rem;">Energy Products</h1>
             <p class="breadcrumb" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7); margin-bottom: 2rem;"><a href="index.html">Home</a> / Energy Products</p>
@@ -80,7 +76,7 @@
                     <div style="background: var(--white); border-radius: 15px; padding: 2rem; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);">
                         <div style="display: grid; grid-template-columns: 350px 1fr; gap: 2rem; align-items: start;">
                             <div style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden;">
-                                <img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=400" alt="EN590 Diesel" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="../images/energy.jpg" alt="EN590 Diesel" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div>
                                 <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem;">Product Overview</h4>
@@ -104,13 +100,15 @@
                             </div>
                         </div>
 
-                        <!-- EN590 Technical Specifications -->
-                        <div style="margin-top: 2rem; background: #f8f9fa; border-radius: 12px; padding: 2rem; border-left: 4px solid var(--accent-teal);">
-                            <h5 style="margin: 0 0 1rem 0; color: var(--primary-navy); font-size: 1.3rem;">
+                        <!-- EN590 Technical Specifications (Collapsible) -->
+                        <details style="margin-top: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid var(--accent-teal); overflow: hidden;">
+                            <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primary-navy); font-size: 1.2rem; list-style: none; display: flex; align-items: center; gap: 0.5rem;">
                                 <i class="fas fa-clipboard-check" style="color: var(--accent-teal);"></i>
                                 Ultra Low Sulfur Diesel Oil EN590 10PPM - Technical Specifications
-                            </h5>
+                                <i class="fas fa-chevron-down" style="margin-left: auto; font-size: 0.9rem; transition: transform 0.3s;"></i>
+                            </summary>
                             
+                            <div style="padding: 0 1.5rem 1.5rem;">
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
                                 <div style="background: white; padding: 1rem; border-radius: 8px; border: 1px solid #e0e0e0;">
                                     <strong style="color: var(--primary-navy); display: block; margin-bottom: 0.5rem;">Sample Location:</strong>
@@ -253,7 +251,8 @@
                                     The tested product conforms to the international standard quality for Ultra Low Sulfur Diesel Oil EN590 10PPM according to UAE.S / GSO / ISO specifications.
                                 </p>
                             </div>
-                        </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -276,7 +275,8 @@
                                 <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400" alt="Jet Fuel" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div>
-                                <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem;">Technical Specifications</h4>
+                                <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem;">Jet Fuel A1</h4>
+                                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem;">Aviation grade</p>
                                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
                                     <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #3b82f6;">
                                         <strong style="color: var(--primary-navy); display: block; margin-bottom: 0.3rem;">Standard</strong>
@@ -313,6 +313,158 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Jet Fuel A1 Technical Specifications (Collapsible) -->
+                        <details style="margin-top: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #3b82f6; overflow: hidden;">
+                            <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primary-navy); font-size: 1.2rem; list-style: none; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-clipboard-check" style="color: #3b82f6;"></i>
+                                Detailed Technical Specifications (ASTM D1655 / DEF STAN 91-91)
+                                <i class="fas fa-chevron-down" style="margin-left: auto; font-size: 0.9rem; transition: transform 0.3s;"></i>
+                            </summary>
+                            
+                            <div style="padding: 0 1.5rem 1.5rem;">
+                                <div style="overflow-x: auto;">
+                                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+                                        <thead>
+                                            <tr style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white;">
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Property</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Unit</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Limit</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Appearance</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">-</td>
+                                                <td style="padding: 0.75rem; font-weight: 600; color: var(--accent-teal);">Clear, bright and free of solids</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Visual inspection; colorless to straw color</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Density at 15°C</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">kg/m³</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">775–840</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Affects energy content and handling</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Flash Point</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Min. 38</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Minimum temperature for ignitable vapors</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Freeze Point</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600; color: var(--accent-teal);">Max. -47</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Crystal formation temperature; critical for high-altitude flights</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Viscosity at -20°C</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">mm²/s (cSt)</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 8</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Flow capability in cold conditions</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Net Calorific Value</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">MJ/kg</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Min. 42.8</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Energy content per mass</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Smoke Point</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">mm</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Min. 25 (or Min. 18 at max. 3% naphthalenes)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Measure of soot formation; higher is better</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Total Sulfur</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">% Mass</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 0.3 (3000 ppm)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Environmental and corrosion aspects</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Mercaptan Sulfur</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">% Mass</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 0.003</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Specific sulfur type causing odor and corrosion</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Aromatics</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">% Vol</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 25</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Affects combustion and elastomer compatibility</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Total Acidity</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">mg KOH/g</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 0.1 (stricter: Max. 0.015 in DEF STAN)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Prevents corrosion</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Distillation - Initial Boiling Point</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Report</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">-</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Distillation - 10% recovered</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 205</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">-</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Distillation - 50% recovered</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Report</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">-</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Distillation - 90% recovered</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Report</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">-</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Distillation - End Point</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 300</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Boiling range for stable combustion</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Water Separation Index</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">-</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Min. 85 (modified)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Ability to separate water</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Conductivity</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">pS/m</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">50–600 (with additives)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Prevents static charging</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Particulate Contamination</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">mg/L</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 1.0 (at point of use; max. 0.5 mg/L at production)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">-</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Copper Strip Corrosion</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">-</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max. 1 (2 hrs at 100°C)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">No severe corrosion</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Thermal Stability (JFTOT)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">-</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Filter pressure drop max. 25 kPa; Tube Rating <3</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Resistance to deposits under heat</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -332,15 +484,12 @@
                     <div style="background: var(--white); border-radius: 15px; padding: 2rem; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);">
                         <div style="display: grid; grid-template-columns: 350px 1fr; gap: 2rem; align-items: start;">
                             <div style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden;">
-                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400" alt="Fuel Oil" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="../images/virgin.jpg" alt="Fuel Oil" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div>
-                                <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem;">Technical Specifications</h4>
+                                <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem;">Virgin Fuel Oil D6</h4>
+                                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem;">Residual Fuel Oil (RFO)</p>
                                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
-                                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #8b5cf6;">
-                                        <strong style="color: var(--primary-navy); display: block; margin-bottom: 0.3rem;">Type</strong>
-                                        <span style="color: var(--text-light);">Residual Fuel Oil (RFO)</span>
-                                    </div>
                                     <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #8b5cf6;">
                                         <strong style="color: var(--primary-navy); display: block; margin-bottom: 0.3rem;">Sulfur Content</strong>
                                         <span style="color: var(--text-light);">Max 2.5%</span>
@@ -372,6 +521,62 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Virgin Fuel D6 Technical Specifications (Collapsible) -->
+                        <details style="margin-top: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #8b5cf6; overflow: hidden;">
+                            <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primary-navy); font-size: 1.2rem; list-style: none; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-clipboard-check" style="color: #8b5cf6;"></i>
+                                Detailed Technical Specifications (ISO 8217 RMG/RMK 700)
+                                <i class="fas fa-chevron-down" style="margin-left: auto; font-size: 0.9rem; transition: transform 0.3s;"></i>
+                            </summary>
+                            
+                            <div style="padding: 0 1.5rem 1.5rem;">
+                                <div style="overflow-x: auto;">
+                                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+                                        <thead>
+                                            <tr style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white;">
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Property</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Your Value</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Typical Standard Value</th>
+                                                <th style="padding: 0.85rem; text-align: left; font-weight: 600;">Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Sulfur Content</td>
+                                                <td style="padding: 0.75rem; font-weight: 600; color: var(--accent-teal);">Max 2.5%</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">Max 3.5% (pre-IMO 2020) or statutory requirements (e.g., max 0.5% post-2020 global, but higher with scrubbers allowed)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Maximum sulfur content, affects emissions and environmental regulations; lower values for modern, eco-friendly variants</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Viscosity @50°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max 700 cSt</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">Max 700 cSt (for RMK 700) or 380–700 cSt for heavy grades</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Viscosity at 50°C, determines flowability and handling; higher values for thicker grades</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0;">
+                                                <td style="padding: 0.75rem;">Density @15°C</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">991 kg/m³</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">Max 991–1010 kg/m³ (depending on grade; e.g., 991 max for RMG, up to 1010 for RMK)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Density at 15°C, affects storage and energy content; typical for heavy residual oils</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Flash Point</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Min 60°C</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">Min 60°C</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Minimum flash point, prevents ignition risks during transport and storage</td>
+                                            </tr>
+                                            <tr style="background: #fafafa;">
+                                                <td style="padding: 0.75rem;">Pour Point</td>
+                                                <td style="padding: 0.75rem; font-weight: 600;">Max 30°C</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light);">Max 30°C (for summer grades) or -6 to 24°C (depending on climate)</td>
+                                                <td style="padding: 0.75rem; color: var(--text-light); font-size: 0.9rem;">Maximum pour point, ensures oil remains flowable at low temperatures; varies depending on application environment</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -462,6 +667,148 @@
             </div>
         </div>
     </footer>
+
+    <style>
+        @media (max-width: 768px) {
+            /* Header kompakter */
+            .page-header {
+                min-height: 250px !important;
+                padding: 0.5rem 0 !important;
+            }
+            
+            .page-header h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .page-header p.breadcrumb {
+                font-size: 0.9rem !important;
+                margin-bottom: 1rem !important;
+            }
+            
+            .page-header > div > div {
+                padding: 0.75rem !important;
+                margin: 0 !important;
+            }
+            
+            .page-header > div {
+                padding: 0 0.75rem !important;
+            }
+            
+            .page-header > div > div h2 {
+                font-size: 1.1rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .page-header > div > div p {
+                font-size: 0.9rem !important;
+                line-height: 1.4 !important;
+            }
+            
+            /* Container enger */
+            .container {
+                padding: 0 0.75rem !important;
+            }
+            
+            .commodities-categories {
+                padding: 1rem 0 !important;
+            }
+            
+            /* Kategorie kompakter */
+            .commodity-category {
+                margin-bottom: 1rem !important;
+            }
+            
+            .category-header {
+                padding: 0.75rem !important;
+            }
+            
+            .category-header h3 {
+                font-size: 1.1rem !important;
+            }
+            
+            .category-header p {
+                font-size: 0.85rem !important;
+            }
+            
+            .category-content {
+                padding: 0.5rem !important;
+            }
+            
+            /* Bilder volle Breite, keine feste Höhe */
+            .category-content > div {
+                border-radius: 10px !important;
+                padding: 0.75rem !important;
+            }
+            
+            .category-content > div > div {
+                grid-template-columns: 1fr !important;
+                gap: 0.75rem !important;
+                padding: 0 !important;
+            }
+            
+            .category-content > div > div > div:first-child {
+                height: auto !important;
+                width: 100% !important;
+                max-height: 200px !important;
+            }
+            
+            .category-content > div > div > div:first-child img {
+                width: 100% !important;
+                height: auto !important;
+                max-height: 200px !important;
+                object-fit: contain !important;
+                display: block !important;
+            }
+            
+            /* Text kompakter */
+            .category-content h4 {
+                font-size: 1rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .category-content ul {
+                margin: 0.5rem 0 !important;
+            }
+            
+            .category-content ul li {
+                padding: 0.35rem 0 !important;
+                font-size: 0.85rem !important;
+            }
+            
+            .category-content span {
+                font-size: 0.8rem !important;
+                padding: 0.4rem 0.75rem !important;
+            }
+            
+            /* Collapsible Sections */
+            .collapsible-section {
+                padding: 0.75rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .collapsible-section h4 {
+                font-size: 0.95rem !important;
+                padding: 0.5rem !important;
+            }
+            
+            /* Tabellen */
+            .specs-table {
+                font-size: 0.7rem !important;
+                display: block !important;
+                overflow-x: auto !important;
+            }
+            
+            .specs-table td, .specs-table th {
+                padding: 0.35rem 0.25rem !important;
+                font-size: 0.7rem !important;
+            }
+            
+            .specs-table tr {
+                display: table-row !important;
+            }
+        }
+    </style>
 
     <script src="../js/main.js"></script>
 </body>

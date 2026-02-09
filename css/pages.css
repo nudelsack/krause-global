@@ -4,39 +4,15 @@
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
     padding: 6rem 0 4rem;
     text-align: center;
-    color: var(--white);
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
 }
 
-.page-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../images/logo-background.jpg') center center no-repeat;
-    background-size: cover;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
-}
-
-.page-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse at top, rgba(20, 184, 166, 0.12), transparent 50%);
-}
-
 .page-header h1 {
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 3.5rem;
     margin-bottom: 1rem;
     text-shadow: 0 2px 40px rgba(0,0,0,0.3);
@@ -532,6 +508,13 @@
     max-width: 100%;
 }
 
+.category-content p {
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
 .commodity-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -649,53 +632,529 @@
 }
 
 /* Responsive adjustments */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .commodity-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .commodities-intro h2 {
+        font-size: 2.25rem;
+    }
+    
+    table {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
+    /* Commodity Grid */
     .commodity-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 1rem;
     }
 
     .commodity-item {
-        max-width: 500px;
+        max-width: 100%;
         margin: 0 auto;
+    }
+    
+    /* Gas Turbine Product Cards - Mobile Optimization */
+    section[style*="padding: 4rem 0"] {
+        padding: 2rem 0 !important;
+    }
+    
+    /* Flexible product layout containers */
+    div[style*="display: flex"][style*="flex-wrap: wrap"] {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Image galleries on left side */
+    div[style*="flex: 0 0 400px"],
+    div[style*="flex: 0 0 450px"] {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Content on right side */
+    div[style*="flex: 1"][style*="min-width: 320px"] {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+    
+    /* Reduce excessive padding in product cards */
+    div[style*="padding: 2.5rem"] {
+        padding: 1.5rem !important;
+    }
+    
+    div[style*="padding: 2rem"] {
+        padding: 1.25rem !important;
+    }
+    
+    /* Images in product sections */
+    div[style*="border-radius: 16px"][style*="overflow: hidden"] img,
+    div[style*="border-radius: 12px"][style*="overflow: hidden"] img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+    
+    /* Lightbox gallery images */
+    div[style*="cursor: pointer"] img {
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    /* Headings in product sections */
+    h2[style*="font-size: 2.2rem"],
+    h2[style*="font-size: 2rem"] {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    h3[style*="font-size: 1.6rem"],
+    h3[style*="font-size: 1.8rem"] {
+        font-size: 1.25rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Details sections */
+    details summary {
+        font-size: 1rem !important;
+        padding: 0.75rem !important;
+    }
+    
+    details[open] {
+        padding: 1rem !important;
+    }
+    
+    /* Specification tables in details */
+    details table {
+        font-size: 0.85rem !important;
+    }
+    
+    details td {
+        padding: 0.5rem !important;
     }
 
     .commodities-intro h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        padding: 0 1rem;
     }
 
     .commodities-intro-text {
         font-size: 1rem;
         padding: 0 1rem;
+        line-height: 1.7;
     }
     
+    /* About Page */
     .about-intro-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
+    .about-intro {
+        padding: 3rem 0;
+    }
+    
+    .about-intro-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .about-intro-content p {
+        font-size: 1rem;
+    }
+    
+    /* Mission Section */
     .mission-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
     
+    .mission-section {
+        padding: 3rem 0;
+    }
+    
+    /* Service Cards */
     .service-card {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 2rem 1.5rem;
     }
     
+    .service-card i {
+        margin: 0 auto 1rem;
+    }
+    
+    /* Timeline */
     .timeline {
         padding-left: 30px;
     }
     
     .timeline-marker {
         left: -28px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .timeline-item h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 3rem 0 2.5rem;
     }
     
     .page-header h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    /* Process Steps */
+    .process-step::after {
+        display: none;
+    }
+    
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Tables */
+    table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table thead {
+        display: none;
+    }
+    
+    table tr {
+        display: block;
+        margin-bottom: 1.5rem;
+        border: 1px solid var(--light-gray);
+        border-radius: 8px;
+        padding: 1rem;
+        background: var(--white);
+    }
+    
+    table td {
+        display: block;
+        text-align: left !important;
+        padding: 0.5rem 0 !important;
+        border: none !important;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--primary-navy);
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    
+    table td strong {
+        color: var(--accent-teal);
+        font-size: 1.1rem;
+    }
+    
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Certifications */
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Stats */
+    .about-stats {
+        padding: 2rem 1.5rem;
+    }
+    
+    .stat-item {
+        padding: 1.5rem 1rem;
+    }
+    
+    .stat-value {
         font-size: 2rem;
     }
     
-    .process-step::after {
-        display: none;
+    /* CTA Section */
+    .cta-section {
+        padding: 3rem 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-section .btn-group {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .cta-section .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    /* Commodity Items */
+    .commodity-item {
+        padding: 1.25rem;
+    }
+    
+    .commodity-item i {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .commodity-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .commodity-item p {
+        font-size: 0.9rem;
+    }
+    
+    /* Commodities Intro */
+    .commodities-intro {
+        padding: 2.5rem 0;
+    }
+    
+    .commodities-intro h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .commodities-intro-text {
+        font-size: 0.9rem;
+    }
+    
+    /* Gas Turbine Products - Small Mobile */
+    section[style*="padding"] {
+        padding: 1.5rem 0 !important;
+    }
+    
+    div[style*="border-radius: 20px"][style*="padding: 2.5rem"],
+    div[style*="border-radius: 16px"][style*="padding: 2rem"] {
+        padding: 1rem !important;
+        border-radius: 12px !important;
+    }
+    
+    /* Smaller icons and badges */
+    i[style*="font-size: 28px"] {
+        font-size: 20px !important;
+    }
+    
+    /* Font sizes for product descriptions */
+    h2[style*="font-size"] {
+        font-size: 1.35rem !important;
+    }
+    
+    h3[style*="font-size"] {
+        font-size: 1.15rem !important;
+    }
+    
+    h4[style*="font-size"] {
+        font-size: 1.05rem !important;
+    }
+    
+    p[style*="font-size: 1.15rem"],
+    p[style*="font-size: 1.1rem"],
+    p[style*="font-size: 1.05rem"] {
+        font-size: 0.95rem !important;
+    }
+    
+    /* Reduce spacing in lists */
+    ul[style*="line-height: 1.9"],
+    ul[style*="line-height: 1.8"],
+    ul[style*="line-height: 1.7"] {
+        line-height: 1.5 !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Button groups */
+    div[style*="gap: 0.75rem"] {
+        gap: 0.5rem !important;
+    }
+    
+    /* Badges and tags */
+    span[style*="padding: 0.5rem 1rem"] {
+        padding: 0.4rem 0.75rem !important;
+        font-size: 0.8rem !important;
+    }
+    
+    /* Details content */
+    details {
+        margin-bottom: 1rem !important;
+    }
+    
+    details summary {
+        font-size: 0.95rem !important;
+        padding: 0.6rem !important;
+    }
+    
+    details table {
+        font-size: 0.8rem !important;
+    }
+    
+    details td,
+    details th {
+        padding: 0.4rem !important;
+    }
+    
+    /* About Page */
+    .about-intro {
+        padding: 2.5rem 0;
+    }
+    
+    .about-intro-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-intro-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    /* Stats */
+    .about-stats {
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+    }
+    
+    .stat-value {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    /* Mission Section */
+    .mission-section {
+        padding: 2.5rem 0;
+    }
+    
+    .mission-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .service-card i {
+        font-size: 2.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.15rem;
+    }
+    
+    /* Timeline */
+    .timeline-item {
+        padding-left: 1rem;
+    }
+    
+    .timeline-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-year {
+        font-size: 1rem;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 2.5rem 0 2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .breadcrumb {
+        font-size: 0.85rem;
+    }
+    
+    /* Tables */
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table tr {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    table td {
+        padding: 0.4rem 0 !important;
+    }
+    
+    table td:before {
+        font-size: 0.8rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 2.5rem 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .cta-section p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 375px) {
+    .page-header h1 {
+        font-size: 1.35rem;
+    }
+    
+    .commodities-intro h2 {
+        font-size: 1.35rem;
+    }
+    
+    .commodity-item {
+        padding: 1rem;
+    }
+    
+    .commodity-item h3 {
+        font-size: 1rem;
     }
 }

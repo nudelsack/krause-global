@@ -1,0 +1,24 @@
+# Protect dashboard directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect all requests to public/index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /dashboard/public/index.php [L,QSA]
+    
+    # Block direct access to sensitive files
+    RewriteRule ^\.env$ - [F,L]
+    RewriteRule ^composer\.(json|lock)$ - [F,L]
+    RewriteRule ^database\.sql$ - [F,L]
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Protect config and vendor directories
+<IfModule mod_authz_core.c>
+    <DirectoryMatch "^.*(config|vendor|app).*$">
+        Require all denied
+    </DirectoryMatch>
+</IfModule>

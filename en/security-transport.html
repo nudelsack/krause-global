@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Strategic Transport - Krause Global Resources & Trade</title>
+    <meta name="description" content="Premium security logistics: Value transport, art transport, data transport and security escort services. Global operations from Europe to Asia, Middle East and South America.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Image Grid Services */
+        .services-image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .service-tile {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .service-tile .tile-image {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-tile .tile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .service-tile:hover .tile-image img {
+            transform: scale(1.05);
+        }
+        
+        .service-tile .tile-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(transparent, rgba(10, 22, 40, 0.9));
+        }
+        
+        .service-tile .tile-label {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            z-index: 2;
+            color: white;
+        }
+        
+        .service-tile .tile-label h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 0 0.25rem;
+        }
+        
+        .service-tile .tile-label span {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        .service-tile .expand-indicator {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 3;
+            transition: all 0.3s ease;
+        }
+        
+        .service-tile.expanded .expand-indicator {
+            background: var(--accent-teal);
+            transform: rotate(180deg);
+        }
+        
+        .service-tile .tile-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            background: rgba(26, 45, 74, 0.8);
+            border-radius: 0 0 12px 12px;
+            margin-top: -12px;
+        }
+        
+        .service-tile.expanded .tile-details {
+            max-height: 500px;
+        }
+        
+        .service-tile .tile-details-inner {
+            padding: 2rem 1.5rem 1.5rem;
+        }
+        
+        .service-tile .tile-details p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            margin: 0 0 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .service-tile .tile-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        
+        .service-tile .tile-details ul li {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-tile .tile-details ul li i {
+            color: var(--accent-teal);
+            font-size: 0.7rem;
+        }
+        
+        @media (max-width: 768px) {
+            .services-image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .services-image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .division-overview {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%);
+            padding: 5rem 0;
+            color: white;
+            position: relative;
+        }
+        
+        .division-overview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .overview-content h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+        
+        .overview-content p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.9;
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+        
+        .overview-content .highlight-text {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.2), rgba(13, 148, 136, 0.2));
+            border-left: 3px solid var(--accent-teal);
+            padding: 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 2rem 0;
+        }
+        
+        .overview-content .highlight-text p {
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        .overview-icon {
+            text-align: center;
+        }
+        
+        .overview-icon i {
+            font-size: 10rem;
+            color: var(--accent-teal);
+            opacity: 0.6;
+        }
+        
+        .global-reach {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%);
+            padding: 5rem 0;
+            color: white;
+        }
+        
+        .vehicle-showcase {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        
+        .vehicle-image-box {
+            max-width: 800px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .vehicle-image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .global-reach h2,
+        .global-reach .section-title {
+            color: white;
+        }
+        
+        .global-reach .lead-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+        
+        .global-reach-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .route-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .route-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .route-card i {
+            font-size: 3rem;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .route-card h4 {
+            color: #1a2d4a;
+            margin-bottom: 0.75rem;
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+        
+        .route-card p {
+            color: #4a5568;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .quality-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, #1a2d4a, #0a1628);
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 2.5rem;
+            box-shadow: 0 8px 25px rgba(10, 22, 40, 0.4);
+        }
+        
+        .cargo-types {
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            padding: 5rem 0;
+        }
+        
+        .cargo-types .image-showcase {
+            max-width: 700px;
+            margin: 2rem auto 3rem;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            border: 4px solid white;
+        }
+        
+        .cargo-types .image-showcase img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .cargo-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .cargo-item {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .cargo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-teal);
+        }
+        
+        .cargo-item .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(13, 148, 136, 0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .cargo-item i {
+            font-size: 1.5rem;
+            color: var(--accent-teal);
+        }
+        
+        .cargo-item h4 {
+            color: var(--primary-navy);
+            font-size: 1rem;
+            margin: 0 0 0.5rem;
+        }
+        
+        .cargo-item p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        .standards-section {
+            background: #1a2d4a;
+            padding: 4rem 0;
+            color: white;
+        }
+        
+        .standards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        
+        .standard-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+        }
+        
+        .standard-item i {
+            font-size: 2.5rem;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+        }
+        
+        .standard-item h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .standard-item p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .role-section {
+            background: #0d9488;
+            padding: 5rem 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .role-section .partner-image {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .role-section .partner-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .role-section .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .role-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .role-section p {
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.9;
+        }
+        
+        @media (max-width: 1024px) {
+            .routes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cargo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .standards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .overview-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .overview-icon {
+                order: -1;
+            }
+            
+            .overview-icon i {
+                font-size: 6rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .routes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cargo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .standards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../images/diamand.png" alt="KGRT Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Gas Turbine</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="security-transport.html" class="active">Security Transport</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('../images/header_grüne Maybachs.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 600px; display: flex; align-items: flex-end; position: relative;">
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 3rem 0; background: linear-gradient(transparent, rgba(10, 22, 40, 0.95));">
+            <div class="container">
+                <h1 style="color: white; font-size: 2.5rem; margin: 0; font-weight: 700;">Krause Global Security & Strategic Transport Division</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Title Section -->
+    <section style="background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%); padding: 2.5rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 800px; margin: 0 auto 1.5rem; line-height: 1.7;">
+                Secure logistics for the international transport of valuable, sensitive, and critical cargo.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <span style="background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 20px; color: white; font-size: 0.9rem;">
+                    <i class="fas fa-check-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Value Transport
+                </span>
+                <span style="background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 20px; color: white; font-size: 0.9rem;">
+                    <i class="fas fa-check-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Art Transport
+                </span>
+                <span style="background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 20px; color: white; font-size: 0.9rem;">
+                    <i class="fas fa-check-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Data Transport
+                </span>
+                <span style="background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 20px; color: white; font-size: 0.9rem;">
+                    <i class="fas fa-check-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Security Escort
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Division Overview -->
+    <section class="division-overview">
+        <div class="container">
+            <div class="overview-content" style="max-width: 900px;">
+                <h2>Security & Strategic Transport Division</h2>
+                <p>
+                    The Krause Global Security & Strategic Transport Division handles high-value and sensitive cargo 
+                    with precision and discretion. From precious metals to fine art, data carriers to diplomatic 
+                    shipments — we ensure safe delivery with full chain-of-custody documentation.
+                </p>
+                <div class="highlight-text">
+                    <p>
+                        <i class="fas fa-globe-europe" style="margin-right: 0.5rem;"></i>
+                        Operating routes between Europe, Asia, Middle East, and the Americas with consistent security standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach Section -->
+    <section style="position: relative; padding: 5rem 0; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background-image: url('../images/world.webp'); background-size: cover; background-position: center;"></div>
+        <div style="position: absolute; inset: 0; background: rgba(10, 22, 40, 0.55);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <h2 style="color: white; font-size: 2.2rem; margin-bottom: 1.5rem;">International Coverage</h2>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Our security transports to and from Europe follow uniform quality standards regardless of destination. 
+                        All operations — intercontinental and regional — follow established security protocols.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-teal); color: white; padding: 1rem 2rem; border-radius: 8px; font-weight: 600;">
+                        <i class="fas fa-shield-halved"></i>
+                        Uniform Standards on All Routes
+                    </div>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 16px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div>
+                            <h4 style="color: var(--accent-teal); font-size: 1rem; margin-bottom: 0.5rem;">Europe ↔ Asia</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">China, Japan, Singapore, UAE</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-teal); font-size: 1rem; margin-bottom: 0.5rem;">Europe ↔ Americas</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">USA, Brazil, Argentina, Mexico</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-teal); font-size: 1rem; margin-bottom: 0.5rem;">Europe ↔ Middle East</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Dubai, Saudi Arabia, Qatar, Kuwait</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-teal); font-size: 1rem; margin-bottom: 0.5rem;">Intra-European</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">EU-wide secure logistics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%);">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1rem; color: white;">Services</h2>
+            <p style="text-align: center; color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                Specialized transport and security services for different cargo categories
+            </p>
+            
+            <div class="services-image-grid">
+                <!-- Value Transport -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/value-transport.webp" alt="Value Transport">
+                        <div class="tile-label">
+                            <h3>Value Transport</h3>
+                            <span>Precious metals & currency</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>Secure movement of high-value assets including precious metals, currencies, securities, and valuables with maximum discretion and protection protocols.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Armoured vehicles</li>
+                                <li><i class="fas fa-circle"></i> GPS tracking</li>
+                                <li><i class="fas fa-circle"></i> Full insurance</li>
+                                <li><i class="fas fa-circle"></i> Vault-to-vault</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art Transport -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/art-transport.webp" alt="Art Transport">
+                        <div class="tile-label">
+                            <h3>Art Transport</h3>
+                            <span>Fine art & antiques</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>Professional handling of artworks, antiques, and collectibles with climate-controlled transport and specialized packing.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Climate control</li>
+                                <li><i class="fas fa-circle"></i> Custom crating</li>
+                                <li><i class="fas fa-circle"></i> Trained handlers</li>
+                                <li><i class="fas fa-circle"></i> Gallery logistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Transport -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/nikita_3.webp" alt="Security Transport">
+                        <div class="tile-label">
+                            <h3>Security Transport</h3>
+                            <span>Sensitive cargo</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>End-to-end secure logistics for sensitive cargo with elevated protection standards and vetted personnel.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Vetted personnel</li>
+                                <li><i class="fas fa-circle"></i> Chain of custody</li>
+                                <li><i class="fas fa-circle"></i> Route planning</li>
+                                <li><i class="fas fa-circle"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Transport -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/nikita_4.webp" alt="Data Transport">
+                        <div class="tile-label">
+                            <h3>Data Transport</h3>
+                            <span>Sensitive data carriers</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>Secure physical transport of sensitive data carriers with strict compliance protocols and GDPR standards.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> GDPR compliance</li>
+                                <li><i class="fas fa-circle"></i> Encrypted containers</li>
+                                <li><i class="fas fa-circle"></i> Audit trail</li>
+                                <li><i class="fas fa-circle"></i> NDA personnel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Escort -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/nikita_5.webp" alt="Security Escort">
+                        <div class="tile-label">
+                            <h3>Security Escort</h3>
+                            <span>VIP logistics</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>Professional escort services for high-value shipments and VIP logistics operations with discrete professionals.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Security professionals</li>
+                                <li><i class="fas fa-circle"></i> Armed/unarmed</li>
+                                <li><i class="fas fa-circle"></i> Convoy coordination</li>
+                                <li><i class="fas fa-circle"></i> Discrete service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Planning -->
+                <div class="service-tile" onclick="this.classList.toggle('expanded')">
+                    <div class="tile-image">
+                        <img src="../images/strategic-planning.webp" alt="Strategic Planning">
+                        <div class="tile-label">
+                            <h3>Strategic Planning</h3>
+                            <span>Risk management</span>
+                        </div>
+                    </div>
+                    <div class="expand-indicator"><i class="fas fa-chevron-down"></i></div>
+                    <div class="tile-details">
+                        <div class="tile-details-inner">
+                            <p>Comprehensive transport planning and risk management for complex logistics with regulatory expertise.</p>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Risk assessment</li>
+                                <li><i class="fas fa-circle"></i> Route optimisation</li>
+                                <li><i class="fas fa-circle"></i> Contingency plans</li>
+                                <li><i class="fas fa-circle"></i> Regulatory support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards Section -->
+    <section class="standards-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; color: white; margin-bottom: 3rem;">Operational Standards</h2>
+            <div class="standards-grid">
+                <div class="standard-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>24/7 Operations</h4>
+                    <p>Round-the-clock monitoring and support</p>
+                </div>
+                <div class="standard-item">
+                    <i class="fas fa-file-contract"></i>
+                    <h4>Full Insurance</h4>
+                    <p>Comprehensive coverage for all shipments</p>
+                </div>
+                <div class="standard-item">
+                    <i class="fas fa-user-check"></i>
+                    <h4>Vetted Personnel</h4>
+                    <p>Background-checked and trained staff</p>
+                </div>
+                <div class="standard-item">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h4>Full Compliance</h4>
+                    <p>International regulatory adherence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Role within Krause Global -->
+    <section class="role-section">
+        <div class="container">
+            <h2>Part of Krause Global</h2>
+            <p>
+                The Security & Strategic Transport Division handles the secure movement of valuable assets — 
+                precious metals, art collections, and sensitive data carriers. All transports follow 
+                the same documented procedures and quality standards applied across Krause Global operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);">
+        <div class="container">
+            <h2>Inquiries</h2>
+            <p>For questions about secure transport services, contact us directly.</p>
+            <a href="contact.html" class="btn btn-primary">Contact</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Your reliable partner for global commodities and goods trading with focus on sustainability and long-term partnerships.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="security-transport.html">Security Transport</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="values.html">Our Values</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@krause-global.com</li>
+                        <li><i class="fas fa-phone"></i> +49 152 26872757</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kraków, Poland</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krause Global Resources & Trade. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="impressum.html">Legal Notice</a>
+                    <a href="datenschutz.html">Privacy Policy</a>
+                    <a href="agb.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal Beef Portfolio | Krause Global Resources</title>
+    <meta name="description" content="Certified halal beef cuts, chilled and frozen, for international B2B supply chains.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/diamand.png" alt="KGRT Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fertilizer.html">Fertilizer</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html" class="active">Halal Beef</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Power Solutions</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, rgba(41, 37, 36, 0.85), rgba(120, 113, 108, 0.75)), url('images/Header.Beef.jpg') center/cover; min-height: 480px; display: flex; align-items: center; position: relative;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.4rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.55); color: white;"><i class="fas fa-drumstick-bite"></i> Halal Beef Portfolio</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);"><a href="index.html">Home</a> / Halal Beef</p>
+            <p style="max-width: 760px; margin: 2rem auto 0; font-size: 1.2rem; line-height: 1.8; text-shadow: 1px 1px 4px rgba(0,0,0,0.45); color: white;">
+                Certified halal beef sourced from audited European production partners. Frozen and chilled deliveries tailored to food service, retail, and industrial processing programs.
+            </p>
+        </div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(17, 24, 39, 0.75), rgba(74, 85, 104, 0.6));"></div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 2rem;">Halal Beef for Global Buyers</h2>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text-light); margin-bottom: 2.25rem;">
+                    We coordinate certified halal beef supply chains with strict religious supervision, veterinary inspection, and full documentation. Tailored packing options include vacuum-packed primals, retail-ready cuts, and bulk cartons for further processing.
+                </p>
+
+                <div style="margin-bottom: 2.5rem; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+                    <div style="padding: 2rem 1.75rem; border-radius: 16px; border: 2px solid rgba(212, 175, 55, 0.35); background: rgba(212, 175, 55, 0.12);">
+                        <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.3rem;">Audited Slaughterhouses</h3>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">
+                            Halal certificates issued by recognized authorities, with continuous supervision and traceability through each batch.
+                        </p>
+                    </div>
+                    <div style="padding: 2rem 1.75rem; border-radius: 16px; border: 2px solid rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.12);">
+                        <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.3rem;">Chilled & Frozen Logistics</h3>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">
+                            Controlled temperature chain from plant to destination. Deliveries under CIF, FOB, or DAP contracts with optional consolidation.
+                        </p>
+                    </div>
+                    <div style="padding: 2rem 1.75rem; border-radius: 16px; border: 2px solid rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.12);">
+                        <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.3rem;">Specification Support</h3>
+                        <p style="margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">
+                            Product specs, microbiological reports, and private label packaging available on request for institutional buyers.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="display: inline-flex; gap: 0.75rem; padding: 1rem 1.5rem; background: rgba(244, 114, 182, 0.08); border-left: 4px solid rgba(236, 72, 153, 0.8); border-radius: 8px; margin-top: 0.5rem; align-items: flex-start;">
+                    <i class="fas fa-certificate" style="color: rgba(236, 72, 153, 0.85); font-size: 1.3rem; margin-top: 0.2rem;"></i>
+                    <p style="text-align: left; margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">
+                        <strong style="color: var(--primary-navy);">Certification scope:</strong> Malaysia JAKIM, UAE ESMA, Saudi SFDA, and selected European halal authorities. Multi-language certificates supplied with each shipment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supply Partner Spotlight -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #111827 0%, #1f2937 100%); color: white;">
+        <div class="container">
+            <div style="max-width: 960px; margin: 0 auto;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 2rem; color: white;">Strategic Production Partner Overview</h2>
+                <p style="font-size: 1.05rem; line-height: 1.85; margin-bottom: 1.75rem; color: rgba(255,255,255,0.85);">
+                    We collaborate with a Polish beef specialist boasting more than 30 years of experience and ranking among Europe’s largest beef producers. Backed by a dense logistics network, the group exports to over 60 countries across Europe, Africa, and Asia, ensuring responsive deliveries and market coverage.
+                </p>
+                <div style="display: grid; gap: 1.75rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.75rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;">Scale & Infrastructure</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            Modern breeding and processing facilities handle up to 1,400 head of cattle per day, allowing swift execution of sizeable contracts without compromising lead times.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.75rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;">Compliance Leadership</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            Certified to HACCP, IFS, and BRC standards, the production team manages halal and kosher slaughter programs, addressing diverse cultural and religious specifications worldwide.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.75rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;">Integrated Portfolio</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            Offerings span premium chilled primals, portioned halves, frozen and packed SKUs, and ready-to-serve solutions for food service and industry under consistent process control.
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 1.5rem 1.75rem; display: grid; gap: 0.75rem;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-shield-alt" style="color: var(--accent-teal);"></i>
+                        <span style="color: rgba(255,255,255,0.85); line-height: 1.7;">End-to-end control from livestock selection through slaughter, deboning, and packaging secures repeatable product parameters at global premium benchmarks.</span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-handshake" style="color: #fbbf24;"></i>
+                        <span style="color: rgba(255,255,255,0.85); line-height: 1.7;">Dedicated B2B support teams maintain long-term customer partnerships with on-time logistics and flexible commercial models for large-scale programs.</span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-globe" style="color: #60a5fa;"></i>
+                        <span style="color: rgba(255,255,255,0.85); line-height: 1.7;">Experience, capacity, and global reach position our Polish manufacturing partner as a recognised supplier of premium beef to world markets.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cut Categories -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem;">Key Product Groups</h2>
+            <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 1.75rem; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.35rem;">Primal Cuts</h3>
+                    <ul style="list-style: none; padding: 0; margin: 1rem 0 0 0; color: var(--text-light); line-height: 1.8;">
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Chilled hindquarter primals (striploin, tenderloin, rump)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Frozen forequarter primals (chuck, brisket, clod)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Vacuum packed manufacturing beef 90VL / 95VL</li>
+                    </ul>
+                </div>
+                <div style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 1.75rem; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.35rem;">Portion Control</h3>
+                    <ul style="list-style: none; padding: 0; margin: 1rem 0 0 0; color: var(--text-light); line-height: 1.8;">
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Steaks 180–300 g, individually vacuum packed</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Retail-ready MAP trays with custom branding</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>IQF burger patties and meatballs</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Pastrami slices and blocks (400 g, 500 g, 1–2 kg, 2.5 kg)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Slowcooked riblets (vacuum 250–260 g, 0.6–1.4 kg, 1 kg single riblet)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Slowcooked short ribs (vacuum 250–700 g, single to triple ribs)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Slowcooked beef cheeks (cut or whole, vacuum 500 g)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Smoked brisket (slow cooked, vacuum 1 kg slabs)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Slowcooked shanks (hind/fore, bone-in vacuum 2–4 kg)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Ossobuco in soy glaze (vacuum 500 g portions)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Pulled beef (slow cooked, vacuum 500 g)</li>
+                        <li><i class="fas fa-caret-right" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Beef carpaccio (Ø22 mm discs, 10 x 50 g)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frozen Beef Products Overview -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Frozen Beef Products</h2>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-light); margin-bottom: 2.5rem;">
+                    Ground, minced, and formed beef items prepared for halal markets with flexible formats. Choose private label or co-branding options, adjusted seasoning, and tailored portion sizing for retail or food service programs.
+                </p>
+            </div>
+            <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div style="background: white; border-radius: 16px; box-shadow: 0 12px 30px rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.18); padding: 2rem;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Retail Formats</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.25rem;">Ready-to-freeze consumer packs for supermarket shelves.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); line-height: 1.8;">
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Individual wrapped portions (IWP)</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Ground, minced, or formed SKUs</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Private label or co-brand options</li>
+                    </ul>
+                </div>
+                <div style="background: white; border-radius: 16px; box-shadow: 0 12px 30px rgba(20,184,166,0.12); border: 1px solid rgba(20,184,166,0.18); padding: 2rem;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Food Service Formats</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.25rem;">Volume packs for Horeca, airline catering, and processors.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); line-height: 1.8;">
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Bulk bags for convenience production</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Cartons for large-scale programs</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Menu-ready formed portions</li>
+                    </ul>
+                </div>
+                <div style="background: white; border-radius: 16px; box-shadow: 0 12px 30px rgba(234,179,8,0.15); border: 1px solid rgba(234,179,8,0.22); padding: 2rem;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Certification & Branding</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.25rem;">Compliance support for halal-focused assortments.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); line-height: 1.8;">
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Halal certification available on request</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Custom branding and packaging artwork</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Documentation prepared to buyer specs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processed Beef Highlights -->
+    <section style="padding: 3.5rem 0; background: linear-gradient(135deg, #fef3c7 0%, #fff7ed 100%);">
+        <div class="container">
+            <div style="max-width: 960px; margin: 0 auto; background: white; border-radius: 18px; box-shadow: 0 18px 45px rgba(209, 145, 64, 0.18); border: 1px solid rgba(209, 145, 64, 0.2); padding: 2.5rem 2.25rem; position: relative;">
+                <div style="position: absolute; inset: 0; border-radius: 18px; border: 1px dashed rgba(209, 145, 64, 0.35); pointer-events: none;"></div>
+                <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                    <div style="flex: 0 0 120px; height: 120px; background: linear-gradient(135deg, #be123c, #fb7185); border-radius: 24px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(190, 18, 60, 0.35);">
+                        <i class="fas fa-bacon" style="color: white; font-size: 3rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 260px;">
+                        <h2 style="margin: 0 0 0.75rem 0; color: var(--primary-navy);">Smoked, Precooked Beef Bacon</h2>
+                        <p style="margin: 0 0 1.25rem 0; color: var(--text-light); font-size: 1rem; line-height: 1.75;">
+                            Fully halal-certified beef bacon slices, produced in EU facilities with natural wood smoke and cooked ready for food service. Ideal for hospitality, QSR menus, and retail multipacks.
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.85rem;">
+                            <div style="background: rgba(190, 18, 60, 0.08); border: 1px solid rgba(190, 18, 60, 0.2); border-radius: 12px; padding: 0.85rem 1rem;">
+                                <h4 style="margin: 0; color: var(--primary-navy); font-size: 1rem;">Vacuum Packs</h4>
+                                <ul style="margin: 0.5rem 0 0 1rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
+                                    <li>250 g</li>
+                                    <li>336 g</li>
+                                    <li>500 g</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(190, 18, 60, 0.08); border: 1px solid rgba(190, 18, 60, 0.2); border-radius: 12px; padding: 0.85rem 1rem;">
+                                <h4 style="margin: 0; color: var(--primary-navy); font-size: 1rem;">Bulk Food Service</h4>
+                                <ul style="margin: 0.5rem 0 0 1rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
+                                    <li>1 kg vacuum</li>
+                                    <li>2.5 kg vacuum</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: inline-flex; gap: 0.75rem; align-items: center; padding: 0.85rem 1.3rem; border-radius: 999px; background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.25);">
+                            <i class="fas fa-clipboard-check" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light); font-size: 0.95rem;">Halal, HACCP, and ISO documentation supplied per lot.</span>
+                        </div>
+                        <div style="margin-top: 2rem; display: grid; gap: 1.5rem;">
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Smoked, Precooked Beef Cubes</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Ready-to-use smoked beef cubes for salads, pasta, and ready meals. Moisture-controlled cooking ensures even portioning and quick regeneration for institutional kitchens.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.65rem; align-items: center; padding: 0.65rem 1.1rem; background: rgba(190, 18, 60, 0.08); border: 1px solid rgba(190, 18, 60, 0.18); border-radius: 999px;">
+                                    <i class="fas fa-box"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Vacuum packed 250 g (food service packs on request)</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Halal Pastrami</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Slow-brined beef brisket, spice-crusted and smoked under halal supervision. Available as pre-sliced packs for food service and deli counters, as well as whole blocks for in-house slicing.
+                                </p>
+                                <div style="display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px;">
+                                        <i class="fas fa-layer-group" style="color: #3b82f6;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Sliced vacuum packs: 400 g, 500 g</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px;">
+                                        <i class="fas fa-cubes" style="color: #3b82f6;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Block vacuum: 1–2 kg, 2.5 kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Smoked, Precooked Ribeye</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Marbled ribeye prepared sous-vide and smoke-finished for consistent tenderness. Delivered chilled or frozen, ready to reheat for premium sandwiches, breakfast menus, or carving stations.
+                                </p>
+                                <div style="display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(244, 114, 182, 0.12); border: 1px solid rgba(244, 114, 182, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-cut" style="color: #ec4899;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Sliced vacuum packs: 250 g, 500 g</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(244, 114, 182, 0.12); border: 1px solid rgba(244, 114, 182, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-solid fa-layer-group" style="color: #ec4899;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Slab vacuum: 1.5–3 kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Slowcooked Riblets</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Tender beef riblets cooked sous-vide and finished in soy or garlic glaze. Ideal as heat-and-serve appetizers, grab-and-go options, or centre-of-plate components.
+                                </p>
+                                <div style="display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-utensils" style="color: var(--accent-teal);"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">250–260 g vac (3 riblets)</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-box-open" style="color: var(--accent-teal);"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">0.6–1.0 kg vac (5 riblets)</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-drumstick-bite" style="color: var(--accent-teal);"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">1.0–1.4 kg vac (7 riblets)</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-bone" style="color: var(--accent-teal);"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">1 kg vacuum (single riblet)</span>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(15, 23, 42, 0.08); border-radius: 12px;">
+                                    <i class="fas fa-pepper-hot" style="color: #f97316;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Available in soy sauce or garlic glaze variants.</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Slowcooked Short Ribs</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Premium EU beef short ribs, braised in soy glaze for deep umami or cross-cut with garlic. Delivered vacuum sealed for easy regeneration in ovens or combi steamers.
+                                </p>
+                                <div style="display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(148, 163, 184, 0.12); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-drumstick-bite" style="color: #475569;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">250–350 g vac (1 rib)</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(148, 163, 184, 0.12); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-box-open" style="color: #475569;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">350–500 g vac (2 ribs)</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(148, 163, 184, 0.12); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-bone" style="color: #475569;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">600–700 g vac (3 ribs)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Slowcooked Beef Cheeks</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Halal beef cheeks braised for hours in soy-infused stock. Offered as whole muscles for signature plating or trimmed cuts ready for portioning.
+                                </p>
+                                <div style="display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-cut" style="color: #ca8a04;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Cut portions, vacuum 500 g</span>
+                                    </div>
+                                    <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.25); border-radius: 12px;">
+                                        <i class="fas fa-drumstick-bite" style="color: #ca8a04;"></i>
+                                        <span style="color: var(--text-light); font-size: 0.9rem;">Whole cheek, vacuum 500 g</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Smoked Brisket</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Whole-muscle brisket seasoned, smoked, and slow cooked until tender. Supplied in vacuum 1 kg slabs for slicing, shredding, or reheating with sauces.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(107, 114, 128, 0.12); border: 1px solid rgba(107, 114, 128, 0.25); border-radius: 12px;">
+                                    <i class="fas fa-layer-group" style="color: #4b5563;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Vacuum packed 1 kg slowcooked slab</span>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(209, 213, 219, 0.25); border-radius: 12px;">
+                                    <i class="fas fa-fire" style="color: #ef4444;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Ready for slicing, shredding, or reheating in combi ovens.</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Slowcooked Bone-In Shanks</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Fore and hind shanks braised on the bone for rich marrow flavour. Delivered vacuum sealed, ready for banquets, buffets, or retail carving.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(148, 163, 184, 0.12); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 12px;">
+                                    <i class="fas fa-bone" style="color: #475569;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Vacuum packed 2–4 kg hind or fore shank</span>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(20, 184, 166, 0.14); border: 1px solid rgba(20, 184, 166, 0.24); border-radius: 12px;">
+                                    <i class="fas fa-seedling" style="color: var(--accent-teal);"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Ideal for slow reheat with fresh herbs or sauce reductions.</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Slowcooked Ossobuco</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Cross-cut beef shanks slow cooked in soy glaze until fork tender. Each piece retains marrow richness and is portioned for individual plating.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(217, 119, 6, 0.15); border: 1px solid rgba(217, 119, 6, 0.25); border-radius: 12px;">
+                                    <i class="fas fa-utensils" style="color: #d97706;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Vacuum packed 500 g portions</span>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(217, 119, 6, 0.1); border-radius: 12px;">
+                                    <i class="fas fa-concierge-bell" style="color: #d97706;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Perfect for premium ready-to-serve mains.</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Pulled Beef</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Shoulder and chuck slow cooked until shreddable, lightly seasoned for menu flexibility. Delivered in vacuum 500 g packs ready for reheating or mixing with signature sauces.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(59, 130, 246, 0.22); border-radius: 12px;">
+                                    <i class="fas fa-box" style="color: #2563eb;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Vacuum packed 500 g shredded beef</span>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(59, 130, 246, 0.08); border-radius: 12px;">
+                                    <i class="fas fa-bread-slice" style="color: #2563eb;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Ideal for sandwiches, tacos, or ready meals.</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1.5rem 1.75rem; background: rgba(15, 23, 42, 0.04); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 14px;">
+                                <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.25rem;">Beef Carpaccio</h3>
+                                <p style="margin: 0 0 0.75rem 0; color: var(--text-light); line-height: 1.7;">
+                                    Thinly sliced raw beef discs (Ø22 mm) prepared for chilled service. Plates out instantly for starters, canapés, or gourmet sandwiches.
+                                </p>
+                                <div style="display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(236, 72, 153, 0.12); border: 1px solid rgba(236, 72, 153, 0.25); border-radius: 12px;">
+                                    <i class="fas fa-dot-circle" style="color: #ec4899;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Disc weight 50 g (single serve)</span>
+                                </div>
+                                <div style="margin-top: 0.9rem; display: inline-flex; gap: 0.6rem; align-items: center; padding: 0.6rem 1rem; background: rgba(236, 72, 153, 0.08); border-radius: 12px;">
+                                    <i class="fas fa-boxes" style="color: #ec4899;"></i>
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Packaging: 10 x 1 pc vacuum pack (500 g)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Guidance -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div style="max-width: 1040px; margin: 0 auto;">
+                <h2 class="section-title" style="margin-bottom: 1rem; text-align: center;">Indicative Pricing (non-binding)</h2>
+                <p style="text-align: center; max-width: 840px; margin: 0 auto 2rem; color: var(--text-light); line-height: 1.8;">
+                    Prices depend on cut, origin, packing, and delivery terms. Values below are reference levels from recent supplier offers and should be confirmed through a written quotation.
+                </p>
+                <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.04), rgba(148, 163, 184, 0.15)); border-radius: 18px; padding: 2rem; border: 1px solid rgba(15, 23, 42, 0.08); box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);">
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; min-width: 760px;">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: left; padding: 0.9rem; border-bottom: 2px solid rgba(15, 23, 42, 0.15); color: var(--primary-navy);">Product</th>
+                                    <th style="text-align: left; padding: 0.9rem; border-bottom: 2px solid rgba(15, 23, 42, 0.15); color: var(--primary-navy);">Origin / Spec</th>
+                                    <th style="text-align: left; padding: 0.9rem; border-bottom: 2px solid rgba(15, 23, 42, 0.15); color: var(--primary-navy);">Indicative price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Smoked beef bacon slices</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / vacuum 250 g, 336 g, 500 g, 1 kg, 2.5 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Smoked beef cubes</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / vacuum 250 g (custom weights)</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Halal pastrami</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / vacuum slices 400 g, 500 g; blocks 1–2 kg, 2.5 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Smoked ribeye</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / vacuum slices 250 g, 500 g; slabs 1.5–3 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Slowcooked riblets</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / soy or garlic glaze; vacuum 250–260 g, 0.6–1.4 kg, 1 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Slowcooked short ribs</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / soy glaze or garlic X-cut; vacuum 250–700 g</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Slowcooked beef cheeks</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / soy glaze; cut or whole vacuum 500 g</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Smoked brisket</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / slow cooked slabs, vacuum 1 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Slowcooked bone-in shank</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / hind & fore shank, vacuum 2–4 kg</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Slowcooked ossobuco</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / soy glaze; vacuum 500 g portions</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Pulled beef</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / shredded shoulder & chuck, vacuum 500 g</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">Beef carpaccio discs</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);">EU processing / Ø22 mm, 10 x 50 g vacuum</td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(15, 23, 42, 0.08);"><strong>On Request</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics & Compliance -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; color: white; margin-bottom: 2.5rem;">Logistics & Compliance</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem;">
+                <div style="background: rgba(15, 23, 42, 0.65); padding: 1.75rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);">
+                    <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-temperature-low" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Cold Chain Integrity</h3>
+                    <p style="margin: 0; color: rgba(226, 232, 240, 0.9); line-height: 1.7;">
+                        Containers equipped with temperature loggers (-18°C frozen / 0–2°C chilled). Reports shared post-delivery for full traceability.
+                    </p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.65); padding: 1.75rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);">
+                    <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-clipboard-check" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Documentation</h3>
+                    <p style="margin: 0; color: rgba(226, 232, 240, 0.9); line-height: 1.7;">
+                        Halal certificates, veterinary health docs, slaughter reports, and ISO/HACCP certificates included. Digital copies provided before shipment.
+                    </p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.65); padding: 1.75rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);">
+                    <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-shipping-fast" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>Lead Times</h3>
+                    <p style="margin: 0; color: rgba(226, 232, 240, 0.9); line-height: 1.7;">
+                        Chilled air freight: 3–5 days. Frozen ocean freight: 4–6 weeks depending on port. Consolidation options for partial loads.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Looking for certified halal beef?</h2>
+            <p>Send us your specifications for cuts, volumes, and delivery terms. We coordinate the quotation and export paperwork.</p>
+            <a href="contact.html" class="btn btn-primary">Send inquiry</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Ihr zuverlässiger Partner für globalen Rohstoff- und Warenhandel mit Fokus auf Sustainablekeit und langfristige Partnerschaften.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="halal-beef.html" class="active">Halal Beef</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="global-presence.html">Global Presence</a></li>
+                        <li><a href="values.html">Our Values</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="impressum.html">Imprint</a></li>
+                        <li><a href="datenschutz.html">Privacy Policy</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Krause Global Resources & Trade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

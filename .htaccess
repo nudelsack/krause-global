@@ -10,5 +10,18 @@ AddDefaultCharset UTF-8
 # Ensure index.html is served for directory requests
 DirectoryIndex index.html
 
-# DISABLE all rewrite rules - no automatic redirects
-RewriteEngine Off
+# Remove .html extension from URLs
+RewriteEngine On
+
+# Redirect /index to root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index(?:\.html)?\s [NC]
+RewriteRule ^ / [R=301,L]
+
+# Redirect .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Internally rewrite clean URLs to .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]

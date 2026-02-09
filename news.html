@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Insights - Krause Global Resources & Trade</title>
-    <meta name="description" content="Aktuelle Marktinformationen und Insights aus dem globalen Rohstoffhandel.">
+    <meta name="description" content="Current market information and insights from global commodities trading.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/additional.css">
@@ -17,17 +17,26 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/diamand.png" alt="KGRT Logo">
+                        <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="KGRT Logo" loading="lazy">
+</picture>
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Über uns</a></li>
-                        <li><a href="commodities.html">Rohstoffe & Waren</a></li>
-                        <li><a href="energy.html">Energie</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Power Solutions</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="gold.html">Gold Bars</a></li>
                         <li><a href="news.html" class="active">News</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="mobile-menu-toggle">
@@ -40,7 +49,7 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>News & Marktinsights</h1>
+            <h1>News & Market Insights</h1>
             <p class="breadcrumb"><a href="index.html">Home</a> / News</p>
         </div>
     </section>
@@ -48,11 +57,11 @@
     <!-- News Intro -->
     <section class="services-intro">
         <div class="container">
-            <h2>Bleiben Sie informiert</h2>
+            <h2>Stay Informed</h2>
             <p class="services-intro-text">
-                Aktuelle Informationen aus den globalen Rohstoffmärkten, Branchentrends und Insights zu 
-                nachhaltiger Beschaffung. Unsere Experten teilen ihr Wissen, damit Sie fundierte 
-                Entscheidungen treffen können.
+                Current information from global commodity markets, industry trends, and insights into 
+                sustainable procurement. Our experts share their knowledge so you can make informed 
+                decisions.
             </p>
         </div>
     </section>
@@ -61,21 +70,216 @@
     <section style="background: var(--light-gray);">
         <div class="container">
             <div class="news-grid">
+                <!-- News Article - Halal Beef Portfolio Launch -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/halal_beef_hero.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> February 5, 2026</span>
+                        </div>
+                        <span class="news-category">New Product Line</span>
+                        <h3>Halal Beef Portfolio Now Available: SFDA & GSO Certified</h3>
+                        <p>
+                            We are pleased to announce the expansion of our commodity portfolio with a comprehensive halal beef offering. Our new product line includes 20+ processed products, frozen beef options (burgers, meatballs, minced beef), and half carcasses (forequarters 80-120kg, hindquarters 100-150kg) - all certified by the Polish Institute of Halal and compliant with SFDA and GSO standards for international B2B markets...
+                        </p>
+                        <a href="halal-beef.html" class="read-more">Explore Halal Beef Portfolio <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Metals Market Update -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/metals-hero.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> February 3, 2026</span>
+                        </div>
+                        <span class="news-category">Industrial Metals</span>
+                        <h3>Copper & Aluminum Market Dynamics: Global Supply Chain Update</h3>
+                        <p>
+                            Global demand for industrial metals remains strong driven by renewable energy infrastructure and electric vehicle production. Our metals portfolio continues to provide reliable access to copper cathodes (Grade A, 99.99% purity, LME-registered), aluminum ingots (ADC 12, A7 grades), and precious metals including gold bars (999.9 fineness, LBMA certified) with complete chain of custody documentation and secure delivery options...
+                        </p>
+                        <a href="metals.html" class="read-more">View Metals Portfolio <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Fertilizer Demand 2026 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/Fertilizer_Hero.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 28, 2026</span>
+                        </div>
+                        <span class="news-category">Agricultural Inputs</span>
+                        <h3>Global Fertilizer Markets: Nitrogen & NPK Demand Forecast 2026</h3>
+                        <p>
+                            Agricultural producers worldwide are securing fertilizer supply chains ahead of the 2026 planting season. Our expanded fertilizer portfolio includes Urea 46% nitrogen (prilled/granular), NPK complexes (15-15-15, 16-16-16), DAP (18-46-0), and potash (MOP 60% K₂O) from certified European and Middle Eastern sources. All products include complete analysis certificates, MSDS, and phytosanitary documentation for international agricultural markets...
+                        </p>
+                        <a href="fertilizer.html" class="read-more">Fertilizer Products <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Fish & Seafood -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/fresh-fish.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 20, 2026</span>
+                        </div>
+                        <span class="news-category">Seafood Industry</span>
+                        <h3>Sustainable Seafood Sourcing: B2B Market Trends 2026</h3>
+                        <p>
+                            The global seafood market continues to prioritize sustainability and traceability. Our comprehensive B2B portfolio now features MSC/ASC certified products with complete documentation from Norwegian and Pacific waters, meeting the highest industry standards for responsible sourcing...
+                        </p>
+                        <a href="fish.html" class="read-more">View Fish Portfolio <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Agriculture -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/weizen.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 18, 2026</span>
+                        </div>
+                        <span class="news-category">Agricultural Commodities</span>
+                        <h3>Wheat & Oilseeds: Quality Standards in B2B Trade</h3>
+                        <p>
+                            High-quality agricultural commodities remain essential for food processing and industrial applications. Our expanded agriculture portfolio includes premium milling wheat (11.5% protein min), crude sunflower seed oil, and refined soybean oil - all with complete phytosanitary certificates and quality documentation...
+                        </p>
+                        <a href="agriculture.html" class="read-more">Explore Agriculture Products <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Power Solutions -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/Header_Gasturbine.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 15, 2026</span>
+                        </div>
+                        <span class="news-category">Industrial Power</span>
+                        <h3>Gas Turbines for Industrial Applications: New & Unused Equipment Available</h3>
+                        <p>
+                            Meeting growing demand for reliable industrial power generation, we offer new and unused gas turbines ready for immediate delivery. Our portfolio includes Siemens SGT-600 (25 MW), SGT5-2000E (670 MW CCPP), and SGT5-PAC 4000F (298 MW) with complete technical documentation and manufacturer certificates...
+                        </p>
+                        <a href="gasturbine.html" class="read-more">View Power Solutions <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article - Energy -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('images/diesel.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 12, 2026</span>
+                        </div>
+                        <span class="news-category">Energy Markets</span>
+                        <h3>EN590 Diesel & Aviation Fuel: Quality Assured Supply for Global Markets</h3>
+                        <p>
+                            Secure energy supply remains critical for global operations. We provide certified EN590 10 PPM diesel, Aviation Jet Fuel (A1), and Virgin Fuel (D6) with UAE.S/GSO/ISO compliance. All products include complete quality certificates and meet international standards for industrial and transportation applications...
+                        </p>
+                        <a href="energy.html" class="read-more">Energy Products <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
                 <!-- News Article 1 -->
                 <div class="news-card">
                     <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 15. Dezember 2025</span>
+                            <span><i class="fas fa-calendar"></i> December 15, 2025</span>
                         </div>
-                        <span class="news-category">Marktanalyse</span>
-                        <h3>Globale Getreidepreise: Trends für 2026</h3>
+                        <span class="news-category">Market Analysis</span>
+                        <h3>Global Grain Prices: Trends for 2026</h3>
                         <p>
-                            Unsere Analyse zeigt, dass die Weizenpreise aufgrund klimatischer Veränderungen und 
-                            steigender Nachfrage aus Asien voraussichtlich stabil bleiben werden...
+                            Our analysis shows that wheat prices are expected to remain stable due to climate changes and 
+                            increasing demand from Asia...
                         </p>
-                        <a href="https://www.fao.org/worldfoodsituation/csdb/en/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.fao.org/worldfoodsituation/csdb/en/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 1 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 22, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Grain</span>
+                        </div>
+                        <span class="news-category">Agriculture</span>
+                        <h3>Australia Anticipating Large Barley, Wheat Crops</h3>
+                        <p>
+                            Australia is expecting significant wheat and barley harvests in 2026, positioning the country 
+                            as a key supplier in global grain markets. Industry experts discuss production forecasts and export opportunities...
+                        </p>
+                        <a href="https://www.world-grain.com/articles/22317-australia-anticipating-large-barley-wheat-crops" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 2 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 19, 2026</span>
+                            <span><i class="fas fa-globe"></i> IEA</span>
+                        </div>
+                        <span class="news-category">Energy</span>
+                        <h3>7 Certainties About Energy for This Age of Uncertainty</h3>
+                        <p>
+                            IEA Executive Director Fatih Birol outlines key trends shaping global energy markets, including renewable 
+                            expansion, fossil fuel transitions, and energy security challenges facing nations worldwide...
+                        </p>
+                        <a href="https://www.iea.org/commentaries/7-certainties-about-energy-for-this-age-of-uncertainty" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 3 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1534390668699-95f6b246c3e8?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 21, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Grain</span>
+                        </div>
+                        <span class="news-category">Agriculture</span>
+                        <h3>Grain Market Review: Oilseeds</h3>
+                        <p>
+                            Comprehensive analysis of global oilseed markets including sunflower and soybean oil prices, 
+                            supply chain dynamics, and trade flows affecting international commodity trading...
+                        </p>
+                        <a href="https://www.world-grain.com/articles/22311-grain-market-review-oilseeds" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 4 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 15, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Bank</span>
+                        </div>
+                        <span class="news-category">Energy</span>
+                        <h3>Power More With Less: Scaling Up Energy Efficiency</h3>
+                        <p>
+                            World Bank report examines how energy efficiency improvements can drive economic growth while 
+                            enhancing energy security in developing and emerging markets worldwide...
+                        </p>
+                        <a href="https://www.worldbank.org/en/topic/energy/publication/power-more-with-less" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -85,15 +289,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 10. Dezember 2025</span>
+                            <span><i class="fas fa-calendar"></i> December 10, 2025</span>
                         </div>
-                        <span class="news-category">Nachhaltigkeit</span>
-                        <h3>Neue ESG-Standards im Rohstoffhandel</h3>
+                        <span class="news-category">Sustainability</span>
+                        <h3>New ESG Standards in Commodities Trading</h3>
                         <p>
-                            Die Bedeutung von ESG-Kriterien nimmt weiter zu. Wir erläutern die neuesten 
-                            internationalen Standards und wie wir diese in unsere Beschaffungsprozesse integrieren...
+                            The importance of ESG criteria continues to grow. We explain the latest 
+                            international standards and how we integrate them into our procurement processes...
                         </p>
-                        <a href="https://www.un.org/sustainabledevelopment/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.un.org/sustainabledevelopment/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -103,15 +307,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 1. Dezember 2025</span>
+                            <span><i class="fas fa-calendar"></i> December 1, 2025</span>
                         </div>
                         <span class="news-category">Commodity Focus</span>
-                        <h3>Kaffeeernten 2025: Qualität und Volumen</h3>
+                        <h3>Coffee Harvests 2025: Quality and Volume</h3>
                         <p>
-                            Die diesjährige Kaffeeernte in Südamerika und Afrika zeigt ausgezeichnete Qualität. 
-                            Ein Überblick über die wichtigsten Anbauregionen und Preisentwicklungen...
+                            This year's coffee harvest in South America and Africa shows excellent quality. 
+                            An overview of the major growing regions and price developments...
                         </p>
-                        <a href="https://www.ico.org/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.ico.org/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -121,15 +325,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 20. November 2025</span>
+                            <span><i class="fas fa-calendar"></i> November 20, 2025</span>
                         </div>
-                        <span class="news-category">Logistik</span>
-                        <h3>Optimierung globaler Lieferketten</h3>
+                        <span class="news-category">Logistics</span>
+                        <h3>Optimizing Global Supply Chains</h3>
                         <p>
-                            Effiziente Logistik ist der Schlüssel zu erfolgreichen Großlieferungen. 
-                            Wir teilen unsere Strategien für resiliente und kosteneffektive Supply Chains...
+                            Efficient logistics is the key to successful large deliveries. 
+                            We share our strategies for resilient and cost-effective supply chains...
                         </p>
-                        <a href="https://www.worldbank.org/en/topic/trade" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.worldbank.org/en/topic/trade" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -139,15 +343,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 10. November 2025</span>
+                            <span><i class="fas fa-calendar"></i> November 10, 2025</span>
                         </div>
-                        <span class="news-category">Energie</span>
-                        <h3>Energiemärkte im Wandel</h3>
+                        <span class="news-category">Energy</span>
+                        <h3>Energy Markets in Transition</h3>
                         <p>
-                            Der Übergang zu erneuerbaren Energien verändert die Rohstoffmärkte. 
-                            Unsere Einschätzung zur Zukunft von Öl, Gas und alternativen Energieträgern...
+                            The transition to renewable energies is changing commodity markets. 
+                            Our assessment of the future of oil, gas, and alternative energy carriers...
                         </p>
-                        <a href="https://www.iea.org/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.iea.org/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -157,15 +361,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 1. November 2025</span>
+                            <span><i class="fas fa-calendar"></i> November 1, 2025</span>
                         </div>
-                        <span class="news-category">Partnerschaft</span>
-                        <h3>Langfristige Partnerschaften: Schlüssel zum Erfolg</h3>
+                        <span class="news-category">Partnership</span>
+                        <h3>Long-term Partnerships: Key to Success</h3>
                         <p>
-                            Warum langfristige Beziehungen im Rohstoffhandel wichtiger sind als kurzfristige Gewinne. 
-                            Ein Einblick in unsere Partnerschaftsphilosophie...
+                            Why long-term relationships in commodities trading are more important than short-term gains. 
+                            An insight into our partnership philosophy...
                         </p>
-                        <a href="https://unctad.org/" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://unctad.org/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -175,15 +379,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 20. Oktober 2025</span>
+                            <span><i class="fas fa-calendar"></i> October 20, 2025</span>
                         </div>
                         <span class="news-category">Regional Focus</span>
-                        <h3>Afrika: Der aufstrebende Rohstoffmarkt</h3>
+                        <h3>Africa: The Emerging Commodity Market</h3>
                         <p>
-                            Afrikas Rolle im globalen Rohstoffhandel wächst stetig. Wir beleuchten Chancen und 
-                            Herausforderungen für nachhaltige Beschaffung auf dem Kontinent...
+                            Africa's role in global commodities trading is steadily growing. We highlight opportunities and 
+                            challenges for sustainable procurement on the continent...
                         </p>
-                        <a href="https://www.afdb.org/en" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.afdb.org/en" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -193,15 +397,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 5. Oktober 2025</span>
+                            <span><i class="fas fa-calendar"></i> October 5, 2025</span>
                         </div>
-                        <span class="news-category">Qualität</span>
-                        <h3>Zertifizierungen im Rohstoffhandel</h3>
+                        <span class="news-category">Quality</span>
+                        <h3>Certifications in Commodities Trading</h3>
                         <p>
-                            Ein Überblick über die wichtigsten Qualitäts- und Nachhaltigkeitszertifizierungen 
-                            und ihre Bedeutung für moderne Beschaffungsprozesse...
+                            An overview of the most important quality and sustainability certifications 
+                            and their significance for modern procurement processes...
                         </p>
-                        <a href="https://www.iso.org/standards.html" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.iso.org/standards.html" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -211,15 +415,15 @@
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 15. September 2025</span>
+                            <span><i class="fas fa-calendar"></i> September 15, 2025</span>
                         </div>
-                        <span class="news-category">Agrarwirtschaft</span>
-                        <h3>Düngemittel: Nachhaltige Alternativen im Fokus</h3>
+                        <span class="news-category">Agriculture</span>
+                        <h3>Fertilizers: Sustainable Alternatives in Focus</h3>
                         <p>
-                            Innovative Ansätze in der Düngemittelproduktion versprechen umweltfreundlichere Lösungen. 
-                            Wir analysieren die neuesten Entwicklungen und Markttrends...
+                            Innovative approaches in fertilizer production promise more environmentally friendly solutions. 
+                            We analyze the latest developments and market trends...
                         </p>
-                        <a href="https://www.fao.org/home/en" target="_blank" rel="noopener" class="read-more">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.fao.org/home/en" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -229,21 +433,21 @@
     <!-- Newsletter Subscription -->
     <section class="mission-section">
         <div class="container">
-            <h2 class="section-title">Bleiben Sie auf dem Laufenden</h2>
+            <h2 class="section-title">Stay Updated</h2>
             <div style="max-width: 600px; margin: 0 auto; text-align: center;">
                 <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem;">
-                    Abonnieren Sie unseren Newsletter für regelmäßige Updates zu Markttrends, 
-                    Branchennews und exklusive Insights.
+                    Subscribe to our newsletter for regular updates on market trends, 
+                    industry news, and exclusive insights.
                 </p>
                 <form style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <input 
                         type="email" 
-                        placeholder="Ihre E-Mail-Adresse" 
+                        placeholder="Your email address" 
                         style="flex: 1; padding: 1rem; border: 2px solid var(--medium-gray); border-radius: 8px; font-size: 1rem; min-width: 250px;"
                         required
                     >
                     <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
-                        <i class="fas fa-envelope"></i> Abonnieren
+                        <i class="fas fa-envelope"></i> Subscribe
                     </button>
                 </form>
             </div>
@@ -253,57 +457,58 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Haben Sie Fragen zu aktuellen Marktentwicklungen?</h2>
-            <p>Unsere Experten stehen Ihnen gerne für eine individuelle Beratung zur Verfügung.</p>
-            <a href="contact.html" class="btn btn-primary">Kontakt aufnehmen</a>
+            <h2>Questions About Current Market Developments?</h2>
+            <p>Our experts are happy to provide you with individual consulting.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            </div>
+            
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Krause Global Resources & Trade</h3>
-                    <p>Ihr zuverlässiger Partner für globalen Rohstoff- und Warenhandel mit Fokus auf Nachhaltigkeit und langfristige Partnerschaften.</p>
+                    <p>Your reliable partner for global commodities and goods trading with focus on sustainability and long-term partnerships.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Über uns</a></li>
-                        <li><a href="commodities.html">Rohstoffe & Waren</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Unternehmen</h4>
+                    <h4>Company</h4>
                     <ul>
-                        <li><a href="values.html">Unsere Werte</a></li>
+                        <li><a href="values.html">Our Values</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontakt</h4>
+                    <h4>Contact</h4>
                     <ul class="contact-info">
                         <li><i class="fas fa-envelope"></i> info@krause-global.com</li>
                         <li><i class="fas fa-phone"></i> +49 152 26872757</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Kraków, Polen</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kraków, Poland</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Krause Global Resources & Trade. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2025 Krause Global Resources & Trade. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="impressum.html">Impressum</a>
-                    <a href="datenschutz.html">Datenschutz</a>
-                    <a href="agb.html">AGB</a>
+                    <a href="impressum.html">Legal Notice</a>
+                    <a href="datenschutz.html">Privacy Policy</a>
+                    <a href="agb.html">Terms & Conditions</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

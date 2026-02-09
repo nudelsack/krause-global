@@ -3,13 +3,585 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=en/index.html">
-    <title>Krause Global Resources & Trade - Redirecting...</title>
-    <script>
-        window.location.href = "en/index.html";
-    </script>
+    <title>Krause Global Resources & Trade - Reliable Partner in Global Commodities Trading</title>
+    <meta name="description" content="Krause Global Resources & Trade - Specialist in procurement of large volumes of commodities and goods worldwide.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .slide-in-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .slide-in-left.visible,
+        .slide-in-right.visible,
+        .slide-in-up.visible {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+        
+        /* Shimmer & Glow Effect */
+        .product-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            filter: brightness(1);
+        }
+        .product-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.1),
+                transparent
+            );
+            z-index: 10;
+            pointer-events: none;
+            transition: none;
+        }
+        .product-box:hover::before {
+            left: 150%;
+            transition: left 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .product-box:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 
+                0 0 25px rgba(100, 180, 255, 0.3),
+                0 0 50px rgba(100, 180, 255, 0.15),
+                0 15px 35px rgba(0, 0, 0, 0.2);
+            filter: brightness(1.08);
+            transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 1.5s ease-out, filter 1s ease;
+        }
+        .product-box.visible {
+            transform: translateX(0) translateY(0);
+        }
+        .product-box.visible:hover {
+            transform: translateY(-4px) scale(1.01);
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to English version... <a href="en/index.html">Click here if not redirected automatically</a></p>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="KGRT Logo" loading="lazy">
+</picture>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fertilizer.html">Fertilizer</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Power Solutions</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="gold.html">Gold Bars</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="logo-display">
+                <h1 class="hero-title">Krause Global Resources & Trade</h1>
+            </div>
+            <p class="hero-slogan">Reliable Partner in Global Commodities & Goods Trading.</p>
+        </div>
+    </section>
+
+    <!-- Description Box -->
+    <section style="background: #0F172A; padding: 2rem 0;">
+        <div class="container">
+            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 16px; max-width: 900px; margin: 0 auto;">
+                <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.8; text-align: center;">
+                    Krause Global Resources & Trade is your specialist for the procurement of large volumes of commodities and goods worldwide. 
+                    We connect suppliers with exclusive institutional networks and focus on long-term partnerships for sustainable trade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commodities & Goods - Compact Grid Section -->
+    <section class="commodities-section" style="padding: 2rem 0; background: #0F172A;">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">Commodities & Goods</h2>
+            <p class="section-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--text-light); font-size: 1rem;">
+                From agricultural products and energy to metals and industrial raw materials.
+            </p>
+
+            <!-- 2-Column Compact Grid -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                
+                <!-- Gas Turbine -->
+                <a href="gasturbine.html" class="slide-in-left product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/Header_Gasturbine.webp" type="image/webp">
+    <img src="images/Header_Gasturbine.png" alt="Gas Turbine" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #0064B4, #0096D4); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cog" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Gas Turbines</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">Siemens, GE, Caterpillar</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(0, 100, 180, 0.3); border-radius: 20px; color: #60A5FA; font-size: 0.7rem;">New & Unused</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Energy / Diesel -->
+                <a href="energy.html" class="slide-in-right product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/diesel.webp" type="image/webp">
+    <img src="images/diesel.jpg" alt="Diesel" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #f59e0b, #ef4444); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-gas-pump" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Energy</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">EN590 Diesel, Jet Fuel, D6</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(245, 158, 11, 0.3); border-radius: 20px; color: #FBBF24; font-size: 0.7rem;">UAE.S / GSO / ISO</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Halal Beef -->
+                <a href="halal-beef.html" class="slide-in-left product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/halal_beef_hero.webp" type="image/webp">
+    <img src="images/halal_beef_hero.png" alt="Halal Beef" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #722F37, #5D001E); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-drumstick-bite" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Halal Beef</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">Certified B2B Products</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(114, 47, 55, 0.4); border-radius: 20px; color: #F87171; font-size: 0.7rem;">SFDA / GSO</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Gold Bars -->
+                <a href="gold.html" class="slide-in-right product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/gold.webp" type="image/webp">
+    <img src="images/gold.jpg" alt="Gold Bars" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #DAA520, #B8860B); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-coins" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Gold Bars</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">999.9 Fineness, 10g - 1kg</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(218, 165, 32, 0.3); border-radius: 20px; color: #FCD34D; font-size: 0.7rem;">LBMA Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Agriculture -->
+                <a href="agriculture.html" class="slide-in-left product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/weizen.webp" type="image/webp">
+    <img src="images/weizen.jpg" alt="Agriculture" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #14b8a6, #0ea5e9); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-seedling" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Agriculture</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">Wheat, Sunflower, Soybean Oil</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(20, 184, 166, 0.3); border-radius: 20px; color: #2DD4BF; font-size: 0.7rem;">B2B Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Metals -->
+                <a href="metals.html" class="slide-in-right product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/Metal_for Homepage_box.webp" type="image/webp">
+    <img src="images/Metal_for Homepage_box.png" alt="Metals" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #DAA520, #B8860B); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-atom" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Metals & Materials</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">High Purity, Graphene, Alloys</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(218, 165, 32, 0.3); border-radius: 20px; color: #FCD34D; font-size: 0.7rem;">99.99% Purity</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Fish & Seafood -->
+                <a href="fish.html" class="slide-in-left product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/Header.Fish.webp" type="image/webp">
+    <img src="images/Header.Fish.jpg" alt="Fish & Seafood" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #0ea5e9, #0284c7); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-fish" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Fish & Seafood</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">Salmon, Cod, Crab, Squid</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(14, 165, 233, 0.3); border-radius: 20px; color: #38bdf8; font-size: 0.7rem;">Wild Caught</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Fertilizer -->
+                <a href="fertilizer.html" class="slide-in-right product-box" style="text-decoration: none; display: block;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative;">
+                        <picture>
+    <source srcset="images/Fertilizer_Hero.webp" type="image/webp">
+    <img src="images/Fertilizer_Hero.png" alt="Fertilizer" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+</picture>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 30%, transparent 50%);"></div>
+                        <div style="position: absolute; top: 12px; left: 12px; width: 40px; height: 40px; background: linear-gradient(135deg, #22c55e, #16a34a); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-flask" style="font-size: 18px; color: white;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 12px; left: 12px; right: 12px;">
+                            <h4 style="font-size: 1.1rem; margin: 0 0 4px 0; color: white;">Fertilizer</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.8rem;">Urea 46%, NPK, DAP</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 8px;">
+                                <span style="padding: 3px 8px; background: rgba(34, 197, 94, 0.3); border-radius: 20px; color: #4ade80; font-size: 0.7rem;">Agricultural Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Contact Box (Centered below grid) -->
+            <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                <a href="contact.html" class="slide-in-left product-box" style="text-decoration: none; display: block; width: 50%; max-width: 600px;">
+                    <div style="background: #1E293B; border-radius: 12px; overflow: hidden; position: relative;">
+                        <picture>
+    <source srcset="images/contact_call.webp" type="image/webp">
+    <img src="images/contact_call.jpg" alt="Contact Us" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
+                        <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 1rem; text-align: center;">
+                            <span style="color: white; font-size: 1.3rem; font-weight: 700; display: block;">Contact</span>
+                            <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem; display: block; margin-top: 0.3rem;">Contact us for detailed specifications, pricing and availability.</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section style="background: var(--light-gray); padding: 5rem 0;">
+        <div class="container">
+            <h2 class="section-title">Latest News & Insights</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Stay informed about the latest developments in global commodity markets and learn more about our expertise.
+            </p>
+            <div class="news-grid">
+                <!-- New News: Halal Beef Portfolio Launch -->
+                <div class="news-card slide-in-left">
+                    <div class="news-image" style="background-image: url('images/halal_beef_hero.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> February 5, 2026</span>
+                        </div>
+                        <span class="news-category">New Product Line</span>
+                        <h3>Halal Beef Portfolio Now Available: SFDA & GSO Certified</h3>
+                        <p>
+                            We are pleased to announce the expansion of our commodity portfolio with a comprehensive halal beef offering. Our new product line includes 20+ processed products, frozen beef options, and half carcasses...
+                        </p>
+                        <a href="halal-beef.html" class="read-more">Explore Halal Beef Portfolio <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- New News: Metals Market Update -->
+                <div class="news-card slide-in-up">
+                    <div class="news-image" style="background-image: url('images/Firefly_Gemini%20Flash_Product-%20High%20purity%20copper%20in%20ingots_Grade-%20C5N%2C%20C6N%20545024.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> February 3, 2026</span>
+                        </div>
+                        <span class="news-category">Industrial Metals</span>
+                        <h3>Copper & Aluminum Market Dynamics: Global Supply Chain Update</h3>
+                        <p>
+                            Global demand for industrial metals remains strong driven by renewable energy infrastructure and electric vehicle production. Our metals portfolio continues to provide reliable access to copper cathodes and aluminum ingots...
+                        </p>
+                        <a href="metals.html" class="read-more">View Metals Portfolio <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- New News: Fertilizer Demand 2026 -->
+                <div class="news-card slide-in-right">
+                    <div class="news-image" style="background-image: url('images/Urea_46.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 28, 2026</span>
+                        </div>
+                        <span class="news-category">Agricultural Inputs</span>
+                        <h3>Global Fertilizer Markets: Nitrogen & NPK Demand Forecast 2026</h3>
+                        <p>
+                            Agricultural producers worldwide are securing fertilizer supply chains ahead of the 2026 planting season. Our expanded fertilizer portfolio includes Urea 46% nitrogen, NPK complexes, DAP, and potash...
+                        </p>
+                        <a href="fertilizer.html" class="read-more">Fertilizer Products <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 1 -->
+                <div class="news-card slide-in-left">
+                    <div class="news-image" style="background-image: url('images/weizen.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 22, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Grain</span>
+                        </div>
+                        <span class="news-category">Agriculture</span>
+                        <h3>Australia Anticipating Large Barley, Wheat Crops</h3>
+                        <p>
+                            Australia is expecting significant wheat and barley harvests in 2026, positioning the country 
+                            as a key supplier in global grain markets...
+                        </p>
+                        <a href="https://www.world-grain.com/articles/22317-australia-anticipating-large-barley-wheat-crops" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 2 -->
+                <div class="news-card slide-in-up">
+                    <div class="news-image" style="background-image: url('images/diesel.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 19, 2026</span>
+                            <span><i class="fas fa-globe"></i> IEA</span>
+                        </div>
+                        <span class="news-category">Energy</span>
+                        <h3>7 Certainties About Energy for This Age of Uncertainty</h3>
+                        <p>
+                            IEA Executive Director outlines key trends shaping global energy markets, including renewable 
+                            expansion and energy security challenges...
+                        </p>
+                        <a href="https://www.iea.org/commentaries/7-certainties-about-energy-for-this-age-of-uncertainty" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coffee news removed per request -->
+
+                <!-- External News Article 3 -->
+                <div class="news-card slide-in-right">
+                    <div class="news-image" style="background-image: url('images/sunflower%20seed%20oil.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 21, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Grain</span>
+                        </div>
+                        <span class="news-category">Agriculture</span>
+                        <h3>Grain Market Review: Oilseeds</h3>
+                        <p>
+                            Comprehensive analysis of global oilseed markets including sunflower and soybean oil prices, 
+                            supply chain dynamics, and trade flows...
+                        </p>
+                        <a href="https://www.world-grain.com/articles/22311-grain-market-review-oilseeds" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- External News Article 4 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> January 15, 2026</span>
+                            <span><i class="fas fa-globe"></i> World Bank</span>
+                        </div>
+                        <span class="news-category">Energy</span>
+                        <h3>Power More With Less: Scaling Up Energy Efficiency</h3>
+                        <p>
+                            World Bank report examines how energy efficiency improvements can drive economic growth while 
+                            enhancing energy security in emerging markets...
+                        </p>
+                        <a href="https://www.worldbank.org/en/topic/energy/publication/power-more-with-less" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Article 6 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> November 1, 2025</span>
+                        </div>
+                        <span class="news-category">Partnership</span>
+                        <h3>Long-term Partnerships: Key to Success</h3>
+                        <p>
+                            Why long-term relationships in commodity trading are more important than short-term profits. 
+                            An insight into our partnership philosophy...
+                        </p>
+                        <a href="https://unctad.org/" target="_blank" rel="noopener" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="news.html" class="btn btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Overview Section -->
+    <section class="quick-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Our Services</h3>
+                    <p>Procurement of large volumes worldwide with focus on long-term partnerships and sustainable processes.</p>
+                    <a href="about.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Clarity, truth, and reliability – our guiding principles for transparent and sustainable trade.</p>
+                    <a href="values.html" class="card-link">Our Principles <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Your reliable partner for global commodity and goods trading with focus on sustainability and long-term partnerships.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="values.html">Our Values</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@krause-global.com</li>
+                        <li><i class="fas fa-phone"></i> +49 152 26872757</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kraków, Poland</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krause Global Resources & Trade. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="impressum.html">Imprint</a>
+                    <a href="datenschutz.html">Privacy</a>
+                    <a href="agb.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Purity Metals & Alloys - B2B Industrial Materials | Krause Global Resources</title>
+    <meta name="description" content="Specialist supplier of high purity metals, precious metal wires, industrial alloys, and advanced materials. Sourcing from certified producers with complete documentation.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/diamand.png" alt="KGRT Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Power Solutions</a></li>
+                        <li><a href="metals.html" class="active">Metals</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/gold.jpg') center/cover; min-height: 500px; display: flex; align-items: center; position: relative;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.5rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); color: white;"><i class="fas fa-atom"></i> High Purity Metals & Advanced Materials</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);"><a href="index.html">Home</a> / Metals</p>
+            <p style="max-width: 800px; margin: 2rem auto 0; font-size: 1.2rem; line-height: 1.8; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); color: white;">
+                Specialist sourcing of high purity metals, precious metal wires, industrial alloys, and advanced materials for research, manufacturing, and industrial applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 class="section-title" style="margin-bottom: 2rem; text-align: center;">Industrial Metals & Materials Portfolio</h2>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text-light); margin-bottom: 2rem; text-align: center;">
+                    Our metals division specializes in sourcing high purity metals, precious metal wires, specialty alloys, and advanced materials. 
+                    We work with certified producers and provide complete quality documentation for all materials.
+                </p>
+
+                <!-- Global Information Cards -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                    <div style="background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(212,175,55,0.05)); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--gold);">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-warehouse" style="color: var(--gold);"></i>
+                            Availability
+                        </h4>
+                        <p style="color: var(--text-light); line-height: 1.7; margin: 0;">
+                            Part of the goods are ready-made and available immediately. Custom manufacturing possible for special requirements and different specifications.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(20,184,166,0.1), rgba(20,184,166,0.05)); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-teal);">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-file-certificate" style="color: var(--accent-teal);"></i>
+                            Documentation
+                        </h4>
+                        <p style="color: var(--text-light); line-height: 1.7; margin: 0;">
+                            Quality certificate and chemical test report from Giredmet Testing Analytical Center, Moscow. Available in Russian and English.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(59,130,246,0.05)); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #3b82f6;">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-certificate" style="color: #3b82f6;"></i>
+                            EU Certification
+                        </h4>
+                        <p style="color: var(--text-light); line-height: 1.7; margin: 0;">
+                            Optional chemical analysis and market value assessment via IGAS Research, Germany. Certification negotiated separately at customer expense.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(139,92,246,0.05)); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #8b5cf6;">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-cogs" style="color: #8b5cf6;"></i>
+                            Custom Manufacturing
+                        </h4>
+                        <p style="color: var(--text-light); line-height: 1.7; margin: 0;">
+                            Special orders possible for wire of different thicknesses from the listed materials, according to customer specifications.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(236,72,153,0.1), rgba(236,72,153,0.05)); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #ec4899;">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-handshake" style="color: #ec4899;"></i>
+                            Commercial Terms
+                        </h4>
+                        <p style="color: var(--text-light); line-height: 1.7; margin: 0;">
+                            All prices and delivery terms are negotiated individually with each customer based on declared volume and transaction procedure.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Source Reference -->
+                <div style="margin-top: 2rem; padding: 1rem; background: rgba(0,0,0,0.02); border-radius: 8px; text-align: center;">
+                    <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">
+                        <i class="fas fa-info-circle" style="color: var(--gold);"></i>
+                        Document Reference: Offer metals dated 03.05.2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A. Offer Metals (Wire Products) Section -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">A. High Purity Metal Wires & Powders</h2>
+                <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+                    Premium quality metal wires with 99.99% purity, available in various diameters. Price per meter, negotiated individually.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                
+                <!-- OM01 - Silver Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #C0C0C0; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Silver wire_Purity- 99.99-_Diameter options- 1 mm, 1.5 mm, 2 mm 638555.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #C0C0C0, #E8E8E8); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-gem" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Silver Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM01</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 1.5mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM02 - Platinum Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #E5E4E2; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Platinum wire_Purity- 99.99-_Diameter options- 1 mm, 1.5 mm, 2 mm 638555.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #E5E4E2, #F0F0F0); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-crown" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Platinum Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM02</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 1.5mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM03 - Palladium Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #CED0DD; transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #CED0DD, #E0E0E8); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-atom" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Palladium Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM03</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 0.25mm, 0.5mm, 1mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM04 - Nickel Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #727472; transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #727472, #A8A8A8); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-link" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Nickel Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM04</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 0.01mm, 0.025mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM05 - Copper Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Copper wire_Purity- 99.99-_Diameter options- 1 mm, 1.5 mm, 2 mm, 2.5 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bolt" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Copper Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM05</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 1.5mm, 2mm, 2.5mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM06 - Aluminum Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #A8A9AD; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Aluminum wire_Purity- 99.99-_Diameter options- 1 mm, 1.5 mm, 2 mm, 2.5 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #A8A9AD, #C4C5C9); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cube" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Aluminum Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM06</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 1.5mm, 2mm, 2.5mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM07 - Titanium Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #878681; transition: transform 0.3s ease;">                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Titanium wire_Purity- 99.99-_Diameter options- 0.5 mm, 1 mm, 2 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #878681, #A5A5A0); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shield-alt" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Titanium Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM07</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 0.5mm, 1mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM08 - Lithium Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #CC99CC; transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #CC99CC, #E6C9E6); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-battery-full" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Lithium Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM08</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 2mm, 3mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM09 - Zinc Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #7C98AB; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Zinc wire_Purity- 99.99-_Diameter options- 1 mm, 2 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #7C98AB, #A3B8C7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-circle" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Zinc Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM09</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM10 - Ruthenium Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #A8A8A8; transition: transform 0.3s ease;">                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Ruthenium wire_Purity- 99.99-_Diameter options- 0.25 mm, 0.5 mm, 1 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #A8A8A8, #C8C8C8); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-star" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Ruthenium Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM10</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 0.25mm, 0.5mm, 1mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM11 - Tantalum Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #5D5D5D; transition: transform 0.3s ease;">                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Tantalum wire_Purity- 99.99-_Diameter options- 0.5 mm, 1 mm, 1.5 mm, 2 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #5D5D5D, #808080); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-circle-notch" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Tantalum Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM11</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 0.5mm, 1mm, 1.5mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM12 - Cobalt Wire -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #0047AB; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Cobalt wire_Purity- 99.99-_Diameter options- 1 mm, 1.5 mm, 2 mm 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0047AB, #4169E1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-magnet" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Cobalt Wire</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM12</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-ruler" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Diameters:</strong> 1mm, 1.5mm, 2mm</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialty Metals & Powders Section -->
+    <section style="padding: 5rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">Specialty Metals, Powders & Isotopes</h2>
+                <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+                    Advanced materials including ultrafine powders, high purity ingots, and specialized isotopes for research and industrial applications.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                
+                <!-- OM13 - Ultrafine Copper Powder -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Ultrafine copper powder (PMU)_Purity- 99.99-_Packaging- PET packaging, in sealed glas 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-vial" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Ultrafine Copper Powder (PMU)</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM13</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-box" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Packaging:</strong> PET, sealed glass flasks</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM14 - High Purity Copper Ingots -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- High purity copper in ingots_Grade- C5N, C6N 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cubes" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">High Purity Copper Ingots</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM14</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Grade:</strong> C5N, C6N</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-weight" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> Ingots</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM15 - High Purity Aluminum Ingots -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #A8A9AD; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- High purity aluminum in ingots_Grade- A5N, A5N5 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #A8A9AD, #C4C5C9); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cubes" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">High Purity Aluminum Ingots</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM15</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Grade:</strong> A5N, A5N5</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-weight" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> Ingots</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM16 - Tungsten Isotope 184 -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #3A3A3A; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Product- Tungsten isotope 184 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #3A3A3A, #5C5C5C); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-atom" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Tungsten Isotope 184</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM16</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-radiation" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Isotope W-184</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-flask" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Application:</strong> Research grade</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM17 - Caesium Metallic -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #FFD700; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Caesium metallic (Cs 133), in quartz ampoules_Purity- 99.995- 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #FFD700, #FFF700); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-vial" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Caesium Metallic Cs-133</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM17</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.995%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-box" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Packaging:</strong> Quartz ampoules</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM18 - Rhodium Powder -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #D4D4D4; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Rhodium powder_Purity- 99.9- minimum 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #D4D4D4, #E8E8E8); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mortar-pestle" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Rhodium Powder</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM18</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.9% min</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-layer-group" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Grades:</strong> RdA 0-2 available</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM19 - Rubidium -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #E0115F; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Rubidium 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #E0115F, #FF1493); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-atom" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Rubidium</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM19</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-flask" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Research grade</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-vial" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> Metallic</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OM20 - Zinc Powder Isotope -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #7C98AB; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_High dispersed zinc powder, isotope Zn 66 906477.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #7C98AB, #A3B8C7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-vial" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">High Dispersed Zinc Powder Zn-66</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">OM20</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-radiation" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Isotope Zn-66</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-microscope" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> High dispersed powder</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials and Alloys Section -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">Materials and Alloys Offer</h2>
+                <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+                    Premium materials and specialized alloys with competitive pricing for industrial applications.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                
+                <!-- MA01 - Copper Ingots 99.999% -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Copper ingots_Product name- Copper ingots_Description- Copper ingot with a chemical p 906477.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cubes" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Copper Ingots</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA01</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.999%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-weight" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> Ingots</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MA02 - Ultrafine Copper Powder (PMU) -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Ultrafine copper powder (PMU)_Purity- 99.99-_Packaging- PET packaging, in sealed glas 545024.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-vial" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Ultrafine Copper Powder (PMU)</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA02</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Ultrafine powder</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-microscope" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Application:</strong> High-tech use</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MA03 - Copper Powder 99.9999% -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #B87333; transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: #f8fafc url('images/Firefly_Gemini Flash_Ultrafine Copper Powder_Lot No.- 008-MX-Cu_Quantity- 8 kg, packed in 4 PE bottles 906477.png') center/cover no-repeat; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #B87333, #CD7F32); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mortar-pestle" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Ultra High Purity Copper Powder</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA03 | Lot No. 008/MX/Cu</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-certificate" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Purity:</strong> 99.9999% (6N)</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-flask" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Grade:</strong> Research/Electronics</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-box" style="color: var(--primary-navy);"></i>
+                            <span style="color: var(--text-light);"><strong>Packaging:</strong> PE bottles</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                    
+                    <!-- IGAS Certificate Details (Collapsible) -->
+                    <details style="margin-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1.5rem;">
+                        <summary style="cursor: pointer; font-weight: 600; color: var(--primary-navy); display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; background: rgba(218,165,32,0.1); border-radius: 8px;">
+                            <i class="fas fa-file-certificate" style="color: var(--gold);"></i>
+                            IGAS Research Certificate Analysis (ICP OES)
+                        </summary>
+                        <div style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                            <p style="margin: 0 0 1rem 0; color: var(--text-light); font-size: 0.95rem;">
+                                <strong>Sample:</strong> Mixed sample taken by IGAS Research<br>
+                                <strong>Measurement Method:</strong> ICP OES (Inductively Coupled Plasma Optical Emission Spectrometry)
+                            </p>
+                            <h5 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1rem;">Impurities Analysis (ppm)</h5>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.5rem; font-size: 0.85rem; color: var(--text-light);">
+                                <div><strong>Ag:</strong> 10</div>
+                                <div><strong>Al:</strong> &lt;0.5</div>
+                                <div><strong>As:</strong> 2</div>
+                                <div><strong>Au:</strong> &lt;1</div>
+                                <div><strong>B:</strong> &lt;0.1</div>
+                                <div><strong>Ba:</strong> &lt;0.1</div>
+                                <div><strong>Bi:</strong> &lt;0.1</div>
+                                <div><strong>Ca:</strong> &lt;1</div>
+                                <div><strong>Cd:</strong> &lt;0.1</div>
+                                <div><strong>Co:</strong> &lt;0.1</div>
+                                <div><strong>Cr:</strong> &lt;0.1</div>
+                                <div><strong>Fe:</strong> &lt;1</div>
+                                <div><strong>Hg:</strong> 1</div>
+                                <div><strong>K:</strong> &lt;1</div>
+                                <div><strong>Li:</strong> &lt;1</div>
+                                <div><strong>Mg:</strong> &lt;0.1</div>
+                                <div><strong>Mn:</strong> &lt;0.1</div>
+                                <div><strong>Mo:</strong> &lt;0.5</div>
+                                <div><strong>Na:</strong> 4</div>
+                                <div><strong>Ni:</strong> &lt;0.5</div>
+                                <div><strong>P:</strong> 7</div>
+                                <div><strong>Pb:</strong> 1</div>
+                                <div><strong>S:</strong> 25</div>
+                                <div><strong>Sb:</strong> 1</div>
+                                <div><strong>Sn:</strong> &lt;0.5</div>
+                                <div><strong>Sr:</strong> &lt;0.5</div>
+                                <div><strong>Ti:</strong> &lt;0.1</div>
+                                <div><strong>V:</strong> &lt;0.1</div>
+                                <div><strong>Zn:</strong> &lt;1</div>
+                                <div><strong>Zr:</strong> &lt;0.1</div>
+                            </div>
+                            <p style="margin: 1rem 0 0 0; padding: 0.75rem; background: rgba(218,165,32,0.1); border-left: 3px solid var(--gold); font-size: 0.9rem; color: var(--text-light);">
+                                <i class="fas fa-info-circle" style="color: var(--gold);"></i> Total impurities: &lt;60 ppm, confirming 99.9999% purity
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- MA04 - Gold-Tungsten Alloy -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid linear-gradient(135deg, #FFD700, #3A3A3A); transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #FFD700, #3A3A3A); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-gem" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Gold-Tungsten Alloy 80/20</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA04</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-balance-scale" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Composition:</strong> Au 80% / W 20%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-cog" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Application:</strong> Specialty alloy</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MA05 - Zinc Powder Isotope 66 -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #7C98AB; transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #7C98AB, #A3B8C7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-vial" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Zinc Powder Isotope 66</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA05</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-radiation" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Isotope Zn-66</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-microscope" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Form:</strong> High dispersed powder</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MA06 - Nanopowders -->
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #9370DB; transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #9370DB, #BA55D3); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-atom" style="font-size: 24px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.4rem; color: var(--primary-navy);">Nanopowders</h3>
+                            <span style="font-size: 0.9rem; color: var(--gold); font-weight: 600;">MA06</span>
+                        </div>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-microscope" style="color: var(--gold);"></i>
+                            <span style="color: var(--text-light);"><strong>Type:</strong> Nanoscale materials</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i class="fas fa-flask" style="color: var(--accent-teal);"></i>
+                            <span style="color: var(--text-light);"><strong>Application:</strong> Advanced research</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphene Section -->
+    <section style="padding: 5rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">Graphene - Advanced Carbon Materials</h2>
+                <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+                    Next-generation carbon nanomaterials with exceptional properties for cutting-edge applications.
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <!-- GR01 - Graphene -->
+                <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-radius: 20px; padding: 3rem; box-shadow: 0 20px 60px rgba(0,0,0,0.15); border: 2px solid var(--gold);">
+                    <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--gold), #FFD700); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);">
+                            <i class="fas fa-layer-group" style="font-size: 32px; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 2rem; color: white;">Graphene</h3>
+                            <span style="font-size: 1rem; color: var(--gold); font-weight: 600;">GR01</span>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                        
+                        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 3px solid var(--gold);">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                                <i class="fas fa-industry" style="color: var(--gold); font-size: 1.5rem;"></i>
+                                <h4 style="margin: 0; color: white; font-size: 1.1rem;">Production Capacity</h4>
+                            </div>
+                            <p style="color: #d4d4d4; margin: 0; font-size: 1.1rem; font-weight: 500;">9-36 tons per month</p>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 3px solid var(--accent-teal);">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                                <i class="fas fa-layer-group" style="color: var(--accent-teal); font-size: 1.5rem;"></i>
+                                <h4 style="margin: 0; color: white; font-size: 1.1rem;">Available Types</h4>
+                            </div>
+                            <p style="color: #d4d4d4; margin: 0; font-size: 1.1rem; font-weight: 500;">Single-layer & Multi-layer</p>
+                        </div>
+
+                    </div>
+
+                    <div style="background: rgba(218, 165, 32, 0.1); border: 1px solid var(--gold); border-radius: 12px; padding: 1.5rem; margin-top: 2rem;">
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <i class="fas fa-info-circle" style="color: var(--gold); font-size: 1.5rem; margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; color: white; font-size: 1.1rem;">Important Advisory</h4>
+                                <p style="color: #d4d4d4; margin: 0; line-height: 1.6;">
+                                    Due to the specialized nature of graphene materials, we recommend conducting a preliminary laboratory study 
+                                    to determine the optimal specifications for your specific application requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Your reliable partner in global commodities trading.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Privacy Policy</a></li>
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Krause Global Resources & Trade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

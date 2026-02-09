@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .custom-production-box {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .custom-production-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.4) !important;
+            background: linear-gradient(135deg, rgba(234, 179, 8, 0.95), rgba(212, 175, 55, 0.85)) !important;
+        }
+        
+        /* Slide-in Animations */
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .slide-in-left.visible,
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -26,17 +54,11 @@
                         <li><a href="commodities.html">Commodities</a></li>
                         <li><a href="fish.html" class="active">Fish &amp; Seafood</a></li>
                         <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Gas Turbine</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="language-switcher">
-                    <i class="fas fa-globe"></i>
-                    <select onchange="window.location.href=this.value" style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 0.3rem 0.5rem; border-radius: 4px; cursor: pointer;">
-                        <option value="../fish.html">DE</option>
-                        <option value="fish.html" selected>EN</option>
-                    </select>
-                </div>
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -49,9 +71,6 @@
         <div class="container" style="position: relative; z-index: 2;">
             <h1 style="font-size: 3.5rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); color: white;"><i class="fas fa-fish"></i> Fish & Seafood</h1>
             <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);"><a href="index.html">Home</a> / Fish & Seafood</p>
-            <p style="max-width: 800px; margin: 2rem auto 0; font-size: 1.2rem; line-height: 1.8; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); color: white;">
-                B2B seafood portfolio for food service, retail, and processing. 
-            </p>
         </div>
     </section>
 
@@ -67,21 +86,17 @@
                 </p>
                 
                 <!-- Custom Production Info -->
-                <div style="display: inline-flex; gap: 0.75rem; padding: 1.25rem 1.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(234, 179, 8, 0.1)); border-left: 4px solid var(--gold); border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-                    <i class="fas fa-cogs" style="color: var(--gold); font-size: 1.4rem; margin-top: 0.2rem;"></i>
-                    <p style="text-align: left; margin: 0; color: var(--text-light); font-size: 1rem; line-height: 1.7;">
-                        <strong style="color: var(--primary-navy); font-size: 1.05rem;">Custom Production:</strong><br>
-                        We produce according to your specifications – from recipe to packaging to private label. Contact us for customized solutions.
-                    </p>
+                <!-- Custom Production Info -->
+                <div class="custom-production-box" style="max-width: 900px; margin: 0 auto 2rem; padding: 2rem 2.5rem; background: linear-gradient(135deg, rgba(234, 179, 8, 0.9), rgba(212, 175, 55, 0.8)); border: 3px solid var(--gold); border-radius: 16px; box-shadow: 0 10px 40px rgba(212, 175, 55, 0.35);">
+                    <div style="text-align: center;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.5rem; font-weight: 700;">Custom Production</h3>
+                        <p style="margin: 0; color: var(--primary-navy); font-size: 1.1rem; line-height: 1.7; opacity: 0.85;">
+                            We produce according to your specifications – from recipe to packaging to private label. Contact us for customized solutions.
+                        </p>
+                    </div>
                 </div>
 
-                <div style="display: inline-flex; gap: 0.75rem; padding: 1rem 1.5rem; background: rgba(20, 184, 166, 0.1); border-left: 4px solid var(--accent-teal); border-radius: 8px; margin-top: 1rem;">
-                    <i class="fas fa-info-circle" style="color: var(--accent-teal); font-size: 1.3rem; margin-top: 0.2rem;"></i>
-                    <p style="text-align: left; margin: 0; color: var(--text-light); font-size: 0.95rem;">
-                        <strong style="color: var(--primary-navy);">Price note:</strong> 
-                        Prices on this website are provided as purchase-price guidance and are finally confirmed in the quotation.
-                    </p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -90,11 +105,6 @@
     <section id="pricing-indications" style="padding: 4.5rem 0; background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);">
         <div class="container">
             <div style="max-width: 1100px; margin: 0 auto;">
-                <h2 class="section-title" style="margin-bottom: 0.75rem;">Indicative Pricing (non-binding)</h2>
-                <p style="text-align: center; max-width: 900px; margin: 0 auto 2.5rem; color: var(--text-light); line-height: 1.8;">
-                    Reference prices based on current supplier information. Prices are typically quoted by port/origin and generally <strong>exclude delivery</strong>.
-                    Final pricing is confirmed in the quotation.
-                </p>
 
                 <div style="background: white; border-radius: 18px; padding: 1.75rem; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06);">
                     <div style="overflow-x: auto;">
@@ -110,85 +120,70 @@
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Norwegian Cod (Cod Fish)</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Wild</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€16 per kg</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Saithe (Saida)</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Fillet pieces, boneless and skinless, wild (pieces 30–55 g)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€8 per kg</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Pink Salmon (Gorbusha)</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Headless, gutted, wild</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€5.5 per fish</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Norwegian Salmon</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Farmed, headless</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€6.8 per fish</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Norwegian Salmon</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Farmed, with head</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€6 per fish</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Herring (Salaka)</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Wild</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€1.3 per kg</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Sprat (Kilka)</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Wild</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€1.2 per kg</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Beluga Caviar</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Preserved (tins 50 g, 100 g, 250 g or 500 g)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€650</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Cod Liver</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Wild, in glass jars (500 g jar)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€15</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Cod Liver</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Wild, in glass jars (350 g jar)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€11</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Crab</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Preserved (350 g jar)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€55</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Crab</td>
                                     <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);">Preserved (500 g jar)</td>
-                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>€85</strong></td>
+                                    <td style="padding: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.06);"><strong>On Request</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 0.9rem;">Keta Caviar</td>
                                     <td style="padding: 0.9rem;">-</td>
-                                    <td style="padding: 0.9rem;"><strong>€120 per kg</strong></td>
+                                    <td style="padding: 0.9rem;"><strong>On Request</strong></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-
-                    <div style="margin-top: 1.5rem; display: grid; gap: 0.8rem; color: var(--text-light);">
-                        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                            <i class="fas fa-ship" style="color: var(--accent-teal); margin-top: 0.2rem;"></i>
-                            <p style="margin: 0; line-height: 1.7;">Prices may be quoted by different ports/origins and <strong>exclude delivery</strong>. Transport is calculated separately.</p>
-                        </div>
-                        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                            <i class="fas fa-coins" style="color: var(--gold); margin-top: 0.2rem;"></i>
-                            <p style="margin: 0; line-height: 1.7;">Many prices are based on <strong>NOK</strong> and may change weekly. Final pricing is confirmed at order; expected variation about <strong>±3%</strong>.</p>
-                        </div>
-                        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                            <i class="fas fa-file-signature" style="color: #3b82f6; margin-top: 0.2rem;"></i>
-                            <p style="margin: 0; line-height: 1.7;">Wild-caught/export items may require licenses and documentation. Availability and details are confirmed in the quotation.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -207,7 +202,7 @@
                     <div style="padding: 2rem;">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--gold), #eab308); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-crown" style="font-size: 22px; color: white;"></i>
+                                <i class="fas fa-star" style="font-size: 22px; color: white;"></i>
                             </div>
                             <h3 style="margin: 0; font-size: 1.5rem; color: var(--primary-navy);">Delicacies & Preserves</h3>
                         </div>
@@ -562,13 +557,13 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Gadus morhua</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Loin</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Loin</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
                             </div>
                         </div>
 
@@ -598,12 +593,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Melanogrammus aeglefinus</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
                             </div>
                         </div>
 
@@ -620,9 +615,9 @@
                     </div>
                 </div>
 
-                <!-- Köhler -->
+                <!-- Saithe (Köhler) -->
                 <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.1);">
-                    <div style="height: 220px; background: url('../images/Köhler.jpg') center/cover; cursor: pointer;" onclick="openImageModal('../images/Köhler.jpg')"></div>
+                    <div style="height: 220px; background: url('../images/Koehler.jpg') center/cover; cursor: pointer;" onclick="openImageModal('../images/Koehler.jpg')"></div>
                     <div style="padding: 2rem;">
                         <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-navy);">
                             <i class="fas fa-fish" style="color: #3b82f6; margin-right: 0.5rem;"></i>
@@ -630,12 +625,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Pollachius virens</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
                             </div>
                         </div>
 
@@ -654,7 +649,7 @@
 
                 <!-- Pollock -->
                 <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.1);">
-                    <div style="height: 220px; background: url('../images/Pollachius pollachiu.jpg') center/cover; cursor: pointer;" onclick="openImageModal('../images/Pollachius pollachiu.jpg')"></div>
+                    <div style="height: 220px; background: url('../images/pollock%20.jpg') center/cover; cursor: pointer;" onclick="openImageModal('../images/pollock%20.jpg')"></div>
                     <div style="padding: 2rem;">
                         <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-navy);">
                             <i class="fas fa-fish" style="color: #3b82f6; margin-right: 0.5rem;"></i>
@@ -662,12 +657,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Pollachius pollachius</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Loin</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Loin</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
                             </div>
                         </div>
 
@@ -694,12 +689,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Clupea harengus</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
                             </div>
                         </div>
 
@@ -726,11 +721,11 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Scomber scombrus</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
                             </div>
                         </div>
 
@@ -757,12 +752,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Sebastes spp.</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
                             </div>
                         </div>
 
@@ -789,12 +784,12 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Hippoglossus hippoglossus</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Steak</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Steak</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
                             </div>
                         </div>
 
@@ -824,11 +819,11 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.25rem; font-size: 0.95rem;">Diverse Arten</p>
                         
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available forms:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
                             </div>
                         </div>
 
@@ -874,8 +869,8 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Gadus macrocephalus</p>
                         
-                        <div style="background: #f0f9ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #0891b2;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -888,31 +883,31 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available states:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available states:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Sea Frozen
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     IQF
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Blockfrozen
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Loin</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Loin</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
                             </div>
                         </div>
 
@@ -937,8 +932,8 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Theragra chalcogramma</p>
                         
-                        <div style="background: #f0f9ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #0891b2;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -950,31 +945,31 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available states:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available states:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Sea Frozen
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     IQF
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Blockfrozen
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Loin</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Surimi Grade</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Loin</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Surimi Grade</span>
                             </div>
                         </div>
 
@@ -999,8 +994,8 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Trachurus japonicus</p>
                         
-                        <div style="background: #f0f9ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #0891b2;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -1013,30 +1008,30 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available states:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available states:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Sea Frozen
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     IQF
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
-                                    <i class="fas fa-snowflake" style="color: #0891b2; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
+                                    <i class="fas fa-snowflake" style="color: #14b8a6; margin-right: 0.3rem;"></i>
                                     Blockfrozen
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">HG (Head & Gut)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">HG (Head & Gut)</span>
                             </div>
                         </div>
 
@@ -1095,7 +1090,7 @@
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Oncorhynchus keta</p>
                         
                         <div style="background: #fff7ed; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #f97316;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -1108,28 +1103,28 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Size ranges:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     4 - 5 lbs
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     5 - 6 lbs
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
                                     6+ lbs
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet (skin on/off)</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole (HG)</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Steak</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet (skin on/off)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole (HG)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Steak</span>
                             </div>
                         </div>
 
@@ -1154,41 +1149,41 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Oncorhynchus nerka</p>
                         
-                        <div style="background: #fef2f2; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #ef4444;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
+                                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">FAO Area:</span>
                                     <strong style="color: #ef4444;">FAO 61, 67 (Pacific)</strong>
                                 </div>
                                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                                    <span style="padding: 0.3rem 0.75rem; background: white; border: 1px solid #fecaca; border-radius: 6px; font-size: 0.8rem; color: #ef4444;">Gillnet</span>
-                                    <span style="padding: 0.3rem 0.75rem; background: white; border: 1px solid #fecaca; border-radius: 6px; font-size: 0.8rem; color: #ef4444;">Purse Seine</span>
+                                    <span style="padding: 0.3rem 0.75rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; font-size: 0.8rem; color: white;">Gillnet</span>
+                                    <span style="padding: 0.3rem 0.75rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; font-size: 0.8rem; color: white;">Purse Seine</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Size ranges:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     4 - 5 lbs
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     5 - 6 lbs
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
                                     6+ lbs
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet (skin on/off)</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole (HG)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet (skin on/off)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole (HG)</span>
                             </div>
                         </div>
 
@@ -1213,38 +1208,38 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Oncorhynchus gorbuscha</p>
                         
-                        <div style="background: #fdf2f8; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #ec4899;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
+                                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">FAO Area:</span>
                                     <strong style="color: #ec4899;">FAO 61 (NW Pacific)</strong>
                                 </div>
                                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                                    <span style="padding: 0.3rem 0.75rem; background: white; border: 1px solid #fbcfe8; border-radius: 6px; font-size: 0.8rem; color: #ec4899;">Gillnet</span>
-                                    <span style="padding: 0.3rem 0.75rem; background: white; border: 1px solid #fbcfe8; border-radius: 6px; font-size: 0.8rem; color: #ec4899;">Purse Seine</span>
+                                    <span style="padding: 0.3rem 0.75rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; font-size: 0.8rem; color: white;">Gillnet</span>
+                                    <span style="padding: 0.3rem 0.75rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; font-size: 0.8rem; color: white;">Purse Seine</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Size ranges:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 600;">Size ranges:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     3 - 4 lbs
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     4 - 5 lbs
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Canned</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Canned</span>
                             </div>
                         </div>
 
@@ -1271,7 +1266,7 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Salmo salar</p>
                         
-                        <div style="background: #eff6ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #3b82f6;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Origin:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -1285,28 +1280,28 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Size ranges:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     3 - 4 kg
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
                                     4 - 5 kg
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
                                     5 - 6 kg
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Filet (skin on/off)</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Portions</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole (HG)</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Smoked</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Filet (skin on/off)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Portions</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole (HG)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Smoked</span>
                             </div>
                         </div>
 
@@ -1362,8 +1357,8 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Dosidicus gigas</p>
                         
-                        <div style="background: #faf5ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #8b5cf6;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -1376,44 +1371,44 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-cut" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-cut" style="color: #a78bfa; margin-right: 0.3rem;"></i>
                                     Fillets
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-cut" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-cut" style="color: #a78bfa; margin-right: 0.3rem;"></i>
                                     Tentacles
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-cut" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-cut" style="color: #a78bfa; margin-right: 0.3rem;"></i>
                                     Tubes
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem;">
-                                    <i class="fas fa-cut" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white;">
+                                    <i class="fas fa-cut" style="color: #a78bfa; margin-right: 0.3rem;"></i>
                                     Wings
                                 </div>
-                                <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 0.85rem; grid-column: span 2;">
-                                    <i class="fas fa-cut" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
+                                <div style="padding: 0.6rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; text-align: center; font-size: 0.85rem; color: white; grid-column: span 2;">
+                                    <i class="fas fa-cut" style="color: #a78bfa; margin-right: 0.3rem;"></i>
                                     Rings
                                 </div>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available states:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available states:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-snowflake" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
                                     Sea Frozen
                                 </span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-snowflake" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
                                     IQF
                                 </span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-snowflake" style="color: #8b5cf6; margin-right: 0.3rem;"></i>
                                     Blockfrozen
                                 </span>
@@ -1447,7 +1442,7 @@
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Paralithodes camtschaticus</p>
                         
                         <div style="background: #fef2f2; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #ef4444;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -1460,7 +1455,7 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
                             <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Size classes:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="padding: 0.6rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px;">
@@ -1484,29 +1479,29 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Whole</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Clusters</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Legs</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Sections</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Meat (picked)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Whole</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Clusters</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Legs</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Sections</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Meat (picked)</span>
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available states:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available states:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-snowflake" style="color: #ef4444; margin-right: 0.3rem;"></i>
                                     Blast Frozen
                                 </span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-snowflake" style="color: #ef4444; margin-right: 0.3rem;"></i>
                                     Sea Frozen
                                 </span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">
                                     <i class="fas fa-jar" style="color: #ef4444; margin-right: 0.3rem;"></i>
                                     Canned
                                 </span>
@@ -1534,8 +1529,8 @@
                         </h3>
                         <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Chionoecetes opilio</p>
                         
-                        <div style="background: #eff6ff; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border-left: 3px solid #3b82f6;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Fishing area & methods:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Fishing area & methods:</h4>
                             <div style="display: grid; gap: 0.5rem;">
                                 <div style="display: flex; justify-content: space-between; align-items: center;">
                                     <span style="color: var(--text-light); font-size: 0.9rem;">FAO Area:</span>
@@ -1547,13 +1542,13 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem;">
-                            <h4 style="font-size: 0.95rem; color: var(--primary-navy); margin-bottom: 0.75rem; font-weight: 600;">Available cuts:</h4>
+                        <div style="background: rgba(255, 255, 255, 0.08); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.15);">
+                            <h4 style="font-size: 0.95rem; color: white; margin-bottom: 0.75rem; font-weight: 700;">Available cuts:</h4>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Clusters</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Legs</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Sections</span>
-                                <span style="padding: 0.4rem 0.85rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">Meat (picked)</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Clusters</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Legs</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Sections</span>
+                                <span style="padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 0.85rem; color: white;">Meat (picked)</span>
                             </div>
                         </div>
 
@@ -1589,7 +1584,7 @@
     </div>
 
     <!-- Quality & Documentation -->
-    <div style="padding: 5rem 0; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);">
+    <div style="padding: 5rem 0; background: linear-gradient(135deg, rgba(234, 179, 8, 0.25), rgba(212, 175, 55, 0.2));">
         <div class="container">
             <div style="text-align: center; margin-bottom: 4rem;">
                 <div style="display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
@@ -1605,79 +1600,79 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                 <!-- Health Certificate -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #14b8a6;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #14b8a6;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(20, 184, 166, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(20, 184, 166, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-notes-medical" style="font-size: 24px; color: #14b8a6;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">Health Certificate</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">Health Certificate</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         Veterinary Health Certificate according to EU requirements for import of fish and seafood products. Confirms food safety and compliance with all hygiene standards. Issued by officially recognized veterinary authorities of the country of origin.
                     </p>
                 </div>
 
                 <!-- Catch Certificate -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #3b82f6;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #3b82f6;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(59, 130, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(59, 130, 246, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-anchor" style="font-size: 24px; color: #3b82f6;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">Catch Certificate</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">Catch Certificate</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         Catch Certificate for documentation of traceability and combating illegal fishing (IUU). Contains information on fishing area (FAO Area), fishing method, fishing vessel and catch date. Mandatory for EU import according to IUU regulation.
                     </p>
                 </div>
 
                 <!-- Certificate of Origin -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #8b5cf6;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #8b5cf6;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(139, 92, 246, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-globe" style="font-size: 24px; color: #8b5cf6;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">Certificate of Origin</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">Certificate of Origin</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         Certificate of Origin (C/O) for customs clearance and preferential trade. Confirms the country of origin of goods and enables customs preferences under applicable trade agreements. Issued by chambers of commerce and industry or government agencies.
                     </p>
                 </div>
 
                 <!-- Certificate of Analysis -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #f59e0b;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #f59e0b;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(245, 158, 11, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-flask" style="font-size: 24px; color: #f59e0b;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">Certificate of Analysis</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">Certificate of Analysis</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         Laboratory analysis certificate (COA) with microbiological and chemical test results. Testing for heavy metals, histamine, salmonella, listeria and other parameters according to EU regulation 2073/2005. Performed by accredited laboratories.
                     </p>
                 </div>
 
                 <!-- CITES for Caviar -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #d4af37;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #d4af37;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(212, 175, 55, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(212, 175, 55, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-shield-alt" style="font-size: 24px; color: #d4af37;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">CITES for Caviar</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">CITES for Caviar</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         CITES permit for sturgeon products (caviar) according to Washington Convention on International Trade in Endangered Species. Mandatory for all sturgeon species (Appendix II). Documents legal origin from certified aquaculture. Import and export only possible with valid CITES certificate.
                     </p>
                 </div>
 
                 <!-- Sustainablekeitszertifikate -->
-                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid #10b981;">
+                <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-top: 4px solid #10b981;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-                        <div style="width: 50px; height: 50px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 50px; height: 50px; background: rgba(16, 185, 129, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-leaf" style="font-size: 24px; color: #10b981;"></i>
                         </div>
-                        <h3 style="font-size: 1.25rem; margin: 0; color: var(--primary-navy);">Sustainability Certificates</h3>
+                        <h3 style="font-size: 1.25rem; margin: 0; color: white;">Sustainability Certificates</h3>
                     </div>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.95rem;">
                         MSC (Marine Stewardship Council) for wild-caught, ASC (Aquaculture Stewardship Council) and BAP (Best Aquaculture Practices) for aquaculture. Confirm sustainable fisheries and responsible farming. Availability depending on product and origin.
                     </p>
                 </div>
@@ -1700,13 +1695,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: linear-gradient(135deg, rgba(20, 184, 166, 0.05), rgba(59, 130, 246, 0.05)); border-radius: 16px;">
-                <h4 style="font-size: 1.2rem; color: var(--primary-navy); margin-bottom: 1rem;">Quality through experience</h4>
-                <p style="color: var(--text-light); max-width: 800px; margin: 0 auto; line-height: 1.7; font-size: 1rem;">
-                    For more than 30 years, we have been organizing the import of seafood products with complete documentation for the European market. Our partners are certified facilities with all necessary approvals for EU export. If you have questions about documentation, we are happy to assist you.
-                </p>
             </div>
         </div>
     </div>
@@ -1732,23 +1720,23 @@
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <!-- Sea Frozen -->
-                    <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-radius: 16px; padding: 2rem; border: 2px solid #0ea5e9; box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; border: 2px solid #0ea5e9; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
-                            <div style="width: 70px; height: 70px; background: white; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(14, 165, 233, 0.2);">
+                            <div style="width: 70px; height: 70px; background: rgba(14, 165, 233, 0.2); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(14, 165, 233, 0.2);">
                                 <i class="fas fa-water" style="font-size: 32px; color: #0ea5e9;"></i>
                             </div>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Sea Frozen</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Sea Frozen</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
                             Direct freezing on the fishing vessel immediately after catch.
                         </p>
-                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem;">
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #e0f2fe;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #0ea5e9; margin-right: 0.5rem;"></i>
                                     Temperature: -18°C or colder
                                 </li>
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #e0f2fe;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #0ea5e9; margin-right: 0.5rem;"></i>
                                     Maximum freshness
                                 </li>
@@ -1761,23 +1749,23 @@
                     </div>
 
                     <!-- Blast Frozen -->
-                    <div style="background: linear-gradient(135deg, #faf5ff, #f3e8ff); border-radius: 16px; padding: 2rem; border: 2px solid #a855f7; box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15);">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; border: 2px solid #a855f7; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
-                            <div style="width: 70px; height: 70px; background: white; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(168, 85, 247, 0.2);">
+                            <div style="width: 70px; height: 70px; background: rgba(168, 85, 247, 0.2); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(168, 85, 247, 0.2);">
                                 <i class="fas fa-wind" style="font-size: 32px; color: #a855f7;"></i>
                             </div>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Blast Frozen</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Blast Frozen</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
                             Blast freezing on land in special freezing tunnels with high air velocity.
                         </p>
-                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem;">
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #f3e8ff;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #a855f7; margin-right: 0.5rem;"></i>
                                     Rapid freezing
                                 </li>
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #f3e8ff;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #a855f7; margin-right: 0.5rem;"></i>
                                     Cell structure preserved
                                 </li>
@@ -1790,23 +1778,23 @@
                     </div>
 
                     <!-- IQF (Individually Quick Frozen) -->
-                    <div style="background: linear-gradient(135deg, #f0fdfa, #ccfbf1); border-radius: 16px; padding: 2rem; border: 2px solid #14b8a6; box-shadow: 0 10px 30px rgba(20, 184, 166, 0.15);">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; border: 2px solid #14b8a6; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
-                            <div style="width: 70px; height: 70px; background: white; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(20, 184, 166, 0.2);">
+                            <div style="width: 70px; height: 70px; background: rgba(20, 184, 166, 0.2); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(20, 184, 166, 0.2);">
                                 <i class="fas fa-snowflake" style="font-size: 32px; color: #14b8a6;"></i>
                             </div>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">IQF</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">IQF</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
                             Individually Quick Frozen - each piece frozen individually, not stuck together.
                         </p>
-                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem;">
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #ccfbf1;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #14b8a6; margin-right: 0.5rem;"></i>
                                     Individually removable
                                 </li>
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #ccfbf1;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #14b8a6; margin-right: 0.5rem;"></i>
                                     Portionable without thawing
                                 </li>
@@ -1819,23 +1807,23 @@
                     </div>
 
                     <!-- Block Frozen -->
-                    <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 16px; padding: 2rem; border: 2px solid #f59e0b; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; border: 2px solid #f59e0b; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
-                            <div style="width: 70px; height: 70px; background: white; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);">
+                            <div style="width: 70px; height: 70px; background: rgba(245, 158, 11, 0.2); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);">
                                 <i class="fas fa-cube" style="font-size: 32px; color: #f59e0b;"></i>
                             </div>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Block Frozen</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Block Frozen</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; text-align: center; font-size: 0.95rem; margin-bottom: 1rem;">
                             Block-frozen goods in standardized formats, space-saving and stackable.
                         </p>
-                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-light); font-size: 0.9rem;">
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #fde68a;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #f59e0b; margin-right: 0.5rem;"></i>
                                     Format: 7.5 kg blocks
                                 </li>
-                                <li style="padding: 0.4rem 0; border-bottom: 1px solid #fde68a;">
+                                <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                                     <i class="fas fa-check" style="color: #f59e0b; margin-right: 0.5rem;"></i>
                                     Storage-optimized
                                 </li>
@@ -1855,67 +1843,67 @@
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <!-- Glas (für Kaviar & Canned) -->
-                    <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 4px solid #d4af37;">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-top: 4px solid #d4af37;">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
                             <i class="fas fa-jar" style="font-size: 48px; color: #d4af37;"></i>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Glas</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Glass</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
                             Premium packaging for delicacies such as Beluga Caviar and Cod Liver. Vacuum-sealed or pasteurized.
                         </p>
-                        <div style="background: #fafaf9; padding: 1rem; border-radius: 10px;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
                             <div style="margin-bottom: 0.75rem;">
-                                <strong style="color: var(--primary-navy); font-size: 0.9rem;">Typische Größen:</strong>
+                                <strong style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Typical sizes:</strong>
                             </div>
                             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">50g</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">125g</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">250g</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">350g</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">500g</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">50g</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">125g</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">250g</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">350g</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">500g</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Karton (Standard) -->
-                    <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 4px solid #3b82f6;">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-top: 4px solid #3b82f6;">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
                             <i class="fas fa-box" style="font-size: 48px; color: #3b82f6;"></i>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Karton</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
-                            Standardverpackung für gefrorene Filets, Loins und Portions. Innenfolie gegen Gefrierbrand, außen bedruckter Karton.
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Carton</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
+                            Standard packaging for frozen fillets, loins and portions. Inner film against freezer burn, outer printed carton.
                         </p>
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 10px;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
                             <div style="margin-bottom: 0.75rem;">
-                                <strong style="color: var(--primary-navy); font-size: 0.9rem;">Typische Größen:</strong>
+                                <strong style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Typical sizes:</strong>
                             </div>
                             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">5 kg</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">7,5 kg</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">10 kg</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">15 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">5 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">7.5 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">10 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">15 kg</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Box / Kiste (Bulk) -->
-                    <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 4px solid #14b8a6;">
+                    <div style="background: #1a1a2e; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-top: 4px solid #14b8a6;">
                         <div style="text-align: center; margin-bottom: 1.25rem;">
                             <i class="fas fa-boxes" style="font-size: 48px; color: #14b8a6;"></i>
                         </div>
-                        <h4 style="font-size: 1.3rem; color: var(--primary-navy); text-align: center; margin-bottom: 1rem;">Box / Kiste</h4>
-                        <p style="color: var(--text-light); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
-                            Großgebinde für whole fish, King Crab Clusters und Bulk-Ware. Styropor-Boxen oder Wachskartons mit Eis/Gelpack.
+                        <h4 style="font-size: 1.3rem; color: white; text-align: center; margin-bottom: 1rem;">Box / Crate</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
+                            Bulk packaging for whole fish, King Crab Clusters and bulk goods. Styrofoam boxes or wax cartons with ice/gel packs.
                         </p>
-                        <div style="background: #f0fdfa; padding: 1rem; border-radius: 10px;">
+                        <div style="background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
                             <div style="margin-bottom: 0.75rem;">
-                                <strong style="color: var(--primary-navy); font-size: 0.9rem;">Typische Größen:</strong>
+                                <strong style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Typical sizes:</strong>
                             </div>
                             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">20 kg</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">25 kg</span>
-                                <span style="padding: 0.4rem 0.75rem; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.85rem;">30 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">20 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">25 kg</span>
+                                <span style="padding: 0.4rem 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem; color: white;">30 kg</span>
                             </div>
                         </div>
                     </div>
@@ -1923,51 +1911,51 @@
             </div>
 
             <!-- Logistik-Informationen -->
-            <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 2.5rem; border-radius: 16px; border-left: 5px solid #3b82f6;">
-                <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1.5rem; text-align: center;">
+            <div style="background: #1a1a2e; padding: 2.5rem; border-radius: 16px; border-left: 5px solid #3b82f6; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                <h3 style="font-size: 1.5rem; color: white; margin-bottom: 1.5rem; text-align: center;">
                     <i class="fas fa-info-circle" style="color: #3b82f6; margin-right: 0.75rem;"></i>
                     Cold-chain logistics & delivery terms
                 </h3>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                    <div style="background: white; padding: 1.5rem; border-radius: 12px;">
-                        <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
+                    <div style="background: #1a1a2e; padding: 1.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                        <h4 style="font-size: 1.1rem; color: white; margin-bottom: 0.75rem;">
                             <i class="fas fa-thermometer-half" style="color: #3b82f6; margin-right: 0.5rem;"></i>
                             Temperature monitoring
                         </h4>
-                        <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.9rem;">
-                            Durchgängige Temperaturkontrolle von -18°C oder kälter während Transport und Lagerung. Temperaturlogger dokumentieren die komplette Kühlkette.
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.9rem;">
+                            Continuous temperature control at -18°C or colder during transport and storage. Temperature loggers document the complete cold chain.
                         </p>
                     </div>
 
-                    <div style="background: white; padding: 1.5rem; border-radius: 12px;">
-                        <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
+                    <div style="background: #1a1a2e; padding: 1.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                        <h4 style="font-size: 1.1rem; color: white; margin-bottom: 0.75rem;">
                             <i class="fas fa-truck-loading" style="color: #3b82f6; margin-right: 0.5rem;"></i>
                             Delivery options
                         </h4>
-                        <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.9rem;">
-                            Container (FCL/LCL), Kühl-LKW für europäische Lieferungen, Express-Luftfracht für Kaviar und Premium-Produkte. Incoterms: FOB, CIF, DAP.
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.9rem;">
+                            Container (FCL/LCL), refrigerated trucks for European deliveries, express air freight for caviar and premium products. Incoterms: FOB, CIF, DAP.
                         </p>
                     </div>
 
-                    <div style="background: white; padding: 1.5rem; border-radius: 12px;">
-                        <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
+                    <div style="background: #1a1a2e; padding: 1.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                        <h4 style="font-size: 1.1rem; color: white; margin-bottom: 0.75rem;">
                             <i class="fas fa-clock" style="color: #3b82f6; margin-right: 0.5rem;"></i>
                             Lead times
                         </h4>
-                        <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.9rem;">
-                            Seefracht: 3-6 Wochen je nach Herkunft. Luftfracht: 2-5 Tage. Europa Landweg: 2-7 Tage. Lagerzeiten und Vorlaufzeiten auf Anfrage.
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.9rem;">
+                            Sea freight: 3-6 weeks depending on origin. Air freight: 2-5 days. Europe road: 2-7 days. Storage and lead times on request.
                         </p>
                     </div>
                 </div>
 
-                <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #dbeafe;">
-                    <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
+                <div style="background: #1a1a2e; padding: 1.75rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 2px solid rgba(59, 130, 246, 0.3);">
+                    <h4 style="font-size: 1.1rem; color: white; margin-bottom: 0.75rem;">
                         <i class="fas fa-shipping-fast" style="color: #3b82f6; margin-right: 0.5rem;"></i>
                         MOQ & minimum order quantities
                     </h4>
-                    <p style="color: var(--text-light); line-height: 1.7; margin: 0; font-size: 0.9rem;">
-                        Mindestbestellmengen variieren je nach Produkt und Packaging. Container-Ladungen (FCL) bieten die besten Konditionen. LCL-Konsolidierung ab 500 kg möglich. Express-Lieferungen für Kaviar ab 5 kg. Genaue MOQ-Angaben erhalten Sie im individuellen Angebot.
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; font-size: 0.9rem;">
+                        Minimum order quantities vary by product and packaging. Full container loads (FCL) offer the best conditions. LCL consolidation from 500 kg possible. Express deliveries for caviar from 5 kg. Exact MOQ details will be included in your individual offer.
                     </p>
                 </div>
             </div>
@@ -2263,10 +2251,10 @@
     </div>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" style="background: #0369a1;">
         <div class="container">
             <h2>Interested in our seafood portfolio?</h2>
-            <p>Kontaktieren Sie uns für detaillierte Product Specificationen, Verfügbarkeit und individuelle Angebote.</p>
+            <p>Contact us for detailed product specifications, availability and individual offers.</p>
             <a href="contact.html" class="btn btn-primary">Send inquiry</a>
         </div>
     </section>
@@ -2333,6 +2321,28 @@
             if (event.key === 'Escape') {
                 closeImageModal();
             }
+        });
+        
+        // Slide-in animation observer
+        const slideObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        // Auto-apply slide animations to fish product cards
+        document.querySelectorAll('div[style*="border-radius: 20px"][style*="box-shadow"]').forEach((el, index) => {
+            if (index % 2 === 0) {
+                el.classList.add('slide-in-left');
+            } else {
+                el.classList.add('slide-in-right');
+            }
+            slideObserver.observe(el);
         });
     </script>
 

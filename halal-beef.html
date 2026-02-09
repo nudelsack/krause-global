@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal Beef Portfolio | Krause Global Resources</title>
+    <meta name="description" content="Certified halal beef cuts, chilled and frozen, for international B2B supply chains.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section-title::after {
+            background: #b33a3a !important;
+        }
+        .btn-primary {
+            background: #b33a3a !important;
+            border-color: #b33a3a !important;
+        }
+        .btn-primary:hover {
+            background: #8a2d2d !important;
+            border-color: #8a2d2d !important;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #b33a3a 0%, #8a2d2d 100%) !important;
+        }
+        
+        /* === ALLE ANIMATIONEN === */
+        
+        /* 1. Fade + Zoom */
+        @keyframes fadeZoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* 2. Slide Up */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 3. Slide Left */
+        @keyframes slideLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* 4. Flip 3D */
+        @keyframes flip3d {
+            0% {
+                opacity: 0;
+                transform: perspective(600px) rotateY(-90deg);
+            }
+            100% {
+                opacity: 1;
+                transform: perspective(600px) rotateY(0deg);
+            }
+        }
+        
+        /* 5. Bounce */
+        @keyframes bounce {
+            0% {
+                opacity: 0;
+                transform: translateY(-60px) scale(0.8);
+            }
+            60% {
+                opacity: 1;
+                transform: translateY(15px) scale(1.05);
+            }
+            80% {
+                transform: translateY(-8px) scale(0.98);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        /* Basis-State für alle Boxen */
+        .product-box {
+            opacity: 0;
+        }
+        
+        /* Animations-Klassen */
+        .product-box.anim-zoom {
+            animation: fadeZoomIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        .product-box.anim-slide-up {
+            animation: slideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        .product-box.anim-slide-left {
+            animation: slideLeft 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        .product-box.anim-flip {
+            animation: flip3d 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+        .product-box.anim-bounce {
+            animation: bounce 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="KGRT Logo" loading="lazy">
+</picture>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fertilizer.html">Fertilizer</a></li>
+                        <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html" class="active">Halal Beef</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="gasturbine.html">Power Solutions</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="gold.html">Gold Bars</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: url('images/halal_beef_hero.png') center/cover; min-height: 480px; display: flex; align-items: center; position: relative;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.4rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); color: white;"><i class="fas fa-drumstick-bite"></i> Halal Beef Portfolio</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);"><a href="index.html">Home</a> / Halal Beef</p>
+        </div>
+    </section>
+
+    <!-- About Our Supplier -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="max-width: 960px; margin: 0 auto;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">About Our Beef Supplier</h2>
+                <p style="font-size: 1.05rem; line-height: 1.85; color: var(--text-light); margin-bottom: 2rem; text-align: center;">
+                    A Polish company with over 30 years of experience and one of Europe's largest beef producers. With a well-developed logistics and transportation network, the company exports its products to over 60 countries on three continents – Europe, Africa, and Asia.
+                </p>
+                <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 2rem;">
+                    <div style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 1.75rem; border: 1px solid rgba(0,0,0,0.05);">
+                        <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.25rem;"><i class="fas fa-industry" style="color: #b33a3a; margin-right: 0.5rem;"></i>Production Capacity</h3>
+                        <p style="margin: 0; color: var(--text-light); line-height: 1.7;">
+                            Modern production and breeding facilities can process up to 1,400 cattle daily, flexibly fulfilling large orders.
+                        </p>
+                    </div>
+                    <div style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 1.75rem; border: 1px solid rgba(0,0,0,0.05);">
+                        <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.25rem;"><i class="fas fa-certificate" style="color: #b33a3a; margin-right: 0.5rem;"></i>Quality Standards</h3>
+                        <p style="margin: 0; color: var(--text-light); line-height: 1.7;">
+                            HACCP, IFS, and BRC certified. Specializes in Halal slaughtering, addressing markets with diverse cultural and religious requirements.
+                        </p>
+                    </div>
+                    <div style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 1.75rem; border: 1px solid rgba(0,0,0,0.05);">
+                        <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.25rem;"><i class="fas fa-box-open" style="color: #b33a3a; margin-right: 0.5rem;"></i>Product Range</h3>
+                        <p style="margin: 0; color: var(--text-light); line-height: 1.7;">
+                            From high-quality fresh meat and portioned meat halves to frozen and packaged products, plus ready-made products for gastronomy and the food industry.
+                        </p>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; line-height: 1.8; color: var(--text-light); text-align: center;">
+                    Thanks to seamless process control – from breeding through slaughtering and cutting to packaging – the supplier ensures consistently high meat quality and product parameters at world-class level in every market. As a reliable B2B partner, the company maintains long-term relationships with its customers and supports them in handling large orders through on-time logistics and individually tailored cooperation conditions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processed Beef Products -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem;">Processed & Ready-to-Eat Beef Products</h2>
+            <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                
+                <!-- Smoked Beef Bacon -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Smoked, Precooked Beef Bacon</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 250 g</li>
+                        <li>Vacuum 336 g</li>
+                        <li>Vacuum 500 g</li>
+                        <li>Vacuum 1 kg</li>
+                        <li>Vacuum 2.5 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Smoked Beef Cubes -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Smoked, Precooked Beef Cubes</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 250 g</li>
+                    </ul>
+                </div>
+
+                <!-- Pastrami -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Pastrami</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Pastrami Slices, Pastrami Block</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 400 g</li>
+                        <li>Vacuum 500 g</li>
+                        <li>Vacuum 2.5 kg</li>
+                        <li>Vacuum 1-2 kg (Block)</li>
+                    </ul>
+                </div>
+
+                <!-- Smoked Ribeye -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Smoked, Precooked Ribeye</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Smoked Ribeye Slices, Smoked Ribeye Block</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 250 g</li>
+                        <li>Vacuum 500 g</li>
+                        <li>Vacuum 1.5-3 kg (Slab)</li>
+                    </ul>
+                </div>
+
+                <!-- Riblets -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Riblets</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Slowcooked Riblets in Soy Sauce, Slowcooked Riblets X Cut with Garlic</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 250-260 g (3 Riblets)</li>
+                        <li>Vacuum 0.6-1.0 kg (5 Riblets)</li>
+                        <li>Vacuum 1.0-1.4 kg (7 Riblets)</li>
+                        <li>Vacuum 1 kg (1 Riblet)</li>
+                    </ul>
+                </div>
+
+                <!-- Short Ribs -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Short Ribs</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Short Ribs Slowcooked in Soy Sauce</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 250-350 g (1 Rib)</li>
+                        <li>Vacuum 350-500 g (2 Ribs)</li>
+                        <li>Vacuum 600-700 g (3 Ribs)</li>
+                    </ul>
+                </div>
+
+                <!-- Beef Cheeks -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Beef Cheeks</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Cheek Slowcooked in Soy Sauce Cut, Cheek Slowcooked in Soy Sauce Whole</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 500 g</li>
+                    </ul>
+                </div>
+
+                <!-- Brisket -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Brisket</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Smoked Brisket Slow Cooked, Brisket Slowcooked</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 1 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Shank -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Shank</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Hind Shank Bone in Slow Cooked, Fore Shank Bone in Slow Cooked</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 2-4 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Ossobuco -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Ossobuco</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Ossobuco Slowcooked in Soy Sauce</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 500 g</li>
+                    </ul>
+                </div>
+
+                <!-- Pulled Beef -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Pulled Beef</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 500 g</li>
+                    </ul>
+                </div>
+
+                <!-- Beef Hot-Dog Sausage -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Beef Hot-Dog Sausage</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Hot-Dog with Paprika</li>
+                        <li>Hot-Dog with Peppers</li>
+                        <li>Hot-Dog with Bacon</li>
+                        <li>Hot-Dog Merguez</li>
+                    </ul>
+                </div>
+
+                <!-- Merguez -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Merguez</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants:</strong> Merguez Baton (Stick), Merguez Cut (Decoupe)</p>
+                </div>
+
+                <!-- Mielonka Sausage -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Mielonka Sausage (Sausage de Viande)</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong> Diameter 65 mm</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>1 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Beef Sausage -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Beef Sausage</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong> Diameter 30 mm</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 6 pcs / 12 pcs / 2.5 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Chorizo -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Chorizo</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong> Diameter IQF 32 mm / IQF 40 mm</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 1 kg</li>
+                    </ul>
+                </div>
+
+                <!-- Carpaccio -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Carpaccio</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong> Diameter 22 mm</p>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>1 pc = 50 g</li>
+                        <li>Packaging 10 x 1 pc = 500 g</li>
+                    </ul>
+                </div>
+
+                <!-- Tripe -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Tripe</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>500 g</li>
+                    </ul>
+                </div>
+
+                <!-- Zamosc Style Tripe Soup -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Zamosc Style Tripe Soup</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 900 g</li>
+                    </ul>
+                </div>
+
+                <!-- Tripe in Broth -->
+                <div class="product-box" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.15rem;">Tripe in Broth</h3>
+                    <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Vacuum 900 g</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Frozen Beef Products -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem;">Frozen Beef Products</h2>
+            <div style="display: grid; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                
+                <!-- Burgers -->
+                <div class="product-box" style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 2rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Burgers (Hamburger)</h3>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants/Ingredients:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>100% Beef (Steak Haches 100% Beef)</li>
+                        <li>Extra Tender (Burger L'Extra Tendre, 80% Beef)</li>
+                        <li>Onion (Onion Burger, 51% Beef)</li>
+                        <li>Soya (Soya Burger Nature, 51% Beef)</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Weights: 45 g, 80 g, 90 g, 100 g, 125 g, 165 g, 180 g</li>
+                        <li>Diameters: 19 mm, 21 mm, 23 mm, 25 mm, 27 mm, 32 mm</li>
+                        <li>Thickness: IQF 5 mm / IQF 15 mm (Whole)</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging Options:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li><strong>Retail:</strong> 10 x 80 g IWP = 800 g/carton, 10 x 100 g IWP = 1 kg/carton</li>
+                        <li><strong>Food Service:</strong> 45 g x 100 pcs = 4.5 kg/carton (up to 540 kg/palette), 80 g x 68 pcs = 5.44 kg/carton (up to 652.8 kg/palette), and similar for other weights</li>
+                    </ul>
+                </div>
+
+                <!-- Meatballs -->
+                <div class="product-box" style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 2rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Meatballs (Boulettes)</h3>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants/Ingredients:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>100% Beef (Pure Beef)</li>
+                        <li>Extra Tender (L'Extra Tendre, 80% Beef)</li>
+                        <li>Onion Flavor (Oignon, 51% Beef)</li>
+                        <li>Soya Flavor (Nature, 51% Beef)</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Weights: 23-30 g</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging Options:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li><strong>Food Service:</strong> 800 g to 2.5 kg/bag</li>
+                    </ul>
+                </div>
+
+                <!-- Minced Beef -->
+                <div class="product-box" style="background: white; border-radius: 14px; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08); padding: 2rem; border: 2px solid #b33a3a;">
+                    <h3 style="margin-top: 0; color: var(--primary-navy); font-size: 1.3rem;">Minced Beef (Egrené)</h3>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Variants/Ingredients:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>100% Beef</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Specifications:</strong></p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li>Thickness: 3 mm, 4 mm, 5 mm</li>
+                    </ul>
+                    <p style="margin: 0.75rem 0; color: var(--text-light); font-size: 0.95rem;"><strong>Packaging Options:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); line-height: 1.7; font-size: 0.95rem;">
+                        <li><strong>Food Service:</strong> 800 g to 2.5 kg/bag</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Half Carcasses -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #722F37 0%, #5D001E 100%); color: white;">
+        <div class="container">
+            <div style="max-width: 1100px; margin: 0 auto;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 2rem; color: white;">Half Carcasses (Forequarters & Hindquarters)</h2>
+                <p style="font-size: 1.05rem; line-height: 1.85; color: rgba(255,255,255,0.85); margin-bottom: 2.5rem; text-align: center;">
+                    Our supplier offers both forequarters (e.g., 5-rib forequarter with flank from heifer, bull, or cow) and hindquarters as part of their fresh and frozen beef range. Available in chilled or frozen form, portioned for export.
+                </p>
+                
+                <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 2.5rem;">
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 2rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-weight" style="color: #b33a3a; margin-right: 0.5rem;"></i>Export Weights</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            <strong>Forequarters:</strong> approx. 80–120 kg<br>
+                            <strong>Hindquarters:</strong> approx. 100–150 kg<br>
+                            Standard for international trade, customizable to customer specifications.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 2rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-certificate" style="color: #b33a3a; margin-right: 0.5rem;"></i>Halal Slaughter</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            Manual slaughter in compliance with SFDA and GSO standards. Halal certification by Polish Institute of Halal, recognized by SFDA (Saudi Food and Drug Authority) and SASO/GSO, including GSO 2055-1 for halal food chain requirements. Facilities are certified and registered for export to Saudi Arabia.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 2rem;">
+                        <h3 style="margin-top: 0; color: white; font-size: 1.25rem;"><i class="fas fa-snowflake" style="color: #b33a3a; margin-right: 0.5rem;"></i>Freezing & Packaging</h3>
+                        <p style="margin: 0; color: rgba(255,255,255,0.8); line-height: 1.8;">
+                            <strong>Freezing:</strong> Deep frozen at -18°C or below using modern technology to ensure quality and safety during transport.<br>
+                            <strong>Packaging:</strong> Hygienic, export-compliant materials (e.g., vacuum-sealed or bulk cartons) suitable for long-distance container transport.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(20, 184, 166, 0.1); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 14px; padding: 1.75rem; margin-top: 2rem;">
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.8; text-align: center;">
+                        <i class="fas fa-info-circle" style="color: #b33a3a; margin-right: 0.5rem;"></i>
+                        Half carcasses are available in both chilled and frozen forms, portioned for international export and can be adapted to meet specific customer requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Looking for halal beef?</h2>
+            <p>Contact us with your specifications and we'll coordinate a quotation.</p>
+            <a href="contact.html" class="btn btn-primary">Send inquiry</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Krause Global Resources & Trade</h3>
+                    <p>Ihr zuverlässiger Partner für globalen Rohstoff- und Warenhandel mit Fokus auf Sustainablekeit und langfristige Partnerschaften.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="halal-beef.html" class="active">Halal Beef</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="global-presence.html">Global Presence</a></li>
+                        <li><a href="values.html">Our Values</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="impressum.html">Imprint</a></li>
+                        <li><a href="datenschutz.html">Privacy Policy</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Krause Global Resources & Trade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Stagger All - Alle Effekte nacheinander versetzt
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.product-box');
+            const animations = ['anim-zoom', 'anim-slide-up', 'anim-slide-left', 'anim-flip', 'anim-bounce'];
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const box = entry.target;
+                        const boxIndex = Array.from(boxes).indexOf(box);
+                        
+                        // Verschiedene Animation pro Box (zyklisch)
+                        const animClass = animations[boxIndex % animations.length];
+                        
+                        // Kaskaden-Delay basierend auf Position
+                        const row = Math.floor(boxIndex / 3);
+                        const col = boxIndex % 3;
+                        const delay = (row * 0.12) + (col * 0.1);
+                        
+                        setTimeout(() => {
+                            box.classList.add(animClass);
+                        }, delay * 1000);
+                        
+                        observer.unobserve(box);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -30px 0px'
+            });
+            
+            boxes.forEach(box => observer.observe(box));
+        });
+    </script>
+</body>
+</html>

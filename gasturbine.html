@@ -8,6 +8,57 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Staggered Slide-in Animation */
+        .power-box {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .power-box.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Shimmer & Glow Hover Effect */
+        .power-box {
+            position: relative;
+            overflow: hidden;
+        }
+        .power-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            z-index: 10;
+            pointer-events: none;
+        }
+        .power-box:hover::before {
+            left: 150%;
+            transition: left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .power-box:hover {
+            transform: translateY(-5px) scale(1.02) !important;
+            box-shadow: 
+                0 0 20px rgba(100, 180, 255, 0.3),
+                0 0 40px rgba(100, 180, 255, 0.15),
+                0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+        .power-box.visible:hover {
+            transform: translateY(-5px) scale(1.02) !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -16,18 +67,22 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/diamand.png" alt="KGRT Logo">
+                        <picture>
+    <source srcset="images/diamand.webp" type="image/webp">
+    <img src="images/diamand.png" alt="KGRT Logo" loading="lazy">
+</picture>
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="fertilizer.html">Fertilizer</a></li>
                         <li><a href="fish.html">Fish &amp; Seafood</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
                         <li><a href="energy.html">Energy</a></li>
                         <li><a href="gasturbine.html" class="active">Power Solutions</a></li>
-                        <li><a href="news.html">News</a></li>
+                        <li><a href="metals.html">Metals</a></li>
+                        <li><a href="gold.html">Gold Bars</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -39,10 +94,11 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(135deg, rgba(0,50,100,0.85), rgba(0,100,180,0.85)), url('../images/Header_Gasturbine.jpg') center/cover; min-height: 500px; display: flex; align-items: center; position: relative;">
+    <section class="page-header" style="background: url('images/Header_Gasturbine.png') center center / cover no-repeat; min-height: 70vh; display: flex; align-items: flex-end; padding-bottom: 2rem; position: relative;">
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.5) 40%, transparent 100%);"></div>
         <div class="container" style="position: relative; z-index: 2;">
-            <h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin-bottom: 1rem;"><i class="fas fa-cog" style="margin-right: 0.75rem;"></i>Industrial Power Solutions</h1>
-            <p class="breadcrumb" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);"><a href="index.html">Home</a> / Industrial Power Solutions</p>
+            <h1 style="text-shadow: 2px 2px 8px rgba(0,0,0,0.9); margin-bottom: 1rem;"><i class="fas fa-cog" style="margin-right: 0.75rem;"></i>Industrial Power Solutions</h1>
+            <p class="breadcrumb" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.9);"><a href="index.html">Home</a> / Industrial Power Solutions</p>
         </div>
     </section>
 
@@ -50,12 +106,12 @@
     <section style="padding: 3rem 0 1rem 0; background: #f8f9fa;">
         <div class="container">
             <div style="max-width: 1400px; margin: 0 auto;">
-                <h2 style="color: var(--primary-navy); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">
+                <h2 style="color: #0F172A; font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center; font-weight: 700;">
                     <i class="fas fa-list-ul" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>
                     Available Power Solutions
                 </h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-                    <a href="#sgt600" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #0064B4; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#sgt600" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #0064B4; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-cog" style="color: #0064B4; margin-right: 0.5rem;"></i>
                             Siemens SGT 600
@@ -63,7 +119,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">25 MW Core Engine, 60 Hz - Brand New</p>
                     </a>
                     
-                    <a href="#caterpillar" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #FF8C00; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#caterpillar" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #FF8C00; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-charging-station" style="color: #FF8C00; margin-right: 0.5rem;"></i>
                             Caterpillar 3516B
@@ -71,7 +127,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">2000 KVA Diesel Generator - 80 Units Available</p>
                     </a>
                     
-                    <a href="#lm2500" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #228B22; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#lm2500" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #228B22; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-wind" style="color: #228B22; margin-right: 0.5rem;"></i>
                             GE LM2500
@@ -79,7 +135,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Gas Turbine - 50/60 Hz, Overhauled</p>
                     </a>
                     
-                    <a href="#sgt2000e" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #0064C8; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#sgt2000e" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #0064C8; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-industry" style="color: #0064C8; margin-right: 0.5rem;"></i>
                             Siemens SGT5-2000E
@@ -87,7 +143,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">670 MW Combined Cycle Plant - ZERO Hours</p>
                     </a>
                     
-                    <a href="#sgt4000f" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #8B008B; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#sgt4000f" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #8B008B; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-bolt" style="color: #8B008B; margin-right: 0.5rem;"></i>
                             Siemens SGT5-PAC 4000F
@@ -95,7 +151,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">298 MW Gas Turbine Plant - Brand New in Crate</p>
                     </a>
                     
-                    <a href="#perkins" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #14b8a6; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#perkins" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #14b8a6; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-industry" style="color: #14b8a6; margin-right: 0.5rem;"></i>
                             Perkins PE-2250 CS
@@ -103,7 +159,7 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Diesel Generator - 3 Units, Brand New 2023</p>
                     </a>
                     
-                    <a href="#v84" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #0064B4; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#v84" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #0064B4; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-cogs" style="color: #0064B4; margin-right: 0.5rem;"></i>
                             Siemens V84.3A2
@@ -111,12 +167,20 @@
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">160 MW Gas Turbine - Complete Power Plant</p>
                     </a>
                     
-                    <a href="#tm2500" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 4px solid #DC143C; display: block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)';">
+                    <a href="#tm2500" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #DC143C; display: block;">
                         <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
                             <i class="fas fa-wind" style="color: #DC143C; margin-right: 0.5rem;"></i>
                             GE TM2500
                         </h3>
                         <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">2x Mobile Gas Turbine - 53 MW Total, Trailer-Mounted</p>
+                    </a>
+                    
+                    <a href="#mars100" class="power-box" style="background: white; padding: 1.25rem; border-radius: 12px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-left: 4px solid #FF6B35; display: block;">
+                        <h3 style="color: var(--primary-navy); font-size: 1.1rem; margin: 0 0 0.5rem 0; font-weight: 600;">
+                            <i class="fas fa-solar-panel" style="color: #FF6B35; margin-right: 0.5rem;"></i>
+                            Solar Mars 100
+                        </h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">2x Gas Turbine Generator Sets - 11.35 MW each, USA</p>
                     </a>
                 </div>
             </div>
@@ -132,7 +196,10 @@
                     <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 2rem;">
                         <div style="flex: 0 0 400px; min-width: 320px;">
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
-                                <img src="images/600 turbine.png" alt="Siemens SGT 600 Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/600 turbine.webp" type="image/webp">
+    <img src="images/600 turbine.png" alt="Siemens SGT 600 Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                         </div>
                         <div style="flex: 1; min-width: 320px;">
@@ -311,17 +378,29 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/Caterpillar 3516B_01.png')">
-                                <img src="images/Caterpillar 3516B_01.png" alt="Caterpillar 3516B Generator" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/Caterpillar 3516B_01.webp" type="image/webp">
+    <img src="images/Caterpillar 3516B_01.png" alt="Caterpillar 3516B Generator" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/Caterpillar 3516B_02.png')">
-                                    <img src="images/Caterpillar 3516B_02.png" alt="Caterpillar Generator Detail" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/Caterpillar 3516B_02.webp" type="image/webp">
+    <img src="images/Caterpillar 3516B_02.png" alt="Caterpillar Generator Detail" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/Caterpillar 3516B_03.png')">
-                                    <img src="images/Caterpillar 3516B_03.png" alt="Caterpillar Generator Side View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/Caterpillar 3516B_03.webp" type="image/webp">
+    <img src="images/Caterpillar 3516B_03.png" alt="Caterpillar Generator Side View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/Caterpillar 3516B_04.png')">
-                                    <img src="images/Caterpillar 3516B_04.png" alt="Caterpillar Generator Control Panel" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/Caterpillar 3516B_04.webp" type="image/webp">
+    <img src="images/Caterpillar 3516B_04.png" alt="Caterpillar Generator Control Panel" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -476,7 +555,10 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem; cursor: pointer;" onclick="openLightbox('../images/GE LM2500_01 .png')">
-                                <img src="images/GE LM2500_01 .png" alt="GE LM2500 Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/GE LM2500_01 .webp" type="image/webp">
+    <img src="images/GE LM2500_01 .png" alt="GE LM2500 Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                         </div>
                         <div style="flex: 1; min-width: 320px;">
@@ -668,17 +750,29 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/2000E_01.jpg')">
-                                <img src="images/2000E_01.jpg" alt="Siemens SGT5-2000E Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/2000E_01.webp" type="image/webp">
+    <img src="images/2000E_01.jpg" alt="Siemens SGT5-2000E Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/2000._02.jpg')">
-                                    <img src="images/2000._02.jpg" alt="SGT5-2000E Detail View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/2000._02.webp" type="image/webp">
+    <img src="images/2000._02.jpg" alt="SGT5-2000E Detail View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/2000E_03.jpg')">
-                                    <img src="images/2000E_03.jpg" alt="SGT5-2000E Technical View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/2000E_03.webp" type="image/webp">
+    <img src="images/2000E_03.jpg" alt="SGT5-2000E Technical View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/2000E_04.jpg')">
-                                    <img src="images/2000E_04.jpg" alt="SGT5-2000E Cutaway View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/2000E_04.webp" type="image/webp">
+    <img src="images/2000E_04.jpg" alt="SGT5-2000E Cutaway View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -885,17 +979,29 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/4000F_01.jpg')">
-                                <img src="images/4000F_01.jpg" alt="Siemens SGT5-PAC 4000F Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/4000F_01.webp" type="image/webp">
+    <img src="images/4000F_01.jpg" alt="Siemens SGT5-PAC 4000F Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/4000F_02.jpg')">
-                                    <img src="images/4000F_02.jpg" alt="SGT5-PAC 4000F Crated Component" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/4000F_02.webp" type="image/webp">
+    <img src="images/4000F_02.jpg" alt="SGT5-PAC 4000F Crated Component" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/4000F_03.jpg')">
-                                    <img src="images/4000F_03.jpg" alt="SGT5-PAC 4000F Installation View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/4000F_03.webp" type="image/webp">
+    <img src="images/4000F_03.jpg" alt="SGT5-PAC 4000F Installation View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/4000F_04.jpg')">
-                                    <img src="images/4000F_04.jpg" alt="SGT5-PAC 4000F Detail View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/4000F_04.webp" type="image/webp">
+    <img src="images/4000F_04.jpg" alt="SGT5-PAC 4000F Detail View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -996,10 +1102,6 @@
                                 <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.08);">
                                     <div style="display: grid; gap: 1rem; color: var(--text-light); line-height: 1.7;">
                                         <div>
-                                            <strong style="color: var(--primary-navy);">Decision Deadline:</strong><br>
-                                            Until January 20, 2026. Buyer must confirm purchase intent within this timeframe, then conduct inspection.
-                                        </div>
-                                        <div>
                                             <strong style="color: var(--primary-navy);">Down Payment:</strong><br>
                                             20% of total price, due on the day of mandatory SGS visual inspection.
                                         </div>
@@ -1099,17 +1201,29 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/25080_Foto1.jpeg')">
-                                <img src="images/25080_Foto1.jpeg" alt="Perkins PE-2250 CS Generator" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/25080_Foto1.webp" type="image/webp">
+    <img src="images/25080_Foto1.jpeg" alt="Perkins PE-2250 CS Generator" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto2.jpeg')">
-                                    <img src="images/25080_Foto2.jpeg" alt="Perkins Generator Detail" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/25080_Foto2.webp" type="image/webp">
+    <img src="images/25080_Foto2.jpeg" alt="Perkins Generator Detail" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto3.jpeg')">
-                                    <img src="images/25080_Foto3.jpeg" alt="Perkins Generator Side View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/25080_Foto3.webp" type="image/webp">
+    <img src="images/25080_Foto3.jpeg" alt="Perkins Generator Side View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto4.jpeg')">
-                                    <img src="images/25080_Foto4.jpeg" alt="Perkins Generator Container" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/25080_Foto4.webp" type="image/webp">
+    <img src="images/25080_Foto4.jpeg" alt="Perkins Generator Container" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -1330,13 +1444,22 @@
                         </h4>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
                             <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto5.jpeg')">
-                                <img src="images/25080_Foto5.jpeg" alt="Additional View 1" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/25080_Foto5.webp" type="image/webp">
+    <img src="images/25080_Foto5.jpeg" alt="Additional View 1" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto6.jpeg')">
-                                <img src="images/25080_Foto6.jpeg" alt="Additional View 2" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/25080_Foto6.webp" type="image/webp">
+    <img src="images/25080_Foto6.jpeg" alt="Additional View 2" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/25080_Foto7.jpeg')">
-                                <img src="images/25080_Foto7.jpeg" alt="Additional View 3" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/25080_Foto7.webp" type="image/webp">
+    <img src="images/25080_Foto7.jpeg" alt="Additional View 3" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                         </div>
                     </div>
@@ -1354,17 +1477,29 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/160MW Gasturbine_01.jpg')">
-                                <img src="images/160MW Gasturbine_01.jpg" alt="Siemens V94.2 Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/160MW Gasturbine_01.webp" type="image/webp">
+    <img src="images/160MW Gasturbine_01.jpg" alt="Siemens V94.2 Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/160MW Gasturbine_02.jpg')">
-                                    <img src="images/160MW Gasturbine_02.jpg" alt="Turbine Detail" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/160MW Gasturbine_02.webp" type="image/webp">
+    <img src="images/160MW Gasturbine_02.jpg" alt="Turbine Detail" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/160MW Gasturbine_03.jpg')">
-                                    <img src="images/160MW Gasturbine_03.jpg" alt="Turbine Components" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/160MW Gasturbine_03.webp" type="image/webp">
+    <img src="images/160MW Gasturbine_03.jpg" alt="Turbine Components" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/160MW Gasturbine_04.jpg')">
-                                    <img src="images/160MW Gasturbine_04.jpg" alt="Control System" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/160MW Gasturbine_04.webp" type="image/webp">
+    <img src="images/160MW Gasturbine_04.jpg" alt="Control System" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -1595,11 +1730,17 @@
                         <div style="flex: 0 0 450px; min-width: 320px;">
                             <!-- Image Gallery -->
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1rem; cursor: pointer;" onclick="openLightbox('../images/TM2500 GE_1.png')">
-                                <img src="images/TM2500 GE_1.png" alt="GE TM2500 Gas Turbine" style="width: 100%; height: auto; display: block;">
+                                <picture>
+    <source srcset="images/TM2500 GE_1.webp" type="image/webp">
+    <img src="images/TM2500 GE_1.png" alt="GE TM2500 Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                             </div>
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
                                 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('../images/TM2500 GE_2.png')">
-                                    <img src="images/TM2500 GE_2.png" alt="GE TM2500 Detail View" style="width: 100%; height: auto; display: block;">
+                                    <picture>
+    <source srcset="images/TM2500 GE_2.webp" type="image/webp">
+    <img src="images/TM2500 GE_2.png" alt="GE TM2500 Detail View" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
                                 </div>
                             </div>
                         </div>
@@ -1828,6 +1969,242 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Solar Mars 100 Section -->
+        <div id="mars100" style="max-width: 1400px; margin: 5rem auto 0; scroll-margin-top: 100px;">
+            <div style="background: linear-gradient(135deg, rgba(255,107,53,0.12), rgba(255,140,0,0.12)); border-radius: 20px; padding: 2.5rem; border: 2px solid rgba(255,107,53,0.35); box-shadow: 0 15px 50px rgba(0,0,0,0.08);">
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 2rem;">
+                    <div style="flex: 0 0 400px; min-width: 320px;">
+                        <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <picture>
+    <source srcset="images/solar11.webp" type="image/webp">
+    <img src="images/solar11.png" alt="Solar Mars 100 Gas Turbine" style="width: 100%; height: auto; display: block;" loading="lazy">
+</picture>
+                        </div>
+                        
+                        <!-- Image Gallery -->
+                        <div style="margin-top: 1.5rem;">
+                            <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.1rem;">
+                                <i class="fas fa-images" style="color: #FF6B35; margin-right: 0.5rem;"></i>
+                                Image Gallery
+                            </h4>
+                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar1.png')">
+                                    <picture>
+    <source srcset="images/solar1.webp" type="image/webp">
+    <img src="images/solar1.png" alt="Solar Mars 100 - Image 1" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar2.png')">
+                                    <picture>
+    <source srcset="images/solar2.webp" type="image/webp">
+    <img src="images/solar2.png" alt="Solar Mars 100 - Image 2" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar3.png')">
+                                    <picture>
+    <source srcset="images/solar3.webp" type="image/webp">
+    <img src="images/solar3.png" alt="Solar Mars 100 - Image 3" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar%204.png')">
+                                    <img src="images/solar%204.png" alt="Solar Mars 100 - Image 4" style="width: 100%; height: 100px; object-fit: cover; display: block;">
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar5.png')">
+                                    <picture>
+    <source srcset="images/solar5.webp" type="image/webp">
+    <img src="images/solar5.png" alt="Solar Mars 100 - Image 5" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar6.png')">
+                                    <picture>
+    <source srcset="images/solar6.webp" type="image/webp">
+    <img src="images/solar6.png" alt="Solar Mars 100 - Image 6" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar7.png')">
+                                    <picture>
+    <source srcset="images/solar7.webp" type="image/webp">
+    <img src="images/solar7.png" alt="Solar Mars 100 - Image 7" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar8.png')">
+                                    <picture>
+    <source srcset="images/solar8.webp" type="image/webp">
+    <img src="images/solar8.png" alt="Solar Mars 100 - Image 8" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar9.png')">
+                                    <picture>
+    <source srcset="images/solar9.webp" type="image/webp">
+    <img src="images/solar9.png" alt="Solar Mars 100 - Image 9" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar10.png')">
+                                    <picture>
+    <source srcset="images/solar10.webp" type="image/webp">
+    <img src="images/solar10.png" alt="Solar Mars 100 - Image 10" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;" onclick="openLightbox('images/solar11.png')">
+                                    <picture>
+    <source srcset="images/solar11.webp" type="image/webp">
+    <img src="images/solar11.png" alt="Solar Mars 100 - Image 11" style="width: 100%; height: 100px; object-fit: cover; display: block;" loading="lazy">
+</picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 320px;">
+                        <h2 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 2.2rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fas fa-solar-panel" style="color: #FF6B35;"></i>
+                            Solar Mars 100
+                        </h2>
+                        <h3 style="margin: 0 0 1rem 0; color: var(--primary-navy); font-size: 1.6rem; font-weight: 600;">
+                            Gas Turbine Generator Set
+                        </h3>
+                        <p style="margin: 0 0 1.5rem 0; color: var(--text-light); line-height: 1.8; font-size: 1.15rem; font-weight: 600;">
+                            2 units available - Currently located in USA
+                        </p>
+
+                        <div style="background: rgba(212,175,55,0.1); border-left: 4px solid var(--gold); padding: 1.25rem; border-radius: 8px; margin-bottom: 1.75rem;">
+                            <h4 style="margin: 0 0 0.75rem 0; color: var(--primary-navy); font-size: 1.2rem;">
+                                <i class="fas fa-check-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>
+                                Availability Options
+                            </h4>
+                            <ul style="margin: 0; padding-left: 1.5rem; color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                                <li><strong>Option 1:</strong> Zero-hours refurbished - Delivery in approximately 1 month FOB USA</li>
+                                <li><strong>Option 2:</strong> As decommissioned (with hours) - Immediate delivery FOB USA</li>
+                                <li>Inspection visit available January/February 2026</li>
+                                <li>Complete overhaul/refurbishment can be initiated immediately upon request</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: rgba(20,184,166,0.08); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--primary-navy); font-size: 1.3rem;">
+                                <i class="fas fa-info-circle" style="color: #FF6B35; margin-right: 0.5rem;"></i>
+                                Key Features
+                            </h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <i class="fas fa-bolt" style="color: #FF6B35; font-size: 1.2rem;"></i>
+                                    <span style="color: var(--text-light); font-size: 1.05rem;"><strong>11.35 MW</strong> Output Power</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <i class="fas fa-map-marker-alt" style="color: #FF6B35; font-size: 1.2rem;"></i>
+                                    <span style="color: var(--text-light); font-size: 1.05rem;"><strong>USA</strong> Location</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <i class="fas fa-layer-group" style="color: #FF6B35; font-size: 1.2rem;"></i>
+                                    <span style="color: var(--text-light); font-size: 1.05rem;"><strong>2 Units</strong> Available</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <i class="fas fa-clipboard-check" style="color: #FF6B35; font-size: 1.2rem;"></i>
+                                    <span style="color: var(--text-light); font-size: 1.05rem;"><strong>Inspection</strong> Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Specifications -->
+                <details style="margin-top: 2rem;">
+                    <summary style="cursor: pointer; font-size: 1.4rem; font-weight: 600; color: var(--primary-navy); padding: 1rem; background: rgba(255,255,255,0.6); border-radius: 10px; user-select: none;">
+                        <i class="fas fa-chart-bar" style="margin-right: 0.5rem; color: #FF6B35;"></i>
+                        Technical Specifications & Performance Data
+                    </summary>
+                    <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.5); border-radius: 12px;">
+                        <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.2rem;">Performance Characteristics</h4>
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+                            <tbody>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Output Power</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">11,350 kWe (11.35 MW)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Heat Rate</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">10,935 kJ/kWe-hr (10,365 Btu/kWe-hr)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Exhaust Flow</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">153,245 kg/hr (337,836 lb/hr)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Exhaust Temperature</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">486°C (902°F)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.2rem;">Application Performance</h4>
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+                            <tbody>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Steam (Unfired)</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">23.7 tonnes/hr (52,340 lb/hr)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Steam (Fired) at 1538°C (2800°F)</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">113.2 tonnes/hr (250,830 lb/hr)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                                    <td style="padding: 0.75rem; color: var(--primary-navy); font-weight: 600;">Chilling (Absorption)</td>
+                                    <td style="padding: 0.75rem; color: var(--text-light);">20,490 kW (5820 refrigeration tons)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 style="color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.2rem;">Dimensions & Requirements</h4>
+                        <ul style="color: var(--text-light); line-height: 1.9; font-size: 1rem; margin: 0; padding-left: 1.5rem;">
+                            <li>Package height: 3.8 m (12'5")</li>
+                            <li>Package weight: 83,148 kg (181,000 lb)</li>
+                            <li>Enclosure length: 14.2 m (46'5")</li>
+                            <li>Generator maintenance space: 2.7 m (9'2")</li>
+                            <li>Minimum clearance required for engine removal: 3.0 m (10'0")</li>
+                            <li>Minimum clearance for routine operation and maintenance: 5.4 m (20'11")</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Applications -->
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.6); border-radius: 12px;">
+                    <h4 style="color: var(--primary-navy); margin-bottom: 1.25rem; font-size: 1.3rem;">
+                        <i class="fas fa-tasks" style="color: #FF6B35; margin-right: 0.5rem;"></i>
+                        Ideal Applications
+                    </h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+                        <div style="background: white; padding: 1.25rem; border-radius: 10px; border-left: 4px solid #FF6B35;">
+                            <i class="fas fa-industry" style="color: #FF6B35; font-size: 1.3rem; margin-bottom: 0.5rem; display: block;"></i>
+                            <strong style="color: var(--primary-navy); font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Industrial Power Generation</strong>
+                            <span style="color: var(--text-light); font-size: 0.95rem;">Reliable base load and peaking power</span>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 10px; border-left: 4px solid #FF6B35;">
+                            <i class="fas fa-fire" style="color: #FF6B35; font-size: 1.3rem; margin-bottom: 0.5rem; display: block;"></i>
+                            <strong style="color: var(--primary-navy); font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Cogeneration (CHP)</strong>
+                            <span style="color: var(--text-light); font-size: 0.95rem;">Combined heat and power applications</span>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 10px; border-left: 4px solid #FF6B35;">
+                            <i class="fas fa-oil-can" style="color: #FF6B35; font-size: 1.3rem; margin-bottom: 0.5rem; display: block;"></i>
+                            <strong style="color: var(--primary-navy); font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Oil & Gas Operations</strong>
+                            <span style="color: var(--text-light); font-size: 0.95rem;">Offshore and onshore power solutions</span>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 10px; border-left: 4px solid #FF6B35;">
+                            <i class="fas fa-recycle" style="color: #FF6B35; font-size: 1.3rem; margin-bottom: 0.5rem; display: block;"></i>
+                            <strong style="color: var(--primary-navy); font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Process Industries</strong>
+                            <span style="color: var(--text-light); font-size: 0.95rem;">Steam and power for industrial processes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1)); border-radius: 12px; border-left: 4px solid var(--accent-teal);">
+                    <p style="margin: 0; color: var(--primary-navy); font-size: 1.1rem;">
+                        <i class="fas fa-info-circle" style="color: var(--accent-teal); margin-right: 0.5rem;"></i>
+                        <strong>Inspection & Documentation Available:</strong> Complete borescope inspection photos and decommissioning documentation provided upon request. Contact us for detailed technical specifications and to schedule an inspection visit in January/February 2026.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- CTA Section -->
@@ -1853,6 +2230,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="commodities.html">Commodities</a></li>
+                        <li><a href="halal-beef.html">Halal Beef</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1908,6 +2286,26 @@
                 closeLightbox();
             }
         });
+        
+        // Staggered Scroll Animation for Power Boxes
+        const powerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const boxes = document.querySelectorAll('.power-box');
+                    boxes.forEach((box, index) => {
+                        setTimeout(() => {
+                            box.classList.add('visible');
+                        }, index * 100); // 100ms delay between each box
+                    });
+                    powerObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        const firstPowerBox = document.querySelector('.power-box');
+        if (firstPowerBox) {
+            powerObserver.observe(firstPowerBox);
+        }
     </script>
 </body>
 </html>
